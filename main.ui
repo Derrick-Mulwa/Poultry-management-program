@@ -161,24 +161,19 @@ border-radius:5px</string>
          <widget class="QLabel" name="lbl_pageSignin_username">
           <property name="geometry">
            <rect>
-            <x>350</x>
+            <x>360</x>
             <y>270</y>
             <width>291</width>
             <height>20</height>
            </rect>
           </property>
-          <property name="text">
-           <string/>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
           </property>
-         </widget>
-         <widget class="QLabel" name="lbl_pageSignin_password">
-          <property name="geometry">
-           <rect>
-            <x>350</x>
-            <y>340</y>
-            <width>301</width>
-            <height>21</height>
-           </rect>
+          <property name="styleSheet">
+           <string notr="true">color:rgb(244, 0, 4)</string>
           </property>
           <property name="text">
            <string/>
@@ -201,6 +196,27 @@ border-radius:5px</string>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lbl_pageSignin_password">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>340</y>
+            <width>291</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:rgb(244, 0, 4)</string>
+          </property>
+          <property name="text">
+           <string/>
           </property>
          </widget>
          <zorder>label_11</zorder>
@@ -2650,6 +2666,9 @@ background-color: rgb(255, 255, 255,0);</string>
                                    <iconset resource="resources.qrc">
                                     <normaloff>:/icons/icons/search.png</normaloff>:/icons/icons/search.png</iconset>
                                   </property>
+                                  <property name="shortcut">
+                                   <string>Return</string>
+                                  </property>
                                  </widget>
                                 </item>
                                </layout>
@@ -2716,15 +2735,24 @@ background-color: rgb(255, 255, 255,0);</string>
                               <widget class="QTableWidget" name="table_pageCustomers_customers">
                                <property name="maximumSize">
                                 <size>
-                                 <width>545</width>
+                                 <width>600</width>
                                  <height>16777215</height>
                                 </size>
+                               </property>
+                               <property name="acceptDrops">
+                                <bool>false</bool>
+                               </property>
+                               <property name="autoFillBackground">
+                                <bool>false</bool>
+                               </property>
+                               <property name="alternatingRowColors">
+                                <bool>true</bool>
                                </property>
                                <property name="rowCount">
                                 <number>10</number>
                                </property>
                                <property name="columnCount">
-                                <number>5</number>
+                                <number>6</number>
                                </property>
                                <row/>
                                <row/>
@@ -2736,6 +2764,7 @@ background-color: rgb(255, 255, 255,0);</string>
                                <row/>
                                <row/>
                                <row/>
+                               <column/>
                                <column/>
                                <column/>
                                <column/>

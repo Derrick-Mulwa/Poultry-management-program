@@ -70,19 +70,27 @@ class Ui_Form(object):
         self.led_pageSignin_username.setStyleSheet("border-radius:7px")
         self.led_pageSignin_username.setObjectName("led_pageSignin_username")
         self.lbl_pageSignin_username = QtWidgets.QLabel(self.pageLogin)
-        self.lbl_pageSignin_username.setGeometry(QtCore.QRect(350, 270, 291, 20))
+        self.lbl_pageSignin_username.setGeometry(QtCore.QRect(360, 270, 291, 20))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lbl_pageSignin_username.setFont(font)
+        self.lbl_pageSignin_username.setStyleSheet("color:rgb(244, 0, 4)")
         self.lbl_pageSignin_username.setText("")
         self.lbl_pageSignin_username.setObjectName("lbl_pageSignin_username")
-        self.lbl_pageSignin_password = QtWidgets.QLabel(self.pageLogin)
-        self.lbl_pageSignin_password.setGeometry(QtCore.QRect(350, 340, 301, 21))
-        self.lbl_pageSignin_password.setText("")
-        self.lbl_pageSignin_password.setObjectName("lbl_pageSignin_password")
         self.label_11 = QtWidgets.QLabel(self.pageLogin)
-        self.label_11.setGeometry(QtCore.QRect(-470, -130, 2061, 991))
+        self.label_11.setGeometry(QtCore.QRect(-190, -140, 2061, 991))
         self.label_11.setText("")
         self.label_11.setPixmap(QtGui.QPixmap(":/images/icons/chicks_.jpg"))
         self.label_11.setScaledContents(True)
         self.label_11.setObjectName("label_11")
+        self.lbl_pageSignin_password = QtWidgets.QLabel(self.pageLogin)
+        self.lbl_pageSignin_password.setGeometry(QtCore.QRect(360, 340, 291, 20))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.lbl_pageSignin_password.setFont(font)
+        self.lbl_pageSignin_password.setStyleSheet("color:rgb(244, 0, 4)")
+        self.lbl_pageSignin_password.setText("")
+        self.lbl_pageSignin_password.setObjectName("lbl_pageSignin_password")
         self.label_11.raise_()
         self.label_2.raise_()
         self.label_3.raise_()
@@ -179,6 +187,7 @@ class Ui_Form(object):
         self.frame_4.setObjectName("frame_4")
         self.btn_pageHomepage_Dashboard = QtWidgets.QPushButton(self.frame_4)
         self.btn_pageHomepage_Dashboard.setGeometry(QtCore.QRect(-40, 40, 201, 41))
+        self.btn_pageHomepage_Dashboard.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_pageHomepage_Dashboard.setStyleSheet("background-color: rgb(19, 145, 13);\n"
 "border: 2px solid rgb(19, 145, 13);")
         icon1 = QtGui.QIcon()
@@ -195,6 +204,7 @@ class Ui_Form(object):
         self.label_5.setObjectName("label_5")
         self.btn_pageHomepage_sales = QtWidgets.QPushButton(self.frame_4)
         self.btn_pageHomepage_sales.setGeometry(QtCore.QRect(0, 80, 151, 41))
+        self.btn_pageHomepage_sales.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_pageHomepage_sales.setStyleSheet("background-color: rgb(19, 145, 13);\n"
 "border: 2px solid rgb(19, 145, 13);\n"
 "")
@@ -204,6 +214,7 @@ class Ui_Form(object):
         self.btn_pageHomepage_sales.setObjectName("btn_pageHomepage_sales")
         self.btn_pageHomepage_customer = QtWidgets.QPushButton(self.frame_4)
         self.btn_pageHomepage_customer.setGeometry(QtCore.QRect(0, 120, 161, 41))
+        self.btn_pageHomepage_customer.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_pageHomepage_customer.setStyleSheet("background-color: rgb(19, 145, 13);\n"
 "border: 2px solid rgb(19, 145, 13);")
         icon3 = QtGui.QIcon()
@@ -212,6 +223,7 @@ class Ui_Form(object):
         self.btn_pageHomepage_customer.setObjectName("btn_pageHomepage_customer")
         self.btn_pageHomepage_batchFlock = QtWidgets.QPushButton(self.frame_4)
         self.btn_pageHomepage_batchFlock.setGeometry(QtCore.QRect(-10, 160, 161, 41))
+        self.btn_pageHomepage_batchFlock.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_pageHomepage_batchFlock.setStyleSheet("background-color: rgb(19, 145, 13);\n"
 "border: 2px solid rgb(19, 145, 13);")
         icon4 = QtGui.QIcon()
@@ -220,6 +232,7 @@ class Ui_Form(object):
         self.btn_pageHomepage_batchFlock.setObjectName("btn_pageHomepage_batchFlock")
         self.btn_pageHomepage_eggProduction = QtWidgets.QPushButton(self.frame_4)
         self.btn_pageHomepage_eggProduction.setGeometry(QtCore.QRect(-10, 200, 161, 41))
+        self.btn_pageHomepage_eggProduction.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_pageHomepage_eggProduction.setStyleSheet("background-color: rgb(19, 145, 13);\n"
 "border: 2px solid rgb(19, 145, 13);")
         icon5 = QtGui.QIcon()
@@ -228,6 +241,7 @@ class Ui_Form(object):
         self.btn_pageHomepage_eggProduction.setObjectName("btn_pageHomepage_eggProduction")
         self.btn_pageHomepage_hatchery = QtWidgets.QPushButton(self.frame_4)
         self.btn_pageHomepage_hatchery.setGeometry(QtCore.QRect(0, 240, 161, 41))
+        self.btn_pageHomepage_hatchery.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_pageHomepage_hatchery.setStyleSheet("background-color: rgb(19, 145, 13);\n"
 "border: 2px solid rgb(19, 145, 13);")
         icon6 = QtGui.QIcon()
@@ -236,6 +250,7 @@ class Ui_Form(object):
         self.btn_pageHomepage_hatchery.setObjectName("btn_pageHomepage_hatchery")
         self.btn_pageHomepage_staffManagement = QtWidgets.QPushButton(self.frame_4)
         self.btn_pageHomepage_staffManagement.setGeometry(QtCore.QRect(-10, 320, 161, 41))
+        self.btn_pageHomepage_staffManagement.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_pageHomepage_staffManagement.setStyleSheet("background-color: rgb(19, 145, 13);\n"
 "border: 2px solid rgb(19, 145, 13);")
         icon7 = QtGui.QIcon()
@@ -244,6 +259,7 @@ class Ui_Form(object):
         self.btn_pageHomepage_staffManagement.setObjectName("btn_pageHomepage_staffManagement")
         self.btn_pageHomepage_expenseManagement = QtWidgets.QPushButton(self.frame_4)
         self.btn_pageHomepage_expenseManagement.setGeometry(QtCore.QRect(-10, 360, 161, 41))
+        self.btn_pageHomepage_expenseManagement.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_pageHomepage_expenseManagement.setStyleSheet("background-color: rgb(19, 145, 13);\n"
 "border: 2px solid rgb(19, 145, 13);")
         icon8 = QtGui.QIcon()
@@ -252,6 +268,7 @@ class Ui_Form(object):
         self.btn_pageHomepage_expenseManagement.setObjectName("btn_pageHomepage_expenseManagement")
         self.btn_pageHomepage_incomeManagement = QtWidgets.QPushButton(self.frame_4)
         self.btn_pageHomepage_incomeManagement.setGeometry(QtCore.QRect(-10, 400, 161, 41))
+        self.btn_pageHomepage_incomeManagement.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_pageHomepage_incomeManagement.setStyleSheet("background-color: rgb(19, 145, 13);\n"
 "border: 2px solid rgb(19, 145, 13);")
         icon9 = QtGui.QIcon()
@@ -260,6 +277,7 @@ class Ui_Form(object):
         self.btn_pageHomepage_incomeManagement.setObjectName("btn_pageHomepage_incomeManagement")
         self.btn_pageHomepage_settings = QtWidgets.QPushButton(self.frame_4)
         self.btn_pageHomepage_settings.setGeometry(QtCore.QRect(-10, 440, 161, 41))
+        self.btn_pageHomepage_settings.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_pageHomepage_settings.setStyleSheet("background-color: rgb(19, 145, 13);\n"
 "border: 2px solid rgb(19, 145, 13);")
         icon10 = QtGui.QIcon()
@@ -268,6 +286,7 @@ class Ui_Form(object):
         self.btn_pageHomepage_settings.setObjectName("btn_pageHomepage_settings")
         self.btn_pageHomepage_vaccination = QtWidgets.QPushButton(self.frame_4)
         self.btn_pageHomepage_vaccination.setGeometry(QtCore.QRect(0, 280, 161, 41))
+        self.btn_pageHomepage_vaccination.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_pageHomepage_vaccination.setStyleSheet("background-color: rgb(19, 145, 13);\n"
 "border: 2px solid rgb(19, 145, 13);")
         icon11 = QtGui.QIcon()
@@ -985,9 +1004,12 @@ class Ui_Form(object):
         self.horizontalLayout_22 = QtWidgets.QHBoxLayout(self.frame_59)
         self.horizontalLayout_22.setObjectName("horizontalLayout_22")
         self.table_pageCustomers_customers = QtWidgets.QTableWidget(self.frame_59)
-        self.table_pageCustomers_customers.setMaximumSize(QtCore.QSize(545, 16777215))
+        self.table_pageCustomers_customers.setMaximumSize(QtCore.QSize(600, 16777215))
+        self.table_pageCustomers_customers.setAcceptDrops(False)
+        self.table_pageCustomers_customers.setAutoFillBackground(False)
+        self.table_pageCustomers_customers.setAlternatingRowColors(True)
         self.table_pageCustomers_customers.setRowCount(10)
-        self.table_pageCustomers_customers.setColumnCount(5)
+        self.table_pageCustomers_customers.setColumnCount(6)
         self.table_pageCustomers_customers.setObjectName("table_pageCustomers_customers")
         self.horizontalLayout_22.addWidget(self.table_pageCustomers_customers)
         self.verticalLayout_44.addWidget(self.frame_59)
@@ -1051,7 +1073,7 @@ class Ui_Form(object):
 
         self.retranslateUi(Form)
         self.stackedWidget.setCurrentIndex(0)
-        self.stackedWidget_2.setCurrentIndex(0)
+        self.stackedWidget_2.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -1128,8 +1150,83 @@ class Ui_Form(object):
         self.combo_pageCustomers_entries.setItemText(5, _translate("Form", "100"))
         self.label_27.setText(_translate("Form", "ENTRIES"))
         self.label_28.setText(_translate("Form", "Search:"))
-import resources_rc
 
+        # Edits
+
+        self.db = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="root"
+        )
+
+        self.mycursor = self.db.cursor()
+
+        self.led_pageSignin_password.setEchoMode(QtWidgets.QLineEdit.Password)
+
+        self.btn_pageSignin_submit.clicked.connect(self.btn_pageSignin_submit_clicked)
+        self.pushButton.clicked.connect(self.logout)
+        self.btn_pageHomepage_customer.clicked.connect(self.btn_pageHomepage_customer_clicked)
+        self.btn_pageHomepage_viewCustomerDetails.clicked.connect(self.btn_pageHomepage_customer_clicked)
+        self.btn_pageHomepage_Dashboard.clicked.connect(self.btn_pageHomepage_Dashboard_clicked)
+        self.btn_pageCustomers_search.clicked.connect(self.btn_pageCustomers_search_clicked)
+
+    def btn_pageCustomers_search_clicked(self):
+        self.stackedWidget_2.setCurrentWidget(self.pageCustomers)
+        header_labels = ["Customer ID", "First Name", "Last Name", "Address", "Phone Number", "Gender"]
+        self.table_pageCustomers_customers.setHorizontalHeaderLabels(header_labels)
+        self.table_pageCustomers_customers.verticalHeader().setVisible(False)
+        self.table_pageCustomers_customers.setRowCount(0)
+        search_term = self.led_pageCustomers_search.text()
+        if search_term == "":
+            search_term = "."
+
+        self.mycursor.execute(f"SELECT * FROM poultry_management.customers WHERE customer_id REGEXP '{search_term}' "
+                                  f"or first_name REGEXP '{search_term}' or last_name REGEXP '{search_term}' or "
+                                  f"address REGEXP '{search_term}' or phone_number REGEXP '{search_term}' or "
+                                  f"sex REGEXP '{search_term}';")
+
+        for row_number, row_data in enumerate(self.mycursor):
+                self.table_pageCustomers_customers.insertRow(row_number)
+                for column_number, data in enumerate(row_data):
+                        self.table_pageCustomers_customers.setItem(row_number, column_number, QtWidgets.QTableWidgetItem(str(data)))
+
+
+    def btn_pageHomepage_Dashboard_clicked(self):
+            self.stackedWidget_2.setCurrentWidget(self.pageDashboard)
+
+    def btn_pageHomepage_customer_clicked(self):
+        self.stackedWidget_2.setCurrentWidget(self.pageCustomers)
+        header_labels = ["Customer ID", "First Name", "Last Name", "Address", "Phone Number", "Gender"]
+        self.table_pageCustomers_customers.setHorizontalHeaderLabels(header_labels)
+        self.table_pageCustomers_customers.verticalHeader().setVisible(False)
+        self.table_pageCustomers_customers.setRowCount(0)
+
+        self.mycursor.execute("SELECT * FROM poultry_management.customers;")
+
+        for row_number, row_data in enumerate(self.mycursor):
+                self.table_pageCustomers_customers.insertRow(row_number)
+                for column_number, data in enumerate(row_data):
+                        self.table_pageCustomers_customers.setItem(row_number, column_number, QtWidgets.QTableWidgetItem(str(data)))
+
+
+    def btn_pageSignin_submit_clicked(self):
+            if (self.led_pageSignin_password.text() == "admin") and (self.led_pageSignin_username.text() == "admin"):
+                    self.stackedWidget.setCurrentWidget(self.pageHomepage)
+                    self.stackedWidget_2.setCurrentWidget(self.pageDashboard)
+                    self.lbl_pageSignin_username.setText("")
+                    self.lbl_pageSignin_password.setText("")
+            elif (self.led_pageSignin_username.text() != "admin"):
+                    self.lbl_pageSignin_username.setText("Incorrect Username!")
+                    self.lbl_pageSignin_password.setText("")
+            elif (self.led_pageSignin_password.text() != "admin"):
+                    self.lbl_pageSignin_username.setText("")
+                    self.lbl_pageSignin_password.setText("Incorrect Password!")
+
+    def logout(self):
+            self.stackedWidget.setCurrentWidget(self.pageLogin)
+
+import mysql.connector
+import resources_rc
 
 if __name__ == "__main__":
     import sys
