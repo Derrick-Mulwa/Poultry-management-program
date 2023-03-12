@@ -1,0 +1,25 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/next.png</file>
+    <file>icons/previous.png</file>
+    <file>icons/search.png</file>
+    <file>icons/add customer.png</file>
+    <file>icons/batch flock management.png</file>
+    <file>icons/customer.png</file>
+    <file>icons/Dashboard.png</file>
+    <file>icons/Egg prodction.png</file>
+    <file>icons/expense (2).png</file>
+    <file>icons/Hatchery records.png</file>
+    <file>icons/income management.png</file>
+    <file>icons/income.png</file>
+    <file>icons/logout.png</file>
+    <file>icons/next.png</file>
+    <file>icons/settings.png</file>
+    <file>icons/Staff management.png</file>
+    <file>icons/user.png</file>
+    <file>icons/Vaccination.png</file>
+  </qresource>
+  <qresource prefix="images">
+    <file>icons/chicks_.jpg</file>
+  </qresource>
+</RCC>
