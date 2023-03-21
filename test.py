@@ -1,38 +1,43 @@
 from PyQt5.QtWidgets import QApplication, QTableWidget, QTableWidgetItem
 from PyQt5 import QtCore, QtGui, QtWidgets
+from datetime import datetime
 
-import mysql.connector
+# import mysql.connector
+#
+# db = mysql.connector.connect(
+#                 host="localhost",
+#                 user="root",
+#                 password="root"
+#         )
+#
+# mycursor = db.cursor()
+#
+# mycursor.execute(f"SELECT first_name, last_name FROM poultry_management.customers;")
+#
+# print([f"{i[0]} {i[1]}" for i in mycursor])
 
-db = mysql.connector.connect(
-                host="localhost",
-                user="root",
-                password="root"
-        )
-
-mycursor = db.cursor()
+from PyQt5.QtWidgets import QApplication, QTableWidget, QTableWidgetItem
 
 app = QApplication([])
+table = QTableWidget()
 
-# Create a new QTableWidget with 3 rows and 4 columns
-table_pageCustomers_customers = QTableWidget(3, 6)
+# create table with 3 rows and 2 columns
+table.setRowCount(3)
+table.setColumnCount(2)
 
-# Hide the vertical header
-table_pageCustomers_customers.verticalHeader().setVisible(False)
+# set data for the first cell
+item = QTableWidgetItem("hello")
+table.setItem(0, 0, item)
 
-header_labels = ["Customer ID", "First Name", "Last Name", "Address", "Phone Number", "Gender"]
-table_pageCustomers_customers.setHorizontalHeaderLabels(header_labels)
-table_pageCustomers_customers.verticalHeader().setVisible(False)
-table_pageCustomers_customers.setRowCount(0)
+# create a slot to handle the itemChanged signal
+def handle_item_changed(item):
+    row = item.row()
+    col = item.column()
+    new_text = item.text()
+    print(f"Cell ({row}, {col}) changed to {new_text}")
 
-sql_data = mycursor.execute("SELECT * FROM poultry_management.customers;")
+# connect the itemChanged signal to the handle_item_changed slot
+table.itemChanged.connect(handle_item_changed)
 
-for row_number, row_data in enumerate(mycursor):
-    table_pageCustomers_customers.insertRow(row_number)
-    for column_number, data in enumerate(row_data):
-        table_pageCustomers_customers.setItem(row_number, column_number, QtWidgets.QTableWidgetItem(str(data)))
-
-# Show the table widget
-table_pageCustomers_customers.show()
-
+table.show()
 app.exec_()
-
