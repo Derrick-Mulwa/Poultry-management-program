@@ -396,7 +396,7 @@ class Ui_Form(object):
         self.btn_pageHomepage_viewCustomerDetails.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.btn_pageHomepage_viewCustomerDetails.setStyleSheet("border:2px sold rgb(255, 255, 255);")
         icon12 = QtGui.QIcon()
-        icon12.addPixmap(QtGui.QPixmap("../../../../Downloads/16537366261580817585-128.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon12.addPixmap(QtGui.QPixmap("../../../../../Downloads/16537366261580817585-128.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_pageHomepage_viewCustomerDetails.setIcon(icon12)
         self.btn_pageHomepage_viewCustomerDetails.setIconSize(QtCore.QSize(20, 20))
         self.btn_pageHomepage_viewCustomerDetails.setObjectName("btn_pageHomepage_viewCustomerDetails")
@@ -1115,6 +1115,7 @@ class Ui_Form(object):
         self.frame_24.setObjectName("frame_24")
         self.horizontalLayout_9.addWidget(self.frame_24)
         self.frame_26 = QtWidgets.QFrame(self.frame_23)
+        self.frame_26.setMaximumSize(QtCore.QSize(650, 16777215))
         self.frame_26.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_26.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_26.setObjectName("frame_26")
@@ -1240,6 +1241,7 @@ class Ui_Form(object):
         self.frame_36.setObjectName("frame_36")
         self.horizontalLayout_10.addWidget(self.frame_36)
         self.frame_37 = QtWidgets.QFrame(self.frame_27)
+        self.frame_37.setMaximumSize(QtCore.QSize(650, 16777215))
         self.frame_37.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_37.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_37.setObjectName("frame_37")
@@ -1980,6 +1982,7 @@ class Ui_Form(object):
         self.frame_104.setObjectName("frame_104")
         self.horizontalLayout_38.addWidget(self.frame_104)
         self.frame_105 = QtWidgets.QFrame(self.frame_103)
+        self.frame_105.setMaximumSize(QtCore.QSize(650, 16777215))
         self.frame_105.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_105.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_105.setObjectName("frame_105")
@@ -2593,6 +2596,7 @@ class Ui_Form(object):
         self.frame_139.setObjectName("frame_139")
         self.horizontalLayout_54.addWidget(self.frame_139)
         self.frame_140 = QtWidgets.QFrame(self.frame_138)
+        self.frame_140.setMaximumSize(QtCore.QSize(650, 16777215))
         self.frame_140.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_140.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_140.setObjectName("frame_140")
@@ -2929,12 +2933,945 @@ class Ui_Form(object):
         self.verticalLayout_71.addWidget(self.frame_152)
         self.verticalLayout_75.addWidget(self.frame_143)
         self.stackedWidget_2.addWidget(self.pageExpenseCategory)
-        self.page_2 = QtWidgets.QWidget()
-        self.page_2.setObjectName("page_2")
-        self.stackedWidget_2.addWidget(self.page_2)
-        self.page_3 = QtWidgets.QWidget()
-        self.page_3.setObjectName("page_3")
-        self.stackedWidget_2.addWidget(self.page_3)
+        self.pageStaffanagement = QtWidgets.QWidget()
+        self.pageStaffanagement.setObjectName("pageStaffanagement")
+        self.verticalLayout_82 = QtWidgets.QVBoxLayout(self.pageStaffanagement)
+        self.verticalLayout_82.setObjectName("verticalLayout_82")
+        self.frame_158 = QtWidgets.QFrame(self.pageStaffanagement)
+        self.frame_158.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_158.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_158.setObjectName("frame_158")
+        self.verticalLayout_76 = QtWidgets.QVBoxLayout(self.frame_158)
+        self.verticalLayout_76.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_76.setSpacing(0)
+        self.verticalLayout_76.setObjectName("verticalLayout_76")
+        self.frame_159 = QtWidgets.QFrame(self.frame_158)
+        self.frame_159.setMinimumSize(QtCore.QSize(30, 30))
+        self.frame_159.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.frame_159.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_159.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_159.setObjectName("frame_159")
+        self.verticalLayout_77 = QtWidgets.QVBoxLayout(self.frame_159)
+        self.verticalLayout_77.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_77.setSpacing(0)
+        self.verticalLayout_77.setObjectName("verticalLayout_77")
+        self.label_66 = QtWidgets.QLabel(self.frame_159)
+        self.label_66.setMinimumSize(QtCore.QSize(0, 50))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.label_66.setFont(font)
+        self.label_66.setStyleSheet("background-color: rgb(175, 175, 175);")
+        self.label_66.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_66.setObjectName("label_66")
+        self.verticalLayout_77.addWidget(self.label_66)
+        self.verticalLayout_76.addWidget(self.frame_159)
+        self.frame_160 = QtWidgets.QFrame(self.frame_158)
+        self.frame_160.setMinimumSize(QtCore.QSize(0, 100))
+        self.frame_160.setMaximumSize(QtCore.QSize(16777215, 150))
+        self.frame_160.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_160.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_160.setObjectName("frame_160")
+        self.verticalLayout_78 = QtWidgets.QVBoxLayout(self.frame_160)
+        self.verticalLayout_78.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_78.setSpacing(10)
+        self.verticalLayout_78.setObjectName("verticalLayout_78")
+        self.frame_161 = QtWidgets.QFrame(self.frame_160)
+        self.frame_161.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_161.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_161.setObjectName("frame_161")
+        self.horizontalLayout_64 = QtWidgets.QHBoxLayout(self.frame_161)
+        self.horizontalLayout_64.setObjectName("horizontalLayout_64")
+        self.frame_162 = QtWidgets.QFrame(self.frame_161)
+        self.frame_162.setMinimumSize(QtCore.QSize(300, 0))
+        self.frame_162.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_162.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_162.setObjectName("frame_162")
+        self.horizontalLayout_73 = QtWidgets.QHBoxLayout(self.frame_162)
+        self.horizontalLayout_73.setObjectName("horizontalLayout_73")
+        self.ledDeleteStaf = QtWidgets.QLineEdit(self.frame_162)
+        self.ledDeleteStaf.setMinimumSize(QtCore.QSize(0, 30))
+        self.ledDeleteStaf.setStyleSheet("border: 2px solid black;\n"
+"border-radius: 5px")
+        self.ledDeleteStaf.setObjectName("ledDeleteStaf")
+        self.horizontalLayout_73.addWidget(self.ledDeleteStaf)
+        self.btn_pageExpenseCategory_DeleteStaff = QtWidgets.QPushButton(self.frame_162)
+        self.btn_pageExpenseCategory_DeleteStaff.setMinimumSize(QtCore.QSize(100, 30))
+        self.btn_pageExpenseCategory_DeleteStaff.setMaximumSize(QtCore.QSize(120, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("Franklin Gothic Book")
+        font.setPointSize(10)
+        self.btn_pageExpenseCategory_DeleteStaff.setFont(font)
+        self.btn_pageExpenseCategory_DeleteStaff.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageExpenseCategory_DeleteStaff.setStyleSheet("border-radius:5px;\n"
+"background-color: rgb(255, 0, 4);")
+        self.btn_pageExpenseCategory_DeleteStaff.setIcon(icon13)
+        self.btn_pageExpenseCategory_DeleteStaff.setObjectName("btn_pageExpenseCategory_DeleteStaff")
+        self.horizontalLayout_73.addWidget(self.btn_pageExpenseCategory_DeleteStaff)
+        self.horizontalLayout_64.addWidget(self.frame_162, 0, QtCore.Qt.AlignLeft)
+        self.frame_173 = QtWidgets.QFrame(self.frame_161)
+        self.frame_173.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_173.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_173.setObjectName("frame_173")
+        self.horizontalLayout_71 = QtWidgets.QHBoxLayout(self.frame_173)
+        self.horizontalLayout_71.setObjectName("horizontalLayout_71")
+        self.btn_pageExpenseManagement_AddExpense_2 = QtWidgets.QPushButton(self.frame_173)
+        self.btn_pageExpenseManagement_AddExpense_2.setMinimumSize(QtCore.QSize(100, 30))
+        font = QtGui.QFont()
+        font.setFamily("Franklin Gothic Book")
+        font.setPointSize(10)
+        self.btn_pageExpenseManagement_AddExpense_2.setFont(font)
+        self.btn_pageExpenseManagement_AddExpense_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageExpenseManagement_AddExpense_2.setStyleSheet("border-radius:5px;\n"
+"background-color: rgb(57, 180, 4);")
+        self.btn_pageExpenseManagement_AddExpense_2.setIcon(icon18)
+        self.btn_pageExpenseManagement_AddExpense_2.setObjectName("btn_pageExpenseManagement_AddExpense_2")
+        self.horizontalLayout_71.addWidget(self.btn_pageExpenseManagement_AddExpense_2)
+        self.btn_pageExpenseManagement_AddExpense_4 = QtWidgets.QPushButton(self.frame_173)
+        self.btn_pageExpenseManagement_AddExpense_4.setMinimumSize(QtCore.QSize(100, 30))
+        self.btn_pageExpenseManagement_AddExpense_4.setMaximumSize(QtCore.QSize(150, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("Franklin Gothic Book")
+        font.setPointSize(10)
+        self.btn_pageExpenseManagement_AddExpense_4.setFont(font)
+        self.btn_pageExpenseManagement_AddExpense_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageExpenseManagement_AddExpense_4.setStyleSheet("border-radius:5px;\n"
+"background-color: rgb(57, 180, 4);")
+        icon19 = QtGui.QIcon()
+        icon19.addPixmap(QtGui.QPixmap(":/icons/icons/income.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_pageExpenseManagement_AddExpense_4.setIcon(icon19)
+        self.btn_pageExpenseManagement_AddExpense_4.setObjectName("btn_pageExpenseManagement_AddExpense_4")
+        self.horizontalLayout_71.addWidget(self.btn_pageExpenseManagement_AddExpense_4)
+        self.horizontalLayout_64.addWidget(self.frame_173)
+        self.frame_163 = QtWidgets.QFrame(self.frame_161)
+        self.frame_163.setMinimumSize(QtCore.QSize(150, 0))
+        self.frame_163.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_163.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_163.setObjectName("frame_163")
+        self.verticalLayout_80 = QtWidgets.QVBoxLayout(self.frame_163)
+        self.verticalLayout_80.setObjectName("verticalLayout_80")
+        self.btn_pageExpenseManagement_ViewExpenseCategory_2 = QtWidgets.QPushButton(self.frame_163)
+        self.btn_pageExpenseManagement_ViewExpenseCategory_2.setMinimumSize(QtCore.QSize(140, 30))
+        font = QtGui.QFont()
+        font.setFamily("Franklin Gothic Book")
+        font.setPointSize(10)
+        self.btn_pageExpenseManagement_ViewExpenseCategory_2.setFont(font)
+        self.btn_pageExpenseManagement_ViewExpenseCategory_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageExpenseManagement_ViewExpenseCategory_2.setStyleSheet("border-radius:5px;\n"
+"background-color: rgb(255, 190, 25);")
+        icon20 = QtGui.QIcon()
+        icon20.addPixmap(QtGui.QPixmap(":/icons/icons/edit.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_pageExpenseManagement_ViewExpenseCategory_2.setIcon(icon20)
+        self.btn_pageExpenseManagement_ViewExpenseCategory_2.setObjectName("btn_pageExpenseManagement_ViewExpenseCategory_2")
+        self.verticalLayout_80.addWidget(self.btn_pageExpenseManagement_ViewExpenseCategory_2)
+        self.horizontalLayout_64.addWidget(self.frame_163, 0, QtCore.Qt.AlignRight)
+        self.verticalLayout_78.addWidget(self.frame_161)
+        self.frame_164 = QtWidgets.QFrame(self.frame_160)
+        self.frame_164.setStyleSheet("")
+        self.frame_164.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_164.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_164.setObjectName("frame_164")
+        self.horizontalLayout_65 = QtWidgets.QHBoxLayout(self.frame_164)
+        self.horizontalLayout_65.setObjectName("horizontalLayout_65")
+        self.frame_165 = QtWidgets.QFrame(self.frame_164)
+        self.frame_165.setMaximumSize(QtCore.QSize(250, 16777215))
+        self.frame_165.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_165.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_165.setObjectName("frame_165")
+        self.horizontalLayout_66 = QtWidgets.QHBoxLayout(self.frame_165)
+        self.horizontalLayout_66.setObjectName("horizontalLayout_66")
+        self.label_67 = QtWidgets.QLabel(self.frame_165)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_67.setFont(font)
+        self.label_67.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_67.setObjectName("label_67")
+        self.horizontalLayout_66.addWidget(self.label_67)
+        self.combo_pageExpenseManagement_entries_2 = QtWidgets.QComboBox(self.frame_165)
+        self.combo_pageExpenseManagement_entries_2.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.combo_pageExpenseManagement_entries_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.combo_pageExpenseManagement_entries_2.setObjectName("combo_pageExpenseManagement_entries_2")
+        self.combo_pageExpenseManagement_entries_2.addItem("")
+        self.combo_pageExpenseManagement_entries_2.addItem("")
+        self.combo_pageExpenseManagement_entries_2.addItem("")
+        self.combo_pageExpenseManagement_entries_2.addItem("")
+        self.combo_pageExpenseManagement_entries_2.addItem("")
+        self.combo_pageExpenseManagement_entries_2.addItem("")
+        self.horizontalLayout_66.addWidget(self.combo_pageExpenseManagement_entries_2)
+        self.label_68 = QtWidgets.QLabel(self.frame_165)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_68.setFont(font)
+        self.label_68.setObjectName("label_68")
+        self.horizontalLayout_66.addWidget(self.label_68)
+        self.horizontalLayout_65.addWidget(self.frame_165)
+        self.frame_166 = QtWidgets.QFrame(self.frame_164)
+        self.frame_166.setMinimumSize(QtCore.QSize(300, 0))
+        self.frame_166.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_166.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_166.setObjectName("frame_166")
+        self.horizontalLayout_67 = QtWidgets.QHBoxLayout(self.frame_166)
+        self.horizontalLayout_67.setObjectName("horizontalLayout_67")
+        self.label_69 = QtWidgets.QLabel(self.frame_166)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_69.setFont(font)
+        self.label_69.setObjectName("label_69")
+        self.horizontalLayout_67.addWidget(self.label_69)
+        self.led_pageExpenseManagement_search_2 = QtWidgets.QLineEdit(self.frame_166)
+        self.led_pageExpenseManagement_search_2.setMinimumSize(QtCore.QSize(0, 30))
+        self.led_pageExpenseManagement_search_2.setStyleSheet("border: 2px solid black;\n"
+"border-radius: 5px")
+        self.led_pageExpenseManagement_search_2.setObjectName("led_pageExpenseManagement_search_2")
+        self.horizontalLayout_67.addWidget(self.led_pageExpenseManagement_search_2)
+        self.btn_pageExpenseManagement_search_2 = QtWidgets.QPushButton(self.frame_166)
+        self.btn_pageExpenseManagement_search_2.setMinimumSize(QtCore.QSize(30, 30))
+        font = QtGui.QFont()
+        font.setFamily("Franklin Gothic Book")
+        font.setPointSize(10)
+        self.btn_pageExpenseManagement_search_2.setFont(font)
+        self.btn_pageExpenseManagement_search_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageExpenseManagement_search_2.setStyleSheet("border-radius:5px;\n"
+"background-color: rgb(255, 255, 255,0);")
+        self.btn_pageExpenseManagement_search_2.setText("")
+        self.btn_pageExpenseManagement_search_2.setIcon(icon15)
+        self.btn_pageExpenseManagement_search_2.setObjectName("btn_pageExpenseManagement_search_2")
+        self.horizontalLayout_67.addWidget(self.btn_pageExpenseManagement_search_2)
+        self.horizontalLayout_65.addWidget(self.frame_166, 0, QtCore.Qt.AlignRight)
+        self.verticalLayout_78.addWidget(self.frame_164)
+        self.verticalLayout_76.addWidget(self.frame_160)
+        self.frame_167 = QtWidgets.QFrame(self.frame_158)
+        self.frame_167.setMinimumSize(QtCore.QSize(0, 100))
+        self.frame_167.setMaximumSize(QtCore.QSize(16777215, 1000))
+        self.frame_167.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_167.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_167.setObjectName("frame_167")
+        self.verticalLayout_81 = QtWidgets.QVBoxLayout(self.frame_167)
+        self.verticalLayout_81.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_81.setSpacing(0)
+        self.verticalLayout_81.setObjectName("verticalLayout_81")
+        self.frame_168 = QtWidgets.QFrame(self.frame_167)
+        self.frame_168.setMinimumSize(QtCore.QSize(0, 230))
+        self.frame_168.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_168.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_168.setObjectName("frame_168")
+        self.horizontalLayout_68 = QtWidgets.QHBoxLayout(self.frame_168)
+        self.horizontalLayout_68.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_68.setSpacing(0)
+        self.horizontalLayout_68.setObjectName("horizontalLayout_68")
+        self.table_pageexpenseManagement_Expense_2 = QtWidgets.QTableWidget(self.frame_168)
+        self.table_pageexpenseManagement_Expense_2.setMaximumSize(QtCore.QSize(650, 16777215))
+        self.table_pageexpenseManagement_Expense_2.setAcceptDrops(False)
+        self.table_pageexpenseManagement_Expense_2.setAutoFillBackground(False)
+        self.table_pageexpenseManagement_Expense_2.setAlternatingRowColors(True)
+        self.table_pageexpenseManagement_Expense_2.setRowCount(10)
+        self.table_pageexpenseManagement_Expense_2.setColumnCount(7)
+        self.table_pageexpenseManagement_Expense_2.setObjectName("table_pageexpenseManagement_Expense_2")
+        item = QtWidgets.QTableWidgetItem()
+        self.table_pageexpenseManagement_Expense_2.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.table_pageexpenseManagement_Expense_2.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.table_pageexpenseManagement_Expense_2.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.table_pageexpenseManagement_Expense_2.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.table_pageexpenseManagement_Expense_2.setHorizontalHeaderItem(4, item)
+        self.horizontalLayout_68.addWidget(self.table_pageexpenseManagement_Expense_2)
+        self.verticalLayout_81.addWidget(self.frame_168)
+        self.frame_169 = QtWidgets.QFrame(self.frame_167)
+        self.frame_169.setMinimumSize(QtCore.QSize(0, 50))
+        self.frame_169.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_169.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_169.setObjectName("frame_169")
+        self.horizontalLayout_69 = QtWidgets.QHBoxLayout(self.frame_169)
+        self.horizontalLayout_69.setObjectName("horizontalLayout_69")
+        self.frame_170 = QtWidgets.QFrame(self.frame_169)
+        self.frame_170.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_170.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_170.setObjectName("frame_170")
+        self.horizontalLayout_69.addWidget(self.frame_170)
+        self.frame_171 = QtWidgets.QFrame(self.frame_169)
+        self.frame_171.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_171.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_171.setObjectName("frame_171")
+        self.horizontalLayout_70 = QtWidgets.QHBoxLayout(self.frame_171)
+        self.horizontalLayout_70.setObjectName("horizontalLayout_70")
+        self.btn_pageIncomeManagement_pevious_4 = QtWidgets.QPushButton(self.frame_171)
+        self.btn_pageIncomeManagement_pevious_4.setMinimumSize(QtCore.QSize(50, 30))
+        self.btn_pageIncomeManagement_pevious_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageIncomeManagement_pevious_4.setStyleSheet("border-radius:5px")
+        self.btn_pageIncomeManagement_pevious_4.setText("")
+        self.btn_pageIncomeManagement_pevious_4.setIcon(icon16)
+        self.btn_pageIncomeManagement_pevious_4.setObjectName("btn_pageIncomeManagement_pevious_4")
+        self.horizontalLayout_70.addWidget(self.btn_pageIncomeManagement_pevious_4)
+        self.btn_pageIncomeManagement_next_4 = QtWidgets.QPushButton(self.frame_171)
+        self.btn_pageIncomeManagement_next_4.setMinimumSize(QtCore.QSize(50, 30))
+        self.btn_pageIncomeManagement_next_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageIncomeManagement_next_4.setStyleSheet("border-radius:5px")
+        self.btn_pageIncomeManagement_next_4.setText("")
+        self.btn_pageIncomeManagement_next_4.setIcon(icon17)
+        self.btn_pageIncomeManagement_next_4.setObjectName("btn_pageIncomeManagement_next_4")
+        self.horizontalLayout_70.addWidget(self.btn_pageIncomeManagement_next_4)
+        self.horizontalLayout_69.addWidget(self.frame_171, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.frame_172 = QtWidgets.QFrame(self.frame_169)
+        self.frame_172.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_172.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_172.setObjectName("frame_172")
+        self.horizontalLayout_69.addWidget(self.frame_172)
+        self.verticalLayout_81.addWidget(self.frame_169, 0, QtCore.Qt.AlignBottom)
+        self.verticalLayout_76.addWidget(self.frame_167)
+        self.verticalLayout_82.addWidget(self.frame_158)
+        self.stackedWidget_2.addWidget(self.pageStaffanagement)
+        self.pageAddStaff = QtWidgets.QWidget()
+        self.pageAddStaff.setObjectName("pageAddStaff")
+        self.verticalLayout_85 = QtWidgets.QVBoxLayout(self.pageAddStaff)
+        self.verticalLayout_85.setObjectName("verticalLayout_85")
+        self.frame_174 = QtWidgets.QFrame(self.pageAddStaff)
+        self.frame_174.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_174.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_174.setObjectName("frame_174")
+        self.verticalLayout_83 = QtWidgets.QVBoxLayout(self.frame_174)
+        self.verticalLayout_83.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_83.setSpacing(0)
+        self.verticalLayout_83.setObjectName("verticalLayout_83")
+        self.frame_175 = QtWidgets.QFrame(self.frame_174)
+        self.frame_175.setMaximumSize(QtCore.QSize(16777215, 80))
+        self.frame_175.setStyleSheet("background-color: rgb(175, 175, 175);")
+        self.frame_175.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_175.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_175.setObjectName("frame_175")
+        self.verticalLayout_84 = QtWidgets.QVBoxLayout(self.frame_175)
+        self.verticalLayout_84.setObjectName("verticalLayout_84")
+        self.label_70 = QtWidgets.QLabel(self.frame_175)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.label_70.setFont(font)
+        self.label_70.setObjectName("label_70")
+        self.verticalLayout_84.addWidget(self.label_70)
+        self.verticalLayout_83.addWidget(self.frame_175)
+        self.frame_176 = QtWidgets.QFrame(self.frame_174)
+        self.frame_176.setStyleSheet("")
+        self.frame_176.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_176.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_176.setObjectName("frame_176")
+        self.horizontalLayout_72 = QtWidgets.QHBoxLayout(self.frame_176)
+        self.horizontalLayout_72.setObjectName("horizontalLayout_72")
+        self.frame_177 = QtWidgets.QFrame(self.frame_176)
+        self.frame_177.setMinimumSize(QtCore.QSize(100, 0))
+        self.frame_177.setMaximumSize(QtCore.QSize(10000, 16777215))
+        self.frame_177.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_177.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_177.setObjectName("frame_177")
+        self.horizontalLayout_72.addWidget(self.frame_177)
+        self.frame_178 = QtWidgets.QFrame(self.frame_176)
+        self.frame_178.setMaximumSize(QtCore.QSize(620, 16777215))
+        self.frame_178.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_178.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_178.setObjectName("frame_178")
+        self.gridLayout_5 = QtWidgets.QGridLayout(self.frame_178)
+        self.gridLayout_5.setContentsMargins(150, -1, 150, -1)
+        self.gridLayout_5.setObjectName("gridLayout_5")
+        self.combo_pageAddExpense_Category_2 = QtWidgets.QComboBox(self.frame_178)
+        self.combo_pageAddExpense_Category_2.setMinimumSize(QtCore.QSize(0, 30))
+        self.combo_pageAddExpense_Category_2.setMaximumSize(QtCore.QSize(170, 16777215))
+        self.combo_pageAddExpense_Category_2.setStyleSheet("border: 2px solid black;\n"
+"border-radius:5px")
+        self.combo_pageAddExpense_Category_2.setObjectName("combo_pageAddExpense_Category_2")
+        self.gridLayout_5.addWidget(self.combo_pageAddExpense_Category_2, 0, 2, 1, 1)
+        self.label_74 = QtWidgets.QLabel(self.frame_178)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_74.setFont(font)
+        self.label_74.setObjectName("label_74")
+        self.gridLayout_5.addWidget(self.label_74, 3, 0, 1, 1)
+        self.led_pageAddExpense_Description_2 = QtWidgets.QLineEdit(self.frame_178)
+        self.led_pageAddExpense_Description_2.setMinimumSize(QtCore.QSize(0, 30))
+        self.led_pageAddExpense_Description_2.setMaximumSize(QtCore.QSize(170, 16777215))
+        self.led_pageAddExpense_Description_2.setStyleSheet("border: 2px solid rgb(3, 23, 24);\n"
+"border-radius: 5px")
+        self.led_pageAddExpense_Description_2.setObjectName("led_pageAddExpense_Description_2")
+        self.gridLayout_5.addWidget(self.led_pageAddExpense_Description_2, 3, 2, 1, 1)
+        self.label_72 = QtWidgets.QLabel(self.frame_178)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_72.setFont(font)
+        self.label_72.setObjectName("label_72")
+        self.gridLayout_5.addWidget(self.label_72, 8, 0, 1, 1)
+        self.label_71 = QtWidgets.QLabel(self.frame_178)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_71.setFont(font)
+        self.label_71.setObjectName("label_71")
+        self.gridLayout_5.addWidget(self.label_71, 0, 0, 1, 1)
+        self.led_pageAddExpense_amount_2 = QtWidgets.QLineEdit(self.frame_178)
+        self.led_pageAddExpense_amount_2.setMinimumSize(QtCore.QSize(0, 30))
+        self.led_pageAddExpense_amount_2.setMaximumSize(QtCore.QSize(170, 16777215))
+        self.led_pageAddExpense_amount_2.setStyleSheet("border: 2px solid rgb(3, 23, 24);\n"
+"border-radius: 5px")
+        self.led_pageAddExpense_amount_2.setText("")
+        self.led_pageAddExpense_amount_2.setObjectName("led_pageAddExpense_amount_2")
+        self.gridLayout_5.addWidget(self.led_pageAddExpense_amount_2, 8, 2, 1, 1)
+        self.btn_pageAddExpense_add_2 = QtWidgets.QPushButton(self.frame_178)
+        self.btn_pageAddExpense_add_2.setMinimumSize(QtCore.QSize(0, 30))
+        self.btn_pageAddExpense_add_2.setMaximumSize(QtCore.QSize(110, 16777215))
+        self.btn_pageAddExpense_add_2.setStyleSheet("background-color: rgb(36, 197, 18);\n"
+"border-radius: 5px")
+        self.btn_pageAddExpense_add_2.setObjectName("btn_pageAddExpense_add_2")
+        self.gridLayout_5.addWidget(self.btn_pageAddExpense_add_2, 9, 1, 1, 2)
+        self.label_75 = QtWidgets.QLabel(self.frame_178)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_75.setFont(font)
+        self.label_75.setObjectName("label_75")
+        self.gridLayout_5.addWidget(self.label_75, 1, 0, 1, 1)
+        self.led_pageAddExpense_Description_3 = QtWidgets.QLineEdit(self.frame_178)
+        self.led_pageAddExpense_Description_3.setMinimumSize(QtCore.QSize(0, 30))
+        self.led_pageAddExpense_Description_3.setMaximumSize(QtCore.QSize(170, 16777215))
+        self.led_pageAddExpense_Description_3.setStyleSheet("border: 2px solid rgb(3, 23, 24);\n"
+"border-radius: 5px")
+        self.led_pageAddExpense_Description_3.setObjectName("led_pageAddExpense_Description_3")
+        self.gridLayout_5.addWidget(self.led_pageAddExpense_Description_3, 1, 2, 1, 1)
+        self.led_pageAddExpense_Description_4 = QtWidgets.QLineEdit(self.frame_178)
+        self.led_pageAddExpense_Description_4.setMinimumSize(QtCore.QSize(0, 30))
+        self.led_pageAddExpense_Description_4.setMaximumSize(QtCore.QSize(170, 16777215))
+        self.led_pageAddExpense_Description_4.setStyleSheet("border: 2px solid rgb(3, 23, 24);\n"
+"border-radius: 5px")
+        self.led_pageAddExpense_Description_4.setObjectName("led_pageAddExpense_Description_4")
+        self.gridLayout_5.addWidget(self.led_pageAddExpense_Description_4, 2, 2, 1, 1)
+        self.label_76 = QtWidgets.QLabel(self.frame_178)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_76.setFont(font)
+        self.label_76.setObjectName("label_76")
+        self.gridLayout_5.addWidget(self.label_76, 2, 0, 1, 1)
+        self.label_78 = QtWidgets.QLabel(self.frame_178)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_78.setFont(font)
+        self.label_78.setObjectName("label_78")
+        self.gridLayout_5.addWidget(self.label_78, 7, 0, 1, 1)
+        self.label_77 = QtWidgets.QLabel(self.frame_178)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_77.setFont(font)
+        self.label_77.setObjectName("label_77")
+        self.gridLayout_5.addWidget(self.label_77, 5, 0, 1, 1)
+        self.led_pageAddExpense_Description_5 = QtWidgets.QLineEdit(self.frame_178)
+        self.led_pageAddExpense_Description_5.setMinimumSize(QtCore.QSize(0, 30))
+        self.led_pageAddExpense_Description_5.setMaximumSize(QtCore.QSize(170, 16777215))
+        self.led_pageAddExpense_Description_5.setStyleSheet("border: 2px solid rgb(3, 23, 24);\n"
+"border-radius: 5px")
+        self.led_pageAddExpense_Description_5.setObjectName("led_pageAddExpense_Description_5")
+        self.gridLayout_5.addWidget(self.led_pageAddExpense_Description_5, 5, 2, 1, 1)
+        self.led_pageAddExpense_Description_6 = QtWidgets.QLineEdit(self.frame_178)
+        self.led_pageAddExpense_Description_6.setMinimumSize(QtCore.QSize(0, 30))
+        self.led_pageAddExpense_Description_6.setMaximumSize(QtCore.QSize(170, 16777215))
+        self.led_pageAddExpense_Description_6.setStyleSheet("border: 2px solid rgb(3, 23, 24);\n"
+"border-radius: 5px")
+        self.led_pageAddExpense_Description_6.setObjectName("led_pageAddExpense_Description_6")
+        self.gridLayout_5.addWidget(self.led_pageAddExpense_Description_6, 7, 2, 1, 1)
+        self.horizontalLayout_72.addWidget(self.frame_178)
+        self.frame_179 = QtWidgets.QFrame(self.frame_176)
+        self.frame_179.setMinimumSize(QtCore.QSize(100, 0))
+        self.frame_179.setMaximumSize(QtCore.QSize(1647613, 16777215))
+        self.frame_179.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_179.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_179.setObjectName("frame_179")
+        self.horizontalLayout_72.addWidget(self.frame_179)
+        self.verticalLayout_83.addWidget(self.frame_176)
+        self.verticalLayout_85.addWidget(self.frame_174)
+        self.stackedWidget_2.addWidget(self.pageAddStaff)
+        self.pageDesinations = QtWidgets.QWidget()
+        self.pageDesinations.setObjectName("pageDesinations")
+        self.verticalLayout_89 = QtWidgets.QVBoxLayout(self.pageDesinations)
+        self.verticalLayout_89.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_89.setSpacing(0)
+        self.verticalLayout_89.setObjectName("verticalLayout_89")
+        self.frame_180 = QtWidgets.QFrame(self.pageDesinations)
+        self.frame_180.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_180.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_180.setObjectName("frame_180")
+        self.verticalLayout_79 = QtWidgets.QVBoxLayout(self.frame_180)
+        self.verticalLayout_79.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_79.setSpacing(0)
+        self.verticalLayout_79.setObjectName("verticalLayout_79")
+        self.frame_181 = QtWidgets.QFrame(self.frame_180)
+        self.frame_181.setMinimumSize(QtCore.QSize(30, 30))
+        self.frame_181.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.frame_181.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_181.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_181.setObjectName("frame_181")
+        self.verticalLayout_86 = QtWidgets.QVBoxLayout(self.frame_181)
+        self.verticalLayout_86.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_86.setSpacing(0)
+        self.verticalLayout_86.setObjectName("verticalLayout_86")
+        self.label_73 = QtWidgets.QLabel(self.frame_181)
+        self.label_73.setMinimumSize(QtCore.QSize(0, 50))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.label_73.setFont(font)
+        self.label_73.setStyleSheet("background-color: rgb(175, 175, 175);")
+        self.label_73.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_73.setObjectName("label_73")
+        self.verticalLayout_86.addWidget(self.label_73)
+        self.verticalLayout_79.addWidget(self.frame_181)
+        self.frame_182 = QtWidgets.QFrame(self.frame_180)
+        self.frame_182.setMinimumSize(QtCore.QSize(0, 100))
+        self.frame_182.setMaximumSize(QtCore.QSize(16777215, 150))
+        self.frame_182.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_182.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_182.setObjectName("frame_182")
+        self.verticalLayout_87 = QtWidgets.QVBoxLayout(self.frame_182)
+        self.verticalLayout_87.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_87.setSpacing(10)
+        self.verticalLayout_87.setObjectName("verticalLayout_87")
+        self.frame_183 = QtWidgets.QFrame(self.frame_182)
+        self.frame_183.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_183.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_183.setObjectName("frame_183")
+        self.horizontalLayout_74 = QtWidgets.QHBoxLayout(self.frame_183)
+        self.horizontalLayout_74.setSpacing(70)
+        self.horizontalLayout_74.setObjectName("horizontalLayout_74")
+        self.frame_184 = QtWidgets.QFrame(self.frame_183)
+        self.frame_184.setMinimumSize(QtCore.QSize(350, 0))
+        self.frame_184.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_184.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_184.setObjectName("frame_184")
+        self.horizontalLayout_75 = QtWidgets.QHBoxLayout(self.frame_184)
+        self.horizontalLayout_75.setSpacing(15)
+        self.horizontalLayout_75.setObjectName("horizontalLayout_75")
+        self.led_pageExpenseCategory_DeleteCategory_2 = QtWidgets.QLineEdit(self.frame_184)
+        self.led_pageExpenseCategory_DeleteCategory_2.setMinimumSize(QtCore.QSize(170, 35))
+        self.led_pageExpenseCategory_DeleteCategory_2.setMaximumSize(QtCore.QSize(210, 16777215))
+        self.led_pageExpenseCategory_DeleteCategory_2.setStyleSheet("border: 2px solid black;\n"
+"border-radius: 5px")
+        self.led_pageExpenseCategory_DeleteCategory_2.setObjectName("led_pageExpenseCategory_DeleteCategory_2")
+        self.horizontalLayout_75.addWidget(self.led_pageExpenseCategory_DeleteCategory_2)
+        self.btn_pageExpenseCategory_DeleteCategory_2 = QtWidgets.QPushButton(self.frame_184)
+        self.btn_pageExpenseCategory_DeleteCategory_2.setMinimumSize(QtCore.QSize(100, 35))
+        self.btn_pageExpenseCategory_DeleteCategory_2.setMaximumSize(QtCore.QSize(120, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("Franklin Gothic Book")
+        font.setPointSize(10)
+        self.btn_pageExpenseCategory_DeleteCategory_2.setFont(font)
+        self.btn_pageExpenseCategory_DeleteCategory_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageExpenseCategory_DeleteCategory_2.setStyleSheet("border-radius:5px;\n"
+"background-color: rgb(255, 0, 4);")
+        self.btn_pageExpenseCategory_DeleteCategory_2.setIcon(icon13)
+        self.btn_pageExpenseCategory_DeleteCategory_2.setObjectName("btn_pageExpenseCategory_DeleteCategory_2")
+        self.horizontalLayout_75.addWidget(self.btn_pageExpenseCategory_DeleteCategory_2)
+        self.horizontalLayout_74.addWidget(self.frame_184)
+        self.frame_185 = QtWidgets.QFrame(self.frame_183)
+        self.frame_185.setMinimumSize(QtCore.QSize(400, 0))
+        self.frame_185.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_185.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_185.setObjectName("frame_185")
+        self.horizontalLayout_76 = QtWidgets.QHBoxLayout(self.frame_185)
+        self.horizontalLayout_76.setObjectName("horizontalLayout_76")
+        self.led_pageCategory_AddCategory_3 = QtWidgets.QLineEdit(self.frame_185)
+        self.led_pageCategory_AddCategory_3.setMinimumSize(QtCore.QSize(170, 35))
+        self.led_pageCategory_AddCategory_3.setMaximumSize(QtCore.QSize(210, 16777215))
+        self.led_pageCategory_AddCategory_3.setStyleSheet("border: 2px solid black;\n"
+"border-radius: 5px")
+        self.led_pageCategory_AddCategory_3.setObjectName("led_pageCategory_AddCategory_3")
+        self.horizontalLayout_76.addWidget(self.led_pageCategory_AddCategory_3)
+        self.btn_pageCategory_AddCategory_3 = QtWidgets.QPushButton(self.frame_185)
+        self.btn_pageCategory_AddCategory_3.setMinimumSize(QtCore.QSize(130, 35))
+        self.btn_pageCategory_AddCategory_3.setMaximumSize(QtCore.QSize(120, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("Franklin Gothic Book")
+        font.setPointSize(10)
+        self.btn_pageCategory_AddCategory_3.setFont(font)
+        self.btn_pageCategory_AddCategory_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageCategory_AddCategory_3.setStyleSheet("border-radius:5px;\n"
+"background-color: rgb(57, 180, 4);")
+        self.btn_pageCategory_AddCategory_3.setIcon(icon18)
+        self.btn_pageCategory_AddCategory_3.setObjectName("btn_pageCategory_AddCategory_3")
+        self.horizontalLayout_76.addWidget(self.btn_pageCategory_AddCategory_3)
+        self.horizontalLayout_74.addWidget(self.frame_185)
+        self.verticalLayout_87.addWidget(self.frame_183)
+        self.frame_186 = QtWidgets.QFrame(self.frame_182)
+        self.frame_186.setStyleSheet("")
+        self.frame_186.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_186.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_186.setObjectName("frame_186")
+        self.horizontalLayout_77 = QtWidgets.QHBoxLayout(self.frame_186)
+        self.horizontalLayout_77.setObjectName("horizontalLayout_77")
+        self.frame_187 = QtWidgets.QFrame(self.frame_186)
+        self.frame_187.setMaximumSize(QtCore.QSize(250, 16777215))
+        self.frame_187.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_187.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_187.setObjectName("frame_187")
+        self.horizontalLayout_78 = QtWidgets.QHBoxLayout(self.frame_187)
+        self.horizontalLayout_78.setObjectName("horizontalLayout_78")
+        self.label_79 = QtWidgets.QLabel(self.frame_187)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_79.setFont(font)
+        self.label_79.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_79.setObjectName("label_79")
+        self.horizontalLayout_78.addWidget(self.label_79)
+        self.combo_pageIncomeManagement_entries_5 = QtWidgets.QComboBox(self.frame_187)
+        self.combo_pageIncomeManagement_entries_5.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.combo_pageIncomeManagement_entries_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.combo_pageIncomeManagement_entries_5.setObjectName("combo_pageIncomeManagement_entries_5")
+        self.combo_pageIncomeManagement_entries_5.addItem("")
+        self.combo_pageIncomeManagement_entries_5.addItem("")
+        self.combo_pageIncomeManagement_entries_5.addItem("")
+        self.combo_pageIncomeManagement_entries_5.addItem("")
+        self.combo_pageIncomeManagement_entries_5.addItem("")
+        self.combo_pageIncomeManagement_entries_5.addItem("")
+        self.horizontalLayout_78.addWidget(self.combo_pageIncomeManagement_entries_5)
+        self.label_80 = QtWidgets.QLabel(self.frame_187)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_80.setFont(font)
+        self.label_80.setObjectName("label_80")
+        self.horizontalLayout_78.addWidget(self.label_80)
+        self.horizontalLayout_77.addWidget(self.frame_187)
+        self.frame_188 = QtWidgets.QFrame(self.frame_186)
+        self.frame_188.setMinimumSize(QtCore.QSize(300, 0))
+        self.frame_188.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_188.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_188.setObjectName("frame_188")
+        self.horizontalLayout_79 = QtWidgets.QHBoxLayout(self.frame_188)
+        self.horizontalLayout_79.setObjectName("horizontalLayout_79")
+        self.label_81 = QtWidgets.QLabel(self.frame_188)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_81.setFont(font)
+        self.label_81.setObjectName("label_81")
+        self.horizontalLayout_79.addWidget(self.label_81)
+        self.led_pageCategory_search_3 = QtWidgets.QLineEdit(self.frame_188)
+        self.led_pageCategory_search_3.setMinimumSize(QtCore.QSize(0, 30))
+        self.led_pageCategory_search_3.setStyleSheet("border: 2px solid black;\n"
+"border-radius: 5px")
+        self.led_pageCategory_search_3.setObjectName("led_pageCategory_search_3")
+        self.horizontalLayout_79.addWidget(self.led_pageCategory_search_3)
+        self.btn_pageCategory_search_3 = QtWidgets.QPushButton(self.frame_188)
+        self.btn_pageCategory_search_3.setMinimumSize(QtCore.QSize(30, 30))
+        font = QtGui.QFont()
+        font.setFamily("Franklin Gothic Book")
+        font.setPointSize(10)
+        self.btn_pageCategory_search_3.setFont(font)
+        self.btn_pageCategory_search_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageCategory_search_3.setStyleSheet("border-radius:5px;\n"
+"background-color: rgb(255, 255, 255,0);")
+        self.btn_pageCategory_search_3.setText("")
+        self.btn_pageCategory_search_3.setIcon(icon15)
+        self.btn_pageCategory_search_3.setObjectName("btn_pageCategory_search_3")
+        self.horizontalLayout_79.addWidget(self.btn_pageCategory_search_3)
+        self.horizontalLayout_77.addWidget(self.frame_188, 0, QtCore.Qt.AlignRight)
+        self.verticalLayout_87.addWidget(self.frame_186)
+        self.verticalLayout_79.addWidget(self.frame_182)
+        self.frame_189 = QtWidgets.QFrame(self.frame_180)
+        self.frame_189.setMinimumSize(QtCore.QSize(0, 100))
+        self.frame_189.setMaximumSize(QtCore.QSize(16777215, 1000))
+        self.frame_189.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_189.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_189.setObjectName("frame_189")
+        self.verticalLayout_88 = QtWidgets.QVBoxLayout(self.frame_189)
+        self.verticalLayout_88.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_88.setSpacing(0)
+        self.verticalLayout_88.setObjectName("verticalLayout_88")
+        self.frame_190 = QtWidgets.QFrame(self.frame_189)
+        self.frame_190.setMinimumSize(QtCore.QSize(0, 226))
+        self.frame_190.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_190.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_190.setObjectName("frame_190")
+        self.horizontalLayout_80 = QtWidgets.QHBoxLayout(self.frame_190)
+        self.horizontalLayout_80.setObjectName("horizontalLayout_80")
+        self.table_pageCategory_category_3 = QtWidgets.QTableWidget(self.frame_190)
+        self.table_pageCategory_category_3.setMaximumSize(QtCore.QSize(400, 16777215))
+        self.table_pageCategory_category_3.setAcceptDrops(False)
+        self.table_pageCategory_category_3.setAutoFillBackground(False)
+        self.table_pageCategory_category_3.setAlternatingRowColors(True)
+        self.table_pageCategory_category_3.setRowCount(10)
+        self.table_pageCategory_category_3.setColumnCount(2)
+        self.table_pageCategory_category_3.setObjectName("table_pageCategory_category_3")
+        item = QtWidgets.QTableWidgetItem()
+        self.table_pageCategory_category_3.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.table_pageCategory_category_3.setHorizontalHeaderItem(1, item)
+        self.table_pageCategory_category_3.horizontalHeader().setDefaultSectionSize(199)
+        self.horizontalLayout_80.addWidget(self.table_pageCategory_category_3)
+        self.verticalLayout_88.addWidget(self.frame_190)
+        self.frame_191 = QtWidgets.QFrame(self.frame_189)
+        self.frame_191.setMinimumSize(QtCore.QSize(0, 50))
+        self.frame_191.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_191.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_191.setObjectName("frame_191")
+        self.horizontalLayout_81 = QtWidgets.QHBoxLayout(self.frame_191)
+        self.horizontalLayout_81.setObjectName("horizontalLayout_81")
+        self.frame_192 = QtWidgets.QFrame(self.frame_191)
+        self.frame_192.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_192.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_192.setObjectName("frame_192")
+        self.horizontalLayout_81.addWidget(self.frame_192)
+        self.frame_193 = QtWidgets.QFrame(self.frame_191)
+        self.frame_193.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_193.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_193.setObjectName("frame_193")
+        self.horizontalLayout_82 = QtWidgets.QHBoxLayout(self.frame_193)
+        self.horizontalLayout_82.setObjectName("horizontalLayout_82")
+        self.btn_pageCategory_Previus_3 = QtWidgets.QPushButton(self.frame_193)
+        self.btn_pageCategory_Previus_3.setMinimumSize(QtCore.QSize(50, 30))
+        self.btn_pageCategory_Previus_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageCategory_Previus_3.setStyleSheet("border-radius:5px")
+        self.btn_pageCategory_Previus_3.setText("")
+        self.btn_pageCategory_Previus_3.setIcon(icon16)
+        self.btn_pageCategory_Previus_3.setObjectName("btn_pageCategory_Previus_3")
+        self.horizontalLayout_82.addWidget(self.btn_pageCategory_Previus_3)
+        self.btn_pageCategory_Next_3 = QtWidgets.QPushButton(self.frame_193)
+        self.btn_pageCategory_Next_3.setMinimumSize(QtCore.QSize(50, 30))
+        self.btn_pageCategory_Next_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btn_pageCategory_Next_3.setStyleSheet("border-radius:5px")
+        self.btn_pageCategory_Next_3.setText("")
+        self.btn_pageCategory_Next_3.setIcon(icon17)
+        self.btn_pageCategory_Next_3.setObjectName("btn_pageCategory_Next_3")
+        self.horizontalLayout_82.addWidget(self.btn_pageCategory_Next_3)
+        self.horizontalLayout_81.addWidget(self.frame_193, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.frame_194 = QtWidgets.QFrame(self.frame_191)
+        self.frame_194.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_194.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_194.setObjectName("frame_194")
+        self.horizontalLayout_81.addWidget(self.frame_194)
+        self.verticalLayout_88.addWidget(self.frame_191, 0, QtCore.Qt.AlignBottom)
+        self.verticalLayout_79.addWidget(self.frame_189)
+        self.verticalLayout_89.addWidget(self.frame_180)
+        self.stackedWidget_2.addWidget(self.pageDesinations)
+        self.page_4 = QtWidgets.QWidget()
+        self.page_4.setObjectName("page_4")
+        self.verticalLayout_92 = QtWidgets.QVBoxLayout(self.page_4)
+        self.verticalLayout_92.setObjectName("verticalLayout_92")
+        self.frame_195 = QtWidgets.QFrame(self.page_4)
+        self.frame_195.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_195.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_195.setObjectName("frame_195")
+        self.verticalLayout_90 = QtWidgets.QVBoxLayout(self.frame_195)
+        self.verticalLayout_90.setObjectName("verticalLayout_90")
+        self.frame_196 = QtWidgets.QFrame(self.frame_195)
+        self.frame_196.setMaximumSize(QtCore.QSize(16777215, 80))
+        self.frame_196.setStyleSheet("background-color: rgb(175, 175, 175);")
+        self.frame_196.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_196.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_196.setObjectName("frame_196")
+        self.verticalLayout_91 = QtWidgets.QVBoxLayout(self.frame_196)
+        self.verticalLayout_91.setObjectName("verticalLayout_91")
+        self.label_82 = QtWidgets.QLabel(self.frame_196)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.label_82.setFont(font)
+        self.label_82.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_82.setObjectName("label_82")
+        self.verticalLayout_91.addWidget(self.label_82)
+        self.verticalLayout_90.addWidget(self.frame_196)
+        self.frame_197 = QtWidgets.QFrame(self.frame_195)
+        self.frame_197.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_197.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_197.setObjectName("frame_197")
+        self.horizontalLayout_83 = QtWidgets.QHBoxLayout(self.frame_197)
+        self.horizontalLayout_83.setObjectName("horizontalLayout_83")
+        self.frame_198 = QtWidgets.QFrame(self.frame_197)
+        self.frame_198.setMinimumSize(QtCore.QSize(100, 0))
+        self.frame_198.setMaximumSize(QtCore.QSize(200, 16777215))
+        self.frame_198.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_198.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_198.setObjectName("frame_198")
+        self.horizontalLayout_83.addWidget(self.frame_198)
+        self.frame_199 = QtWidgets.QFrame(self.frame_197)
+        self.frame_199.setMaximumSize(QtCore.QSize(650, 16777215))
+        self.frame_199.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_199.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_199.setObjectName("frame_199")
+        self.gridLayout_6 = QtWidgets.QGridLayout(self.frame_199)
+        self.gridLayout_6.setContentsMargins(150, -1, 150, -1)
+        self.gridLayout_6.setObjectName("gridLayout_6")
+        self.label_83 = QtWidgets.QLabel(self.frame_199)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_83.setFont(font)
+        self.label_83.setObjectName("label_83")
+        self.gridLayout_6.addWidget(self.label_83, 0, 0, 1, 1)
+        self.label_84 = QtWidgets.QLabel(self.frame_199)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_84.setFont(font)
+        self.label_84.setObjectName("label_84")
+        self.gridLayout_6.addWidget(self.label_84, 4, 0, 1, 1)
+        self.btn_pageAddExpense_add_3 = QtWidgets.QPushButton(self.frame_199)
+        self.btn_pageAddExpense_add_3.setMinimumSize(QtCore.QSize(0, 30))
+        self.btn_pageAddExpense_add_3.setMaximumSize(QtCore.QSize(110, 16777215))
+        self.btn_pageAddExpense_add_3.setStyleSheet("background-color: rgb(36, 197, 18);\n"
+"border-radius: 5px")
+        self.btn_pageAddExpense_add_3.setObjectName("btn_pageAddExpense_add_3")
+        self.gridLayout_6.addWidget(self.btn_pageAddExpense_add_3, 5, 1, 1, 2)
+        self.combo_pageAddExpense_Category_4 = QtWidgets.QComboBox(self.frame_199)
+        self.combo_pageAddExpense_Category_4.setMinimumSize(QtCore.QSize(0, 30))
+        self.combo_pageAddExpense_Category_4.setMaximumSize(QtCore.QSize(170, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.combo_pageAddExpense_Category_4.setFont(font)
+        self.combo_pageAddExpense_Category_4.setStyleSheet("border: 2px solid black;\n"
+"border-radius:5px")
+        self.combo_pageAddExpense_Category_4.setObjectName("combo_pageAddExpense_Category_4")
+        self.combo_pageAddExpense_Category_4.addItem("")
+        self.combo_pageAddExpense_Category_4.addItem("")
+        self.combo_pageAddExpense_Category_4.addItem("")
+        self.combo_pageAddExpense_Category_4.addItem("")
+        self.gridLayout_6.addWidget(self.combo_pageAddExpense_Category_4, 1, 2, 1, 1)
+        self.led_pageAddExpense_Description_7 = QtWidgets.QLineEdit(self.frame_199)
+        self.led_pageAddExpense_Description_7.setMinimumSize(QtCore.QSize(0, 30))
+        self.led_pageAddExpense_Description_7.setMaximumSize(QtCore.QSize(170, 16777215))
+        self.led_pageAddExpense_Description_7.setStyleSheet("border: 2px solid rgb(3, 23, 24);\n"
+"border-radius: 5px")
+        self.led_pageAddExpense_Description_7.setObjectName("led_pageAddExpense_Description_7")
+        self.gridLayout_6.addWidget(self.led_pageAddExpense_Description_7, 3, 2, 1, 1)
+        self.combo_pageAddExpense_Category_3 = QtWidgets.QComboBox(self.frame_199)
+        self.combo_pageAddExpense_Category_3.setMinimumSize(QtCore.QSize(0, 30))
+        self.combo_pageAddExpense_Category_3.setMaximumSize(QtCore.QSize(170, 16777215))
+        self.combo_pageAddExpense_Category_3.setStyleSheet("border: 2px solid black;\n"
+"border-radius:5px")
+        self.combo_pageAddExpense_Category_3.setObjectName("combo_pageAddExpense_Category_3")
+        self.gridLayout_6.addWidget(self.combo_pageAddExpense_Category_3, 0, 2, 1, 1)
+        self.label_86 = QtWidgets.QLabel(self.frame_199)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_86.setFont(font)
+        self.label_86.setObjectName("label_86")
+        self.gridLayout_6.addWidget(self.label_86, 3, 0, 1, 1)
+        self.led_pageAddExpense_amount_3 = QtWidgets.QLineEdit(self.frame_199)
+        self.led_pageAddExpense_amount_3.setMinimumSize(QtCore.QSize(0, 30))
+        self.led_pageAddExpense_amount_3.setMaximumSize(QtCore.QSize(170, 16777215))
+        self.led_pageAddExpense_amount_3.setStyleSheet("border: 2px solid rgb(3, 23, 24);\n"
+"border-radius: 5px")
+        self.led_pageAddExpense_amount_3.setText("")
+        self.led_pageAddExpense_amount_3.setObjectName("led_pageAddExpense_amount_3")
+        self.gridLayout_6.addWidget(self.led_pageAddExpense_amount_3, 4, 2, 1, 1)
+        self.label_87 = QtWidgets.QLabel(self.frame_199)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_87.setFont(font)
+        self.label_87.setObjectName("label_87")
+        self.gridLayout_6.addWidget(self.label_87, 1, 0, 1, 1)
+        self.horizontalLayout_83.addWidget(self.frame_199)
+        self.frame_200 = QtWidgets.QFrame(self.frame_197)
+        self.frame_200.setMinimumSize(QtCore.QSize(100, 0))
+        self.frame_200.setMaximumSize(QtCore.QSize(200, 16777215))
+        self.frame_200.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_200.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_200.setObjectName("frame_200")
+        self.horizontalLayout_83.addWidget(self.frame_200)
+        self.verticalLayout_90.addWidget(self.frame_197)
+        self.verticalLayout_92.addWidget(self.frame_195)
+        self.stackedWidget_2.addWidget(self.page_4)
+        self.page_5 = QtWidgets.QWidget()
+        self.page_5.setObjectName("page_5")
+        self.verticalLayout_95 = QtWidgets.QVBoxLayout(self.page_5)
+        self.verticalLayout_95.setObjectName("verticalLayout_95")
+        self.frame_201 = QtWidgets.QFrame(self.page_5)
+        self.frame_201.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_201.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_201.setObjectName("frame_201")
+        self.verticalLayout_93 = QtWidgets.QVBoxLayout(self.frame_201)
+        self.verticalLayout_93.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_93.setSpacing(0)
+        self.verticalLayout_93.setObjectName("verticalLayout_93")
+        self.frame_202 = QtWidgets.QFrame(self.frame_201)
+        self.frame_202.setMaximumSize(QtCore.QSize(16777215, 80))
+        self.frame_202.setStyleSheet("background-color: rgb(175, 175, 175);")
+        self.frame_202.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_202.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_202.setObjectName("frame_202")
+        self.verticalLayout_94 = QtWidgets.QVBoxLayout(self.frame_202)
+        self.verticalLayout_94.setObjectName("verticalLayout_94")
+        self.label_85 = QtWidgets.QLabel(self.frame_202)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.label_85.setFont(font)
+        self.label_85.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_85.setObjectName("label_85")
+        self.verticalLayout_94.addWidget(self.label_85)
+        self.verticalLayout_93.addWidget(self.frame_202)
+        self.frame_203 = QtWidgets.QFrame(self.frame_201)
+        self.frame_203.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_203.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_203.setObjectName("frame_203")
+        self.horizontalLayout_84 = QtWidgets.QHBoxLayout(self.frame_203)
+        self.horizontalLayout_84.setObjectName("horizontalLayout_84")
+        self.frame_204 = QtWidgets.QFrame(self.frame_203)
+        self.frame_204.setMinimumSize(QtCore.QSize(100, 0))
+        self.frame_204.setMaximumSize(QtCore.QSize(200, 16777215))
+        self.frame_204.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_204.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_204.setObjectName("frame_204")
+        self.verticalLayout_96 = QtWidgets.QVBoxLayout(self.frame_204)
+        self.verticalLayout_96.setObjectName("verticalLayout_96")
+        self.btn_pageAddExpense_add_5 = QtWidgets.QPushButton(self.frame_204)
+        self.btn_pageAddExpense_add_5.setMinimumSize(QtCore.QSize(0, 30))
+        self.btn_pageAddExpense_add_5.setMaximumSize(QtCore.QSize(110, 16777215))
+        self.btn_pageAddExpense_add_5.setStyleSheet("background-color: rgb(36, 197, 18);\n"
+"border-radius: 5px")
+        self.btn_pageAddExpense_add_5.setObjectName("btn_pageAddExpense_add_5")
+        self.verticalLayout_96.addWidget(self.btn_pageAddExpense_add_5)
+        self.btn_pageAddExpense_add_6 = QtWidgets.QPushButton(self.frame_204)
+        self.btn_pageAddExpense_add_6.setMinimumSize(QtCore.QSize(0, 30))
+        self.btn_pageAddExpense_add_6.setMaximumSize(QtCore.QSize(110, 16777215))
+        self.btn_pageAddExpense_add_6.setStyleSheet("background-color: rgb(36, 197, 18);\n"
+"border-radius: 5px")
+        self.btn_pageAddExpense_add_6.setObjectName("btn_pageAddExpense_add_6")
+        self.verticalLayout_96.addWidget(self.btn_pageAddExpense_add_6)
+        self.btn_pageAddExpense_add_7 = QtWidgets.QPushButton(self.frame_204)
+        self.btn_pageAddExpense_add_7.setMinimumSize(QtCore.QSize(0, 30))
+        self.btn_pageAddExpense_add_7.setMaximumSize(QtCore.QSize(110, 16777215))
+        self.btn_pageAddExpense_add_7.setStyleSheet("background-color: rgb(36, 197, 18);\n"
+"border-radius: 5px")
+        self.btn_pageAddExpense_add_7.setObjectName("btn_pageAddExpense_add_7")
+        self.verticalLayout_96.addWidget(self.btn_pageAddExpense_add_7)
+        self.horizontalLayout_84.addWidget(self.frame_204)
+        self.frame_205 = QtWidgets.QFrame(self.frame_203)
+        self.frame_205.setMaximumSize(QtCore.QSize(650, 16777215))
+        self.frame_205.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_205.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_205.setObjectName("frame_205")
+        self.horizontalLayout_85 = QtWidgets.QHBoxLayout(self.frame_205)
+        self.horizontalLayout_85.setObjectName("horizontalLayout_85")
+        self.table_pageCategory_category_4 = QtWidgets.QTableWidget(self.frame_205)
+        self.table_pageCategory_category_4.setMaximumSize(QtCore.QSize(400, 250))
+        self.table_pageCategory_category_4.setAcceptDrops(False)
+        self.table_pageCategory_category_4.setAutoFillBackground(False)
+        self.table_pageCategory_category_4.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContents)
+        self.table_pageCategory_category_4.setAlternatingRowColors(True)
+        self.table_pageCategory_category_4.setShowGrid(True)
+        self.table_pageCategory_category_4.setCornerButtonEnabled(True)
+        self.table_pageCategory_category_4.setRowCount(10)
+        self.table_pageCategory_category_4.setColumnCount(2)
+        self.table_pageCategory_category_4.setObjectName("table_pageCategory_category_4")
+        item = QtWidgets.QTableWidgetItem()
+        self.table_pageCategory_category_4.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.table_pageCategory_category_4.setHorizontalHeaderItem(1, item)
+        self.table_pageCategory_category_4.horizontalHeader().setDefaultSectionSize(199)
+        self.horizontalLayout_85.addWidget(self.table_pageCategory_category_4)
+        self.horizontalLayout_84.addWidget(self.frame_205)
+        self.verticalLayout_93.addWidget(self.frame_203)
+        self.verticalLayout_95.addWidget(self.frame_201)
+        self.stackedWidget_2.addWidget(self.page_5)
+        self.page_6 = QtWidgets.QWidget()
+        self.page_6.setObjectName("page_6")
+        self.stackedWidget_2.addWidget(self.page_6)
+        self.page_7 = QtWidgets.QWidget()
+        self.page_7.setObjectName("page_7")
+        self.stackedWidget_2.addWidget(self.page_7)
+        self.page_9 = QtWidgets.QWidget()
+        self.page_9.setObjectName("page_9")
+        self.stackedWidget_2.addWidget(self.page_9)
+        self.page_10 = QtWidgets.QWidget()
+        self.page_10.setObjectName("page_10")
+        self.stackedWidget_2.addWidget(self.page_10)
+        self.page_8 = QtWidgets.QWidget()
+        self.page_8.setObjectName("page_8")
+        self.stackedWidget_2.addWidget(self.page_8)
         self.verticalLayout_4.addWidget(self.stackedWidget_2)
         self.horizontalLayout.addWidget(self.frame_5)
         self.verticalLayout_3.addWidget(self.frame_3)
@@ -3180,9 +4117,88 @@ class Ui_Form(object):
         item.setText(_translate("Form", "Category ID"))
         item = self.table_pageCategory_category_2.horizontalHeaderItem(1)
         item.setText(_translate("Form", "Category"))
+        self.label_66.setText(_translate("Form", "STAFF MANAGEMENT"))
+        self.ledDeleteStaf.setPlaceholderText(_translate("Form", "Staff ID (Eg. 3)"))
+        self.btn_pageExpenseCategory_DeleteStaff.setText(_translate("Form", "Delete Staff  "))
+        self.btn_pageExpenseManagement_AddExpense_2.setText(_translate("Form", "Add Staff"))
+        self.btn_pageExpenseManagement_AddExpense_4.setText(_translate("Form", "Pay Staff"))
+        self.btn_pageExpenseManagement_ViewExpenseCategory_2.setText(_translate("Form", "View/Edit Designations    "))
+        self.label_67.setText(_translate("Form", "SHOW"))
+        self.combo_pageExpenseManagement_entries_2.setItemText(0, _translate("Form", "10"))
+        self.combo_pageExpenseManagement_entries_2.setItemText(1, _translate("Form", "15"))
+        self.combo_pageExpenseManagement_entries_2.setItemText(2, _translate("Form", "20"))
+        self.combo_pageExpenseManagement_entries_2.setItemText(3, _translate("Form", "30"))
+        self.combo_pageExpenseManagement_entries_2.setItemText(4, _translate("Form", "50"))
+        self.combo_pageExpenseManagement_entries_2.setItemText(5, _translate("Form", "100"))
+        self.label_68.setText(_translate("Form", "ENTRIES"))
+        self.label_69.setText(_translate("Form", "Search:"))
+        self.btn_pageExpenseManagement_search_2.setShortcut(_translate("Form", "Return"))
+        item = self.table_pageexpenseManagement_Expense_2.horizontalHeaderItem(0)
+        item.setText(_translate("Form", "Income ID"))
+        item = self.table_pageexpenseManagement_Expense_2.horizontalHeaderItem(1)
+        item.setText(_translate("Form", "Category"))
+        item = self.table_pageexpenseManagement_Expense_2.horizontalHeaderItem(2)
+        item.setText(_translate("Form", "Description"))
+        item = self.table_pageexpenseManagement_Expense_2.horizontalHeaderItem(3)
+        item.setText(_translate("Form", "Date"))
+        item = self.table_pageexpenseManagement_Expense_2.horizontalHeaderItem(4)
+        item.setText(_translate("Form", "Amount"))
+        self.label_70.setText(_translate("Form", "ADD NEW STAFF"))
+        self.label_74.setText(_translate("Form", "Address"))
+        self.led_pageAddExpense_Description_2.setPlaceholderText(_translate("Form", "Kangundo road, Kenya"))
+        self.label_72.setText(_translate("Form", "Salary"))
+        self.label_71.setText(_translate("Form", "Designation"))
+        self.led_pageAddExpense_amount_2.setPlaceholderText(_translate("Form", "20000"))
+        self.btn_pageAddExpense_add_2.setText(_translate("Form", "ADD "))
+        self.label_75.setText(_translate("Form", "First Name"))
+        self.led_pageAddExpense_Description_3.setPlaceholderText(_translate("Form", "John"))
+        self.led_pageAddExpense_Description_4.setPlaceholderText(_translate("Form", "Kiriamiti"))
+        self.label_76.setText(_translate("Form", "Last Name"))
+        self.label_78.setText(_translate("Form", "Email Address"))
+        self.label_77.setText(_translate("Form", "Phone Number"))
+        self.led_pageAddExpense_Description_5.setPlaceholderText(_translate("Form", "24799478179"))
+        self.led_pageAddExpense_Description_6.setPlaceholderText(_translate("Form", "abc@xyz.com"))
+        self.label_73.setText(_translate("Form", "STAFF DESIGNATIONS"))
+        self.led_pageExpenseCategory_DeleteCategory_2.setPlaceholderText(_translate("Form", "Enter designation ID"))
+        self.btn_pageExpenseCategory_DeleteCategory_2.setText(_translate("Form", "Delete   "))
+        self.led_pageCategory_AddCategory_3.setPlaceholderText(_translate("Form", "Enter new designation name"))
+        self.btn_pageCategory_AddCategory_3.setText(_translate("Form", "Add  Designation  "))
+        self.label_79.setText(_translate("Form", "SHOW"))
+        self.combo_pageIncomeManagement_entries_5.setItemText(0, _translate("Form", "10"))
+        self.combo_pageIncomeManagement_entries_5.setItemText(1, _translate("Form", "15"))
+        self.combo_pageIncomeManagement_entries_5.setItemText(2, _translate("Form", "20"))
+        self.combo_pageIncomeManagement_entries_5.setItemText(3, _translate("Form", "30"))
+        self.combo_pageIncomeManagement_entries_5.setItemText(4, _translate("Form", "50"))
+        self.combo_pageIncomeManagement_entries_5.setItemText(5, _translate("Form", "100"))
+        self.label_80.setText(_translate("Form", "ENTRIES"))
+        self.label_81.setText(_translate("Form", "Search:"))
+        self.btn_pageCategory_search_3.setShortcut(_translate("Form", "Return"))
+        item = self.table_pageCategory_category_3.horizontalHeaderItem(0)
+        item.setText(_translate("Form", "Category ID"))
+        item = self.table_pageCategory_category_3.horizontalHeaderItem(1)
+        item.setText(_translate("Form", "Category"))
+        self.label_82.setText(_translate("Form", "STAFF PAYMENT"))
+        self.label_83.setText(_translate("Form", "Select Staff"))
+        self.label_84.setText(_translate("Form", "Amount"))
+        self.btn_pageAddExpense_add_3.setText(_translate("Form", "Make Payment"))
+        self.combo_pageAddExpense_Category_4.setItemText(0, _translate("Form", "Salary"))
+        self.combo_pageAddExpense_Category_4.setItemText(1, _translate("Form", "Bonus"))
+        self.combo_pageAddExpense_Category_4.setItemText(2, _translate("Form", "Commission"))
+        self.combo_pageAddExpense_Category_4.setItemText(3, _translate("Form", "Compensation"))
+        self.led_pageAddExpense_Description_7.setPlaceholderText(_translate("Form", "February\'s salary"))
+        self.label_86.setText(_translate("Form", "Description"))
+        self.led_pageAddExpense_amount_3.setPlaceholderText(_translate("Form", "60000"))
+        self.label_87.setText(_translate("Form", " Incentive"))
+        self.label_85.setText(_translate("Form", "FARM SETTINGS"))
+        self.btn_pageAddExpense_add_5.setText(_translate("Form", "Feed Type"))
+        self.btn_pageAddExpense_add_6.setText(_translate("Form", "Breed Type"))
+        self.btn_pageAddExpense_add_7.setText(_translate("Form", "Vaccination"))
+        item = self.table_pageCategory_category_4.horizontalHeaderItem(0)
+        item.setText(_translate("Form", "Category ID"))
+        item = self.table_pageCategory_category_4.horizontalHeaderItem(1)
+        item.setText(_translate("Form", "Category"))
 
-
-# Edits
+        # Edits
 
         self.db = mysql.connector.connect(
                 host="localhost",
@@ -3213,7 +4229,8 @@ class Ui_Form(object):
         self.btn_pageIncomeManagement_search.clicked.connect(self.btn_pageIncomeManagement_search_clicked)
         self.btn_pageIncomeManagement_AddIncome.clicked.connect(self.btn_pageIncomeManagement_AddIncome_clicked)
         self.btn_pageAddincome_AddIncome.clicked.connect(self.btn_pageAddincome_AddIncome_clicked)
-        self.btn_pageIncomeManagement_ViewIncomeCategory.clicked.connect(self.btn_pageIncomeManagement_ViewIncomeCategory_clicked)
+        self.btn_pageIncomeManagement_ViewIncomeCategory.clicked.connect(
+                self.btn_pageIncomeManagement_ViewIncomeCategory_clicked)
         self.btn_pageCategory_AddCategory.clicked.connect(self.btn_pageCategory_AddCategory_clicked)
         self.btn_pageCategory_DeleteCategory.clicked.connect(self.btn_pageCategory_DeleteCategory_clicked)
         self.btn_pageHomepage_sales.clicked.connect(self.btn_pageHomepage_sales_clicked)
@@ -3225,12 +4242,340 @@ class Ui_Form(object):
         self.btn_pageHomepage_expenseManagement.clicked.connect(self.btn_pageHomepage_expenseManagement_clicked)
         self.btn_pageHomepage_viewExpensesDetails.clicked.connect(self.btn_pageHomepage_expenseManagement_clicked)
         self.btn_pageExpenseManagement_search.clicked.connect(self.btn_pageExpenseManagement_search_clicked)
-        self.btn_pageExpenseManagement_ViewExpenseCategory.clicked.connect(self.btn_pageExpenseManagement_ViewExpenseCategory_clicked)
+        self.btn_pageExpenseManagement_ViewExpenseCategory.clicked.connect(
+                self.btn_pageExpenseManagement_ViewExpenseCategory_clicked)
         self.btn_pageExpenseCategory_DeleteCategory.clicked.connect(self.btn_pageExpenseCategory_DeleteCategory_clicked)
         self.btn_pageCategory_AddCategory_2.clicked.connect(self.btn_pageCategory_AddCategory_2_clicked)
         self.btn_pageCategory_search_2.clicked.connect(self.btn_pageCategory_search_2_clicked)
         self.btn_pageExpenseManagement_AddExpense.clicked.connect(self.btn_pageExpenseManagement_AddExpense_clicked)
         self.btn_pageAddExpense_add.clicked.connect(self.btn_pageAddExpense_add_clicked)
+        self.btn_pageHomepage_staffManagement.clicked.connect(self.btn_pageHomepage_staffManagement_clicked)
+        self.btn_pageExpenseManagement_search_2.clicked.connect(self.btn_pageExpenseManagement_search_2_clicked)
+        self.btn_pageExpenseCategory_DeleteStaff.clicked.connect(self.btn_pageExpenseCategory_DeleteStaff_clicked)
+        self.btn_pageExpenseManagement_ViewExpenseCategory_2.clicked.connect(self.btn_pageExpenseManagement_ViewExpenseCategory_2_clicked)
+        self.btn_pageCategory_search_3.clicked.connect(self.btn_pageCategory_search_3_clicked)
+        self.btn_pageExpenseCategory_DeleteCategory_2.clicked.connect(self.btn_pageExpenseCategory_DeleteCategory_2_clicked)
+        self.btn_pageCategory_AddCategory_3.clicked.connect(self.btn_pageCategory_AddCategory_3_clicked)
+        self.btn_pageExpenseManagement_AddExpense_2.clicked.connect(self.btn_pageExpenseManagement_AddExpense_2_cliked)
+        self.btn_pageAddExpense_add_2.clicked.connect(self.btn_pageAddExpense_add_2_clicked)
+        self.btn_pageExpenseManagement_AddExpense_4.clicked.connect(self.btn_pageExpenseManagement_AddExpense_4_clicked)
+        self.btn_pageAddExpense_add_3.clicked.connect(self.btn_pageAddExpense_add_3_clicked)
+
+    def btn_pageAddExpense_add_3_clicked(self):
+        incentive = self.combo_pageAddExpense_Category_4.currentText()
+        staff = self.combo_pageAddExpense_Category_3.currentText()
+        description = self.led_pageAddExpense_Description_7.text()
+        amount = self.led_pageAddExpense_amount_3.text()
+
+        if amount != '':
+                try:
+                        float(amount)
+
+                        self.mycursor.execute(f"INSERT INTO poultry_management.expenses(category, expense_description, expense_date, amount) VALUES"
+                                              f"('Staff Expenditure', '{staff} {incentive}: {description}', '{datetime.now().date()}', '{amount}')")
+                        self.led_pageAddExpense_Description_7.clear()
+                        self.led_pageAddExpense_amount_3.clear()
+
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Paid")
+                        messagebox.setIcon(QMessageBox.Information)
+                        messagebox.setText("Transaction updated successfully.")
+                        x = messagebox.exec_()
+
+
+
+                except:
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Amount")
+                        messagebox.setIcon(QMessageBox.Warning)
+                        messagebox.setText("Please provide a valid amount. \nUse digits only.")
+                        x = messagebox.exec_()
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Amount")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide an amount. \nIt should not be blank.")
+                x = messagebox.exec_()
+
+
+    def btn_pageExpenseManagement_AddExpense_4_clicked(self):
+        self.combo_pageAddExpense_Category_3.clear()
+        self.mycursor.execute(f"SELECT first_name, last_name FROM poultry_management.staff;")
+        staff =[f'{i[0]} {i[1]}' for i in self.mycursor]
+
+        self.combo_pageAddExpense_Category_3.addItems(staff)
+
+        self.stackedWidget_2.setCurrentWidget(self.page_4)
+
+    def btn_pageAddExpense_add_2_clicked(self):
+        firstname_done = False
+        lastname_done = False
+        address_done = False
+        phone_done = False
+        email_done = False
+        salary_done = False
+
+        designation = self.combo_pageAddExpense_Category_2.currentText()
+
+        if self.led_pageAddExpense_Description_3.text() != "":
+                firstname_done = True
+                first_name = self.led_pageAddExpense_Description_3.text()
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Blank Firstname")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide a First Name. \nIt should not be blank.")
+                x = messagebox.exec_()
+
+        if self.led_pageAddExpense_Description_4.text() != "":
+                lastname_done = True
+                last_name = self.led_pageAddExpense_Description_4.text()
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Blank lastname")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide a Last Name. \nIt should not be blank.")
+                x = messagebox.exec_()
+
+        if self.led_pageAddExpense_Description_2.text() != "":
+                address_done = True
+                address = self.led_pageAddExpense_Description_2.text()
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Blank Address")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide an address. \nIt should not be blank.")
+                x = messagebox.exec_()
+
+        if self.led_pageAddExpense_Description_5.text() != "" and len(self.led_pageAddExpense_Description_5.text()) == 12:
+                try:
+                        int(self.led_pageAddExpense_Description_5.text())
+                        phone_done = True
+                        phone_number = self.led_pageAddExpense_Description_5.text()
+                except:
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Phone number")
+                        messagebox.setIcon(QMessageBox.Warning)
+                        messagebox.setText(
+                                "Please provide a valid phone number. \nIt should not be blank.\neg: 254712345678")
+                        x = messagebox.exec_()
+
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Phone number")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide a valid phone number. \nIt should not be blank.\neg: 254712345678")
+                x = messagebox.exec_()
+
+
+        if self.led_pageAddExpense_Description_6.text() != "":
+                pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+                valid = bool(re.match(pattern, self.led_pageAddExpense_Description_6.text()))
+                if valid is True:
+                        email_done = True
+                        email = self.led_pageAddExpense_Description_6.text()
+                else:
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Blank email")
+                        messagebox.setIcon(QMessageBox.Warning)
+                        messagebox.setText("Please provide a valid email address. \nEntered email is invalid.")
+                        x = messagebox.exec_()
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Blank email")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide an email address. \nIt should not be blank.")
+                x = messagebox.exec_()
+
+
+        if self.led_pageAddExpense_amount_2.text() != "":
+                try:
+                        int(self.led_pageAddExpense_amount_2.text())
+                        salary_done = True
+                        salary = self.led_pageAddExpense_amount_2.text()
+                except:
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Salo salooo")
+                        messagebox.setIcon(QMessageBox.Warning)
+                        messagebox.setText(
+                                "Please provide a valid salary amount. \nIt should be purely digits.\neg: 60000")
+                        x = messagebox.exec_()
+
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("salo saloo")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide a valid salary. \nIt should not be blank.\neg: 60000")
+                x = messagebox.exec_()
+
+
+        if firstname_done is True and lastname_done is True and address_done is True and phone_done is True and email_done is True and salary_done is True:
+                self.mycursor.execute(f"INSERT INTO poultry_management.staff(designation , first_name, "
+                                      f"last_name, address, email_address, phone_number, salary) values("
+                                      f"'{designation}', '{first_name}', '{last_name}', '{address}', '{email}', "
+                                      f"'{phone_number}', '{salary}');")
+                self.db.commit()
+
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Staff added")
+                messagebox.setIcon(QMessageBox.Information)
+                messagebox.setText("New staff added successfully")
+                x = messagebox.exec_()
+
+                self.btn_pageHomepage_staffManagement_clicked()
+                self.led_pageAddExpense_amount_2.clear()
+                self.led_pageAddExpense_Description_2.clear()
+                self.led_pageAddExpense_Description_3.clear()
+                self.led_pageAddExpense_Description_4.clear()
+                self.led_pageAddExpense_Description_5.clear()
+                self.led_pageAddExpense_Description_6.clear()
+
+    def btn_pageExpenseManagement_AddExpense_2_cliked(self):
+        self.combo_pageAddExpense_Category_2.clear()
+        self.mycursor.execute(f"SELECT designation_name FROM poultry_management.designation ORDER BY designation_name;")
+        fields = [i[0] for i in self.mycursor]
+
+        self.combo_pageAddExpense_Category_2.addItems(fields)
+
+        self.stackedWidget_2.setCurrentWidget(self.pageAddStaff)
+
+    def btn_pageCategory_search_3_clicked(self):
+            search_term = self.led_pageCategory_search_3.text()
+
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT * FROM poultry_management.designation WHERE designation_id REGEXP '{search_term}' "
+                    f"or designation_name REGEXP '{search_term}';")
+
+            header_labels = ["Designation ID", "Designation Name"]
+            self.table_pageCategory_category_3.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCategory_category_3.verticalHeader().setVisible(False)
+            self.table_pageCategory_category_3.setRowCount(0)
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCategory_category_3.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCategory_category_3.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageCategory_AddCategory_3_clicked(self):
+            category = self.led_pageCategory_AddCategory_3.text()
+            if category == "":
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Blank Designation")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Please provide a designation Name. \nIt should not be blank.")
+                    x = messagebox.exec_()
+            else:
+                    self.mycursor.execute(f"INSERT INTO poultry_management.designation(designation_name) "
+                                          f"VALUES('{category}');")
+                    self.db.commit()
+                    self.led_pageCategory_AddCategory_3.clear()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Designation Added")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"{category} added successfully!")
+                    x = messagebox.exec_()
+                    self.btn_pageExpenseManagement_ViewExpenseCategory_2_clicked()
+
+    def btn_pageExpenseCategory_DeleteCategory_2_clicked(self):
+            to_delete_id = self.led_pageExpenseCategory_DeleteCategory_2.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.designation WHERE designation_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Desination Deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageExpenseManagement_ViewExpenseCategory_2_clicked()
+                    self.led_pageExpenseCategory_DeleteCategory_2.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting designation due to invalid input.\nPlease enter a valid Category ID")
+                    x = messagebox.exec_()
+    def btn_pageExpenseManagement_ViewExpenseCategory_2_clicked(self):
+            header_labels = ["Designation ID", "Designation Name"]
+            self.table_pageCategory_category_3.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCategory_category_3.verticalHeader().setVisible(False)
+            self.table_pageCategory_category_3.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT * FROM poultry_management.designation;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCategory_category_3.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCategory_category_3.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+            self.stackedWidget_2.setCurrentWidget(self.pageDesinations)
+
+    def btn_pageExpenseCategory_DeleteStaff_clicked(self):
+            to_delete_id = self.ledDeleteStaf.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.staff WHERE staff_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Staff Deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageHomepage_staffManagement_clicked()
+                    self.ledDeleteStaf.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting staff due to invalid input.\nPlease enter a valid staff ID")
+                    x = messagebox.exec_()
+
+    def btn_pageExpenseManagement_search_2_clicked(self):
+            search_term = self.led_pageExpenseManagement_search_2.text()
+
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT staff_id, designation , first_name, last_name, address, phone_number, email_address"
+                    f" FROM poultry_management.staff WHERE staff_id REGEXP '{search_term}' "
+                    f"or designation REGEXP '{search_term}' or first_name REGEXP '{search_term}' or last_name REGEXP '{search_term}'"
+                    f" or address REGEXP '{search_term}' or phone_number REGEXP '{search_term}' or email_address REGEXP '{search_term}';")
+
+            header_labels = ["Staff ID", "Designation", "First Name", "Last Name", "Address", "Phone number", "Email Address"]
+            self.table_pageexpenseManagement_Expense_2.setHorizontalHeaderLabels(header_labels)
+            self.table_pageexpenseManagement_Expense_2.verticalHeader().setVisible(False)
+            self.table_pageexpenseManagement_Expense_2.setRowCount(0)
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageexpenseManagement_Expense_2.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageexpenseManagement_Expense_2.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageHomepage_staffManagement_clicked(self):
+            header_labels = ["Staff ID", "Designation", "First Name", "Last Name", "Address", "Phone number", "Email Address"]
+            self.table_pageexpenseManagement_Expense_2.setHorizontalHeaderLabels(header_labels)
+            self.table_pageexpenseManagement_Expense_2.verticalHeader().setVisible(False)
+            self.table_pageexpenseManagement_Expense_2.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT staff_id, designation , first_name, last_name, address, phone_number, email_address FROM poultry_management.staff;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageexpenseManagement_Expense_2.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageexpenseManagement_Expense_2.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+
+            self.stackedWidget_2.setCurrentWidget(self.pageStaffanagement)
 
     def btn_pageAddExpense_add_clicked(self):
             category = self.combo_pageAddExpense_Category.currentText()
@@ -3254,10 +4599,10 @@ class Ui_Form(object):
                     except:
                             done_amount = False
 
-
             if (done_description is True) and (done_amount is True):
-                    self.mycursor.execute("INSERT INTO poultry_management.expenses(category, expense_description, expense_date, amount) VALUES"
-                                          f"('{category}', '{description}', '{date}', '{amount}');")
+                    self.mycursor.execute(
+                            "INSERT INTO poultry_management.expenses(category, expense_description, expense_date, amount) VALUES"
+                            f"('{category}', '{description}', '{date}', '{amount}');")
                     self.db.commit()
 
                     messagebox = QMessageBox()
@@ -3316,25 +4661,24 @@ class Ui_Form(object):
                                                                        QtWidgets.QTableWidgetItem(str(data)))
 
     def btn_pageCategory_AddCategory_2_clicked(self):
-        category = self.led_pageCategory_AddCategory_2.text()
-        if category == "":
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Blank Category")
-                messagebox.setIcon(QMessageBox.Warning)
-                messagebox.setText("Please provide a Category Name. \nIt should not be blank.")
-                x = messagebox.exec_()
-        else:
-                self.mycursor.execute(f"INSERT INTO poultry_management.expense_category(category_name) "
-                                      f"VALUES('{category}');")
-                self.db.commit()
-                self.led_pageCategory_AddCategory_2.clear()
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Category Added")
-                messagebox.setIcon(QMessageBox.Information)
-                messagebox.setText(f"{category} added successfully!")
-                x = messagebox.exec_()
-                self.btn_pageExpenseManagement_ViewExpenseCategory_clicked()
-
+            category = self.led_pageCategory_AddCategory_2.text()
+            if category == "":
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Blank Category")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Please provide a Category Name. \nIt should not be blank.")
+                    x = messagebox.exec_()
+            else:
+                    self.mycursor.execute(f"INSERT INTO poultry_management.expense_category(category_name) "
+                                          f"VALUES('{category}');")
+                    self.db.commit()
+                    self.led_pageCategory_AddCategory_2.clear()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Category Added")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"{category} added successfully!")
+                    x = messagebox.exec_()
+                    self.btn_pageExpenseManagement_ViewExpenseCategory_clicked()
 
     def btn_pageExpenseCategory_DeleteCategory_clicked(self):
             to_delete_id = self.led_pageExpenseCategory_DeleteCategory.text()
@@ -3353,9 +4697,9 @@ class Ui_Form(object):
                     messagebox = QMessageBox()
                     messagebox.setWindowTitle("Error")
                     messagebox.setIcon(QMessageBox.Warning)
-                    messagebox.setText("Error deleting category due to invalid input.\nPlease enter a valid Category ID")
+                    messagebox.setText(
+                            "Error deleting category due to invalid input.\nPlease enter a valid Category ID")
                     x = messagebox.exec_()
-
 
     def btn_pageExpenseManagement_ViewExpenseCategory_clicked(self):
             header_labels = ["Category ID", "Category Name"]
@@ -3369,7 +4713,7 @@ class Ui_Form(object):
                     self.table_pageCategory_category_2.insertRow(row_number)
                     for column_number, data in enumerate(row_data):
                             self.table_pageCategory_category_2.setItem(row_number, column_number,
-                                                                     QtWidgets.QTableWidgetItem(str(data)))
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
             self.stackedWidget_2.setCurrentWidget(self.pageExpenseCategory)
 
     def btn_pageExpenseManagement_search_clicked(self):
@@ -3395,141 +4739,146 @@ class Ui_Form(object):
                                                                              QtWidgets.QTableWidgetItem(str(data)))
 
     def btn_pageHomepage_expenseManagement_clicked(self):
-        header_labels = ['Expense ID', 'Category', 'Description', 'Date', 'Amount']
-        self.table_pageexpenseManagement_Expense.setHorizontalHeaderLabels(header_labels)
-        self.table_pageexpenseManagement_Expense.verticalHeader().setVisible(False)
-        self.table_pageexpenseManagement_Expense.setRowCount(0)
+            header_labels = ['Expense ID', 'Category', 'Description', 'Date', 'Amount']
+            self.table_pageexpenseManagement_Expense.setHorizontalHeaderLabels(header_labels)
+            self.table_pageexpenseManagement_Expense.verticalHeader().setVisible(False)
+            self.table_pageexpenseManagement_Expense.setRowCount(0)
 
-        self.mycursor.execute("SELECT * FROM poultry_management.expenses;")
+            self.mycursor.execute("SELECT * FROM poultry_management.expenses;")
 
-        for row_number, row_data in enumerate(self.mycursor):
-                self.table_pageexpenseManagement_Expense.insertRow(row_number)
-                for column_number, data in enumerate(row_data):
-                        self.table_pageexpenseManagement_Expense.setItem(row_number, column_number,
-                                                                         QtWidgets.QTableWidgetItem(str(data)))
-        self.stackedWidget_2.setCurrentWidget(self.pageExpenseManagement)
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageexpenseManagement_Expense.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageexpenseManagement_Expense.setItem(row_number, column_number,
+                                                                             QtWidgets.QTableWidgetItem(str(data)))
+            self.stackedWidget_2.setCurrentWidget(self.pageExpenseManagement)
 
     def btn_addSale_clicked(self):
-        customer = self.combo_pageAddsale_Customer.currentText()
-        staff = self.combo_pageAddsale_staff.currentText()
-        order_date = self.led_pageaddSale_dateOfSale.date().toString('yyyy-MM-dd')
-        order_date = datetime.strptime(order_date, "%Y-%m-%d").date()
-        description = self.led_pageaddSale_Description.text()
-        if description == "":
-                done_description = False
-        else:
-                done_description = True
+            customer = self.combo_pageAddsale_Customer.currentText()
+            staff = self.combo_pageAddsale_staff.currentText()
+            order_date = self.led_pageaddSale_dateOfSale.date().toString('yyyy-MM-dd')
+            order_date = datetime.strptime(order_date, "%Y-%m-%d").date()
+            description = self.led_pageaddSale_Description.text()
+            if description == "":
+                    done_description = False
+            else:
+                    done_description = True
 
-        amount = self.led_pageaddSale_amount.text()
+            amount = self.led_pageaddSale_amount.text()
 
-        if amount == "":
-                done_amount = False
-        else:
-                try:
-                        float(amount)
-                        done_amount = True
-                except:
-                        done_amount = False
+            if amount == "":
+                    done_amount = False
+            else:
+                    try:
+                            float(amount)
+                            done_amount = True
+                    except:
+                            done_amount = False
 
-        paid = self.led_pageaddSale_paid.text()
+            paid = self.led_pageaddSale_paid.text()
 
-        if paid == "":
-                done_paid = False
-        else:
-                try:
-                        float(paid)
-                        done_paid = True
-                except:
-                        done_paid = False
+            if paid == "":
+                    done_paid = False
+            else:
+                    try:
+                            float(paid)
+                            done_paid = True
+                    except:
+                            done_paid = False
 
-        balance = self.led_pageaddSale_balance.text()
-        if balance == "":
-                done_balance = False
-        else:
-                try:
-                        float(balance)
-                        done_balance = True
-                except:
-                        done_balance = False
+            balance = self.led_pageaddSale_balance.text()
+            if balance == "":
+                    done_balance = False
+            else:
+                    try:
+                            float(balance)
+                            done_balance = True
+                    except:
+                            done_balance = False
 
-        if (done_paid is True) and (done_balance is True) and (done_description is True) and (done_amount is True):
+            if (done_paid is True) and (done_balance is True) and (done_description is True) and (done_amount is True):
 
-                self.mycursor.execute("INSERT INTO poultry_management.orders"
-                                      "(customer,received_by, order_description, date_received, amount, paid, balance) VALUES"
-                                      f"('{customer}','{staff}', '{description}', '{order_date}', '{amount}', "
-                                      f"'{paid}', '{balance}');")
-                self.db.commit()
+                    self.mycursor.execute("INSERT INTO poultry_management.orders"
+                                          "(customer,received_by, order_description, date_received, amount, paid, balance) VALUES"
+                                          f"('{customer}','{staff}', '{description}', '{order_date}', '{amount}', "
+                                          f"'{paid}', '{balance}');")
+                    self.db.commit()
 
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Success")
-                messagebox.setIcon(QMessageBox.Information)
-                messagebox.setText(f"Order Added successfully.")
-                x = messagebox.exec_()
-                self.led_pageaddSale_Description.clear()
-                self.led_pageaddSale_balance.clear()
-                self.led_pageaddSale_amount.clear()
-                self.led_pageaddSale_paid.clear()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Order Added successfully.")
+                    x = messagebox.exec_()
+                    self.led_pageaddSale_Description.clear()
+                    self.led_pageaddSale_balance.clear()
+                    self.led_pageaddSale_amount.clear()
+                    self.led_pageaddSale_paid.clear()
 
-                self.btn_pageHomepage_sales_clicked()
-        elif done_description is False:
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Error")
-                messagebox.setIcon(QMessageBox.Warning)
-                messagebox.setText(f"Description cannot be blank!.")
-                x = messagebox.exec_()
+                    self.btn_pageHomepage_sales_clicked()
+            elif done_description is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(f"Description cannot be blank!.")
+                    x = messagebox.exec_()
 
-        elif done_amount is False:
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Error")
-                messagebox.setIcon(QMessageBox.Warning)
-                messagebox.setText(f"'Amount' is ether blank or received wrong input\nEnter digits only!.")
-                x = messagebox.exec_()
+            elif done_amount is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(f"'Amount' is ether blank or received wrong input\nEnter digits only!.")
+                    x = messagebox.exec_()
 
-        elif done_paid is False:
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Error")
-                messagebox.setIcon(QMessageBox.Warning)
-                messagebox.setText(f"'Paid' is ether blank or received wrong input\nEnter digits only!.")
-                x = messagebox.exec_()
+            elif done_paid is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(f"'Paid' is ether blank or received wrong input\nEnter digits only!.")
+                    x = messagebox.exec_()
 
-        elif done_balance is False:
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Error")
-                messagebox.setIcon(QMessageBox.Warning)
-                messagebox.setText(f"'Balance' is ether blank or received wrong input\nEnter digits only!.")
-                x = messagebox.exec_()
+            elif done_balance is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(f"'Balance' is ether blank or received wrong input\nEnter digits only!.")
+                    x = messagebox.exec_()
 
     def btn_pageOrder_addOrder_clicked(self):
-        self.combo_pageAddsale_Customer.clear()
-        self.combo_pageAddsale_staff.clear()
-        self.mycursor.execute(f"SELECT first_name, last_name FROM poultry_management.customers ORDER BY first_name;")
-        customers = [f"{i[0]} {i[1]}" for i in self.mycursor]
+            self.combo_pageAddsale_Customer.clear()
+            self.combo_pageAddsale_staff.clear()
+            self.mycursor.execute(
+                    f"SELECT first_name, last_name FROM poultry_management.customers ORDER BY first_name;")
+            customers = [f"{i[0]} {i[1]}" for i in self.mycursor]
 
-        self.combo_pageAddsale_Customer.addItems(customers)
+            self.combo_pageAddsale_Customer.addItems(customers)
 
-        self.combo_pageAddsale_staff.addItems(customers)
-        self.led_pageaddSale_dateOfSale.setDate(datetime.now().date())
+            self.mycursor.execute(f"SELECT first_name, last_name FROM poultry_management.staff;")
 
-        self.stackedWidget_2.setCurrentWidget(self.pageAddOrder)
+            staff_names = [f'{i[0]} {i[1]}' for i in self.mycursor]
+
+            self.combo_pageAddsale_staff.addItems(staff_names)
+            self.led_pageaddSale_dateOfSale.setDate(datetime.now().date())
+
+            self.stackedWidget_2.setCurrentWidget(self.pageAddOrder)
+
     def btn_pageOrder_deleteOrder_clicked(self):
-        to_delete_id = self.led_pageOrder_searchOrder_2.text()
-        try:
-                self.mycursor.execute(f"DELETE FROM poultry_management.orders WhERE order_id = {to_delete_id};")
-                self.db.commit()
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Success")
-                messagebox.setIcon(QMessageBox.Information)
-                messagebox.setText(f"Order Deleted successfully.")
-                x = messagebox.exec_()
-                self.btn_pageHomepage_sales_clicked()
-                self.led_pageOrder_searchOrder_2.clear()
-        except:
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Error")
-                messagebox.setIcon(QMessageBox.Warning)
-                messagebox.setText("Error deleting order due to invalid input.\nPlease enter a valid Category ID")
-                x = messagebox.exec_()
-
+            to_delete_id = self.led_pageOrder_searchOrder_2.text()
+            try:
+                    self.mycursor.execute(f"DELETE FROM poultry_management.orders WhERE order_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Order Deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageHomepage_sales_clicked()
+                    self.led_pageOrder_searchOrder_2.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Error deleting order due to invalid input.\nPlease enter a valid Category ID")
+                    x = messagebox.exec_()
 
     def btn_pageOrder_search_clicked(self):
             search_term = self.led_pageOrder_searchOrder.text()
@@ -3553,62 +4902,65 @@ class Ui_Form(object):
                     for column_number, data in enumerate(row_data):
                             self.table_pageOrder_Orders.setItem(row_number, column_number,
                                                                 QtWidgets.QTableWidgetItem(str(data)))
+
     def btn_pageHomepage_sales_clicked(self):
 
-            header_labels = ["Order ID", "Customer", "Received By", "Description", "Date Placed", "Amount", "Paid", "Balance"]
+            header_labels = ["Order ID", "Customer", "Received By", "Description", "Date Placed", "Amount", "Paid",
+                             "Balance"]
             self.table_pageOrder_Orders.setHorizontalHeaderLabels(header_labels)
             self.table_pageOrder_Orders.verticalHeader().setVisible(False)
             self.table_pageOrder_Orders.setRowCount(0)
 
-            self.mycursor.execute(f"SELECT order_id, customer,received_by, order_description, date_received, amount, paid, balance "
-                                  f"FROM poultry_management.orders;")
+            self.mycursor.execute(
+                    f"SELECT order_id, customer,received_by, order_description, date_received, amount, paid, balance "
+                    f"FROM poultry_management.orders;")
 
             for row_number, row_data in enumerate(self.mycursor):
                     self.table_pageOrder_Orders.insertRow(row_number)
                     for column_number, data in enumerate(row_data):
                             self.table_pageOrder_Orders.setItem(row_number, column_number,
-                                                                     QtWidgets.QTableWidgetItem(str(data)))
+                                                                QtWidgets.QTableWidgetItem(str(data)))
             self.stackedWidget_2.setCurrentWidget(self.pageOrder)
 
     def btn_pageCategory_DeleteCategory_clicked(self):
-        to_delete_id = self.led_pageCategory_DeleteCategory.text()
-        try:
-                self.mycursor.execute(f"DELETE FROM poultry_management.income_category WhERE category_id = {to_delete_id};")
-                self.db.commit()
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Succedd")
-                messagebox.setIcon(QMessageBox.Information)
-                messagebox.setText(f"Category Deleted successfully.")
-                x = messagebox.exec_()
-                self.btn_pageIncomeManagement_ViewIncomeCategory_clicked()
-                self.led_pageCategory_DeleteCategory.clear()
-        except:
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Error")
-                messagebox.setIcon(QMessageBox.Warning)
-                messagebox.setText("Error deleting record due to invalid input.\nPlease enter a valid Category ID")
-                x = messagebox.exec_()
+            to_delete_id = self.led_pageCategory_DeleteCategory.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.income_category WhERE category_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Succedd")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Category Deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageIncomeManagement_ViewIncomeCategory_clicked()
+                    self.led_pageCategory_DeleteCategory.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Error deleting record due to invalid input.\nPlease enter a valid Category ID")
+                    x = messagebox.exec_()
 
     def btn_pageCategory_AddCategory_clicked(self):
-        category = self.led_pageCategory_AddCategory.text()
-        if category == "":
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Blank Category")
-                messagebox.setIcon(QMessageBox.Warning)
-                messagebox.setText("Please provide a Category Name. \nIt should not be blank.")
-                x = messagebox.exec_()
-        else:
-                self.mycursor.execute(f"INSERT INTO poultry_management.income_category(category_name) "
-                                      f"VALUES('{category}');")
-                self.db.commit()
-                self.led_pageCategory_AddCategory.clear()
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Category Added")
-                messagebox.setIcon(QMessageBox.Information)
-                messagebox.setText(f"{category} added successfully!")
-                x = messagebox.exec_()
-                self.btn_pageIncomeManagement_ViewIncomeCategory_clicked()
-
+            category = self.led_pageCategory_AddCategory.text()
+            if category == "":
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Blank Category")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Please provide a Category Name. \nIt should not be blank.")
+                    x = messagebox.exec_()
+            else:
+                    self.mycursor.execute(f"INSERT INTO poultry_management.income_category(category_name) "
+                                          f"VALUES('{category}');")
+                    self.db.commit()
+                    self.led_pageCategory_AddCategory.clear()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Category Added")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"{category} added successfully!")
+                    x = messagebox.exec_()
+                    self.btn_pageIncomeManagement_ViewIncomeCategory_clicked()
 
     def btn_pageIncomeManagement_ViewIncomeCategory_clicked(self):
             header_labels = ["Category ID", "Category Name"]
@@ -3622,61 +4974,61 @@ class Ui_Form(object):
                     self.table_pageCategory_category.insertRow(row_number)
                     for column_number, data in enumerate(row_data):
                             self.table_pageCategory_category.setItem(row_number, column_number,
-                                                                       QtWidgets.QTableWidgetItem(str(data)))
-
+                                                                     QtWidgets.QTableWidgetItem(str(data)))
 
             self.stackedWidget_2.setCurrentWidget(self.pageCategory)
 
     def btn_pageAddincome_AddIncome_clicked(self):
-        income_date = self.led_pageAddincome_dateOfIncome.date().toString('yyyy-MM-dd')
-        income_date = datetime.strptime(income_date, "%Y-%m-%d").date()
-        description = self.led_pageAddincome_Description.text()
-        amount = self.led_pageAddincome_amount.text()
-        category = self.combo_pageAddincome_Category.currentText()
+            income_date = self.led_pageAddincome_dateOfIncome.date().toString('yyyy-MM-dd')
+            income_date = datetime.strptime(income_date, "%Y-%m-%d").date()
+            description = self.led_pageAddincome_Description.text()
+            amount = self.led_pageAddincome_amount.text()
+            category = self.combo_pageAddincome_Category.currentText()
 
-        try:
-                amount = float(amount)
-                correct_amount = True
-        except:
-                correct_amount = False
+            try:
+                    amount = float(amount)
+                    correct_amount = True
+            except:
+                    correct_amount = False
 
-        if description == "":
-                correct_description = False
-        else:
-                correct_description = True
+            if description == "":
+                    correct_description = False
+            else:
+                    correct_description = True
 
-        if correct_description is True and correct_amount is True:
-                self.mycursor.execute(f"INSERT INTO poultry_management.income(category, income_description, income_date, amount) VALUES"
-                                      f"('{category}', '{description}', '{income_date}', '{amount}');")
-                self.db.commit()
+            if correct_description is True and correct_amount is True:
+                    self.mycursor.execute(
+                            f"INSERT INTO poultry_management.income(category, income_description, income_date, amount) VALUES"
+                            f"('{category}', '{description}', '{income_date}', '{amount}');")
+                    self.db.commit()
 
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Success")
-                messagebox.setIcon(QMessageBox.Information)
-                messagebox.setText("Income has been added successfully.")
-                x = messagebox.exec_()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText("Income has been added successfully.")
+                    x = messagebox.exec_()
 
-                self.btn_pageHomepage_incomeManagement_clicked()
-        elif correct_description is False:
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Blank Description")
-                messagebox.setIcon(QMessageBox.Warning)
-                messagebox.setText("Please provide a description. \nIt should not be blank.")
-                x = messagebox.exec_()
-        elif correct_amount is False:
-                messagebox = QMessageBox()
-                messagebox.setWindowTitle("Wrong Amount")
-                messagebox.setIcon(QMessageBox.Warning)
-                messagebox.setText("You entered incorrect Amount format.")
-                x = messagebox.exec_()
+                    self.btn_pageHomepage_incomeManagement_clicked()
+            elif correct_description is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Blank Description")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Please provide a description. \nIt should not be blank.")
+                    x = messagebox.exec_()
+            elif correct_amount is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Wrong Amount")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("You entered incorrect Amount format.")
+                    x = messagebox.exec_()
 
     def btn_pageIncomeManagement_AddIncome_clicked(self):
-        self.stackedWidget_2.setCurrentWidget(self.pageAddIncome)
-        self.mycursor.execute(f"SELECT category_name FROM poultry_management.income_category;")
+            self.stackedWidget_2.setCurrentWidget(self.pageAddIncome)
+            self.mycursor.execute(f"SELECT category_name FROM poultry_management.income_category;")
 
-        categories = [i[0] for i in self.mycursor]
-        self.combo_pageAddincome_Category.addItems(categories)
-        self.led_pageAddincome_dateOfIncome.setDate(datetime.now().date())
+            categories = [i[0] for i in self.mycursor]
+            self.combo_pageAddincome_Category.addItems(categories)
+            self.led_pageAddincome_dateOfIncome.setDate(datetime.now().date())
 
     def btn_pageIncomeManagement_search_clicked(self):
             search_term = self.led_pageIncomeManagement_search.text()
@@ -3699,45 +5051,44 @@ class Ui_Form(object):
                             self.table_pageIncomeManagement_Income.setItem(row_number, column_number,
                                                                            QtWidgets.QTableWidgetItem(str(data)))
 
-
     def btn_pageCustomers_previous_clicked(self):
-        if self.customer_display_highbound > 10:
-                self.customer_display_highbound -= 10
+            if self.customer_display_highbound > 10:
+                    self.customer_display_highbound -= 10
 
-        if self.customer_display_lowbound > 0:
-                self.customer_display_lowbound -= 10
+            if self.customer_display_lowbound > 0:
+                    self.customer_display_lowbound -= 10
 
-        self.mycursor.execute(f"SELECT COUNT(*) FROM(SELECT * FROM poultry_management.customers "
-                              f"limit {self.customer_display_lowbound}, {self.customer_display_highbound}) as A")
-        records = int(self.mycursor.fetchall()[0][0])
+            self.mycursor.execute(f"SELECT COUNT(*) FROM(SELECT * FROM poultry_management.customers "
+                                  f"limit {self.customer_display_lowbound}, {self.customer_display_highbound}) as A")
+            records = int(self.mycursor.fetchall()[0][0])
 
-        if records >= 1:
-                header_labels = ["Customer ID", "First Name", "Last Name", "Address", "Phone Number", "Gender"]
-                self.table_pageCustomers_customers.setHorizontalHeaderLabels(header_labels)
-                self.table_pageCustomers_customers.verticalHeader().setVisible(False)
-                self.table_pageCustomers_customers.setRowCount(0)
+            if records >= 1:
+                    header_labels = ["Customer ID", "First Name", "Last Name", "Address", "Phone Number", "Gender"]
+                    self.table_pageCustomers_customers.setHorizontalHeaderLabels(header_labels)
+                    self.table_pageCustomers_customers.verticalHeader().setVisible(False)
+                    self.table_pageCustomers_customers.setRowCount(0)
 
-                self.mycursor.execute(f"SELECT * FROM poultry_management.customers "
-                                      f"limit {self.customer_display_lowbound}, {self.customer_display_highbound};")
+                    self.mycursor.execute(f"SELECT * FROM poultry_management.customers "
+                                          f"limit {self.customer_display_lowbound}, {self.customer_display_highbound};")
 
-                for row_number, row_data in enumerate(self.mycursor):
-                        self.table_pageCustomers_customers.insertRow(row_number)
-                        for column_number, data in enumerate(row_data):
-                                self.table_pageCustomers_customers.setItem(row_number, column_number,
-                                                                           QtWidgets.QTableWidgetItem(str(data)))
+                    for row_number, row_data in enumerate(self.mycursor):
+                            self.table_pageCustomers_customers.insertRow(row_number)
+                            for column_number, data in enumerate(row_data):
+                                    self.table_pageCustomers_customers.setItem(row_number, column_number,
+                                                                               QtWidgets.QTableWidgetItem(str(data)))
 
 
 
-        else:
-                print("Records is NOT FUCKING grater than 1")
+            else:
+                    print("Records is NOT FUCKING grater than 1")
 
-                self.customer_display_highbound -= 10
-                self.customer_display_lowbound -= 10
+                    self.customer_display_highbound -= 10
+                    self.customer_display_lowbound -= 10
 
     def btn_pageCustomers_next_clicked(self):
 
             self.customer_display_highbound += 10
-            self.customer_display_lowbound +=10
+            self.customer_display_lowbound += 10
 
             self.mycursor.execute(f"SELECT COUNT(*) FROM(SELECT * FROM poultry_management.customers "
                                   f"limit {self.customer_display_lowbound}, {self.customer_display_highbound}) as A")
@@ -3765,7 +5116,6 @@ class Ui_Form(object):
 
     def btn_pageHomepage_incomeManagement_clicked(self):
 
-
             header_labels = ["Transaction ID", "Category", "Description", "Date", "Amount"]
             self.table_pageIncomeManagement_Income.setHorizontalHeaderLabels(header_labels)
             self.table_pageIncomeManagement_Income.verticalHeader().setVisible(False)
@@ -3777,7 +5127,7 @@ class Ui_Form(object):
                     self.table_pageIncomeManagement_Income.insertRow(row_number)
                     for column_number, data in enumerate(row_data):
                             self.table_pageIncomeManagement_Income.setItem(row_number, column_number,
-                                                                       QtWidgets.QTableWidgetItem(str(data)))
+                                                                           QtWidgets.QTableWidgetItem(str(data)))
 
             self.stackedWidget_2.setCurrentWidget(self.pageIncomeManagement)
 
@@ -3933,6 +5283,7 @@ import mysql.connector
 import resources_rc
 from PyQt5.QtWidgets import QMessageBox
 from datetime import datetime
+import re
 
 
 if __name__ == "__main__":

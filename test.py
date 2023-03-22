@@ -12,7 +12,14 @@ db = mysql.connector.connect(
 
 mycursor = db.cursor()
 
-mycursor.execute(f"SELECT category_name FROM poultry_management.expense_category;")
+mycursor.execute(f"SELECT first_name, last_name FROM poultry_management.staff;")
 
-print([i[0] for i in mycursor])
+# print([f'{i[0]} {i[1]}' for i in mycursor])
+import re
+
+email = "knl@x.fd"
+pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+valid = bool(re.match(pattern, email))
+
+print(datetime.now().date())
 

@@ -71,7 +71,7 @@ CREATE TABLE expense_category(
 category_ID INT PRIMARY KEY AUTO_INCREMENT,
 category_name VARCHAR(200));
 
-INSERT INTO expense_category(category_name) VALUES('Purchase feeds'),('Staff Salary'),('Equipment Purchase'),('Rent'),('Generator Fuel'),
+INSERT INTO expense_category(category_name) VALUES('Purchase feeds'),('Staff Expenditure'),('Equipment Purchase'),('Rent'),('Generator Fuel'),
 ('Equipment Maintenance'),('Purchase chicks');
 
 
@@ -81,6 +81,41 @@ INSERT INTO expenses(category, expense_description, expense_date, amount) VALUES
 ('Purchase chicks', 'Bought 140 chicks', '2023-03-28', 10000),
 ('Purchase feeds', 'Bought layers mash', '2023-03-12', 30000),
 ('Rent', 'Paid February\'s rent', '2023-02-4', 40000);
+
+CREATE TABLE staff(
+staff_id INT PRIMARY KEY AUTO_INCREMENT,
+designation VARCHAR(100),
+first_name VARCHAR(100),
+last_name VARCHAR(100),
+address VARCHAR(100),
+email_address VARCHAR(100),
+phone_number VARCHAR(100),
+salary DECIMAL(10,2));
+
+INSERT INTO staff(designation , first_name, last_name, address, email_address, phone_number, salary) values
+('Manager','Ian','Mweta','Ruiru, Kiambu','ianmewta@muguku.com','254797012369',60000),
+('Staff','Alexa','Muthoni','Mwatate, Coast','alexamuthoni@muguku.com','254704163790', 23000),
+('IT Tecnician','Skyler', 'Mdamu', 'Boni Forest Reserve, Tana River', 'skylermdamu@muguku.com','254793984667',28000),
+('Mechanic','Justin','Nyanchae','Kisii Town, Kisii', 'justinnyanchae@gmail.com', '254703629028',20000);
+
+CREATE TABLE designation(
+designation_id INT PRIMARY KEY AUTO_INCREMENT,
+designation_name VARCHAR(100));
+
+INSERT INTO designation(designation_name) VALUES ('Manager'), ('Mechanic'), ('Staff');
+
+CREATE TABLE payments(
+payment_id INT PRIMARY KEY AUTO_INCREMENT,
+paid_to VARCHAR(100),
+incentive_type VARCHAR(100),
+payment_description VARCHAR(100),
+amount DECIMAL(8,2)
+);
+
+INSERT INTO payments(paid_to, incentive_type, payment_description, amount) VALUES
+('Alexa Muthoni','Salary','February\'s Salary',23000);
+
+
 
 
 
