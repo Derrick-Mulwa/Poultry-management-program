@@ -60,5 +60,27 @@ INSERT INTO orders(customer, received_by, order_description, date_received, amou
 ('Ann Nduta', 'Priscilla Mbugua', '310 chicken', '2023-02-14', 36000, 30000, 6000),
 ('Kamlesh Patni', 'Eve Tande', '2000 crates of egg', '2023-03-13', 700000, 700000, 0);
 
+CREATE TABLE expenses(
+expense_id INT PRIMARY KEY AUTO_INCREMENT,
+category VARCHAR(100),
+expense_description VARCHAR(100),
+expense_date DATE,
+amount DECIMAL(8,2));
+
+CREATE TABLE expense_category(
+category_ID INT PRIMARY KEY AUTO_INCREMENT,
+category_name VARCHAR(200));
+
+INSERT INTO expense_category(category_name) VALUES('Purchase feeds'),('Staff Salary'),('Equipment Purchase'),('Rent'),('Generator Fuel'),
+('Equipment Maintenance'),('Purchase chicks');
+
+
+INSERT INTO expenses(category, expense_description, expense_date, amount) VALUES 
+('Staff Salary', 'Paid February Salaries to managers', '2023-02-28', 120000),
+('Equipment Maintenance', 'Took the loan mowers to the mechanic', '2023-02-19', 3500),
+('Purchase chicks', 'Bought 140 chicks', '2023-03-28', 10000),
+('Purchase feeds', 'Bought layers mash', '2023-03-12', 30000),
+('Rent', 'Paid February\'s rent', '2023-02-4', 40000);
+
 
 
