@@ -6516,8 +6516,1998 @@ class Ui_Form(object):
         self.label_141.setText(_translate("Form", "Reaction"))
         self.led_pageAddExpense_Description_21.setPlaceholderText(_translate("Form", "Newcastle Lasota"))
         self.label_140.setText(_translate("Form", "Select Batch flock"))
-import resources_rc
 
+
+        # Edits
+
+        self.db = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="root"
+        )
+
+        self.mycursor = self.db.cursor()
+
+        self.led_pageSignin_password.setEchoMode(QtWidgets.QLineEdit.Password)
+
+        self.btn_pageSignin_submit.clicked.connect(self.btn_pageSignin_submit_clicked)
+        self.pushButton.clicked.connect(self.logout)
+        self.btn_pageHomepage_customer.clicked.connect(self.btn_pageHomepage_customer_clicked)
+        self.btn_pageHomepage_viewCustomerDetails.clicked.connect(self.btn_pageHomepage_customer_clicked)
+        self.btn_pageHomepage_Dashboard.clicked.connect(self.btn_pageHomepage_Dashboard_clicked)
+        self.btn_pageCustomers_search.clicked.connect(self.btn_pageCustomers_search_clicked)
+        self.btn_pageCustomers_addCustomer.clicked.connect(self.btn_pageCustomers_addCustomer_clicked)
+        self.btn_addCustomer.clicked.connect(self.btn_addCustomer_clicked)
+        self.customer_display_highbound = 10
+        self.customer_display_lowbound = 0
+        self.btn_pageCustomers_deleteCustomer.clicked.connect(self.btn_pageCustomers_deleteCustomer_clicked)
+        self.btn_pageDeleteCustomer_deleteCustomer.clicked.connect(self.btn_pageDeleteCustomer_deleteCustomer_clicked)
+        self.btn_pageHomepage_incomeManagement.clicked.connect(self.btn_pageHomepage_incomeManagement_clicked)
+        self.btn_pageHomepage_viewIncomeDetails.clicked.connect(self.btn_pageHomepage_incomeManagement_clicked)
+        self.btn_pageCustomers_next.clicked.connect(self.btn_pageCustomers_next_clicked)
+        self.btn_pageCustomers_previous.clicked.connect(self.btn_pageCustomers_previous_clicked)
+        self.btn_pageIncomeManagement_search.clicked.connect(self.btn_pageIncomeManagement_search_clicked)
+        self.btn_pageIncomeManagement_AddIncome.clicked.connect(self.btn_pageIncomeManagement_AddIncome_clicked)
+        self.btn_pageAddincome_AddIncome.clicked.connect(self.btn_pageAddincome_AddIncome_clicked)
+        self.btn_pageIncomeManagement_ViewIncomeCategory.clicked.connect(
+                self.btn_pageIncomeManagement_ViewIncomeCategory_clicked)
+        self.btn_pageCategory_AddCategory.clicked.connect(self.btn_pageCategory_AddCategory_clicked)
+        self.btn_pageCategory_DeleteCategory.clicked.connect(self.btn_pageCategory_DeleteCategory_clicked)
+        self.btn_pageHomepage_sales.clicked.connect(self.btn_pageHomepage_sales_clicked)
+        self.btn_pageHomepage_viewSalesDetails.clicked.connect(self.btn_pageHomepage_sales_clicked)
+        self.btn_pageOrder_search.clicked.connect(self.btn_pageOrder_search_clicked)
+        self.btn_pageOrder_deleteOrder.clicked.connect(self.btn_pageOrder_deleteOrder_clicked)
+        self.btn_pageOrder_addOrder.clicked.connect(self.btn_pageOrder_addOrder_clicked)
+        self.btn_addSale.clicked.connect(self.btn_addSale_clicked)
+        self.btn_pageHomepage_expenseManagement.clicked.connect(self.btn_pageHomepage_expenseManagement_clicked)
+        self.btn_pageHomepage_viewExpensesDetails.clicked.connect(self.btn_pageHomepage_expenseManagement_clicked)
+        self.btn_pageExpenseManagement_search.clicked.connect(self.btn_pageExpenseManagement_search_clicked)
+        self.btn_pageExpenseManagement_ViewExpenseCategory.clicked.connect(
+                self.btn_pageExpenseManagement_ViewExpenseCategory_clicked)
+        self.btn_pageExpenseCategory_DeleteCategory.clicked.connect(self.btn_pageExpenseCategory_DeleteCategory_clicked)
+        self.btn_pageCategory_AddCategory_2.clicked.connect(self.btn_pageCategory_AddCategory_2_clicked)
+        self.btn_pageCategory_search_2.clicked.connect(self.btn_pageCategory_search_2_clicked)
+        self.btn_pageExpenseManagement_AddExpense.clicked.connect(self.btn_pageExpenseManagement_AddExpense_clicked)
+        self.btn_pageAddExpense_add.clicked.connect(self.btn_pageAddExpense_add_clicked)
+        self.btn_pageHomepage_staffManagement.clicked.connect(self.btn_pageHomepage_staffManagement_clicked)
+        self.btn_pageExpenseManagement_search_2.clicked.connect(self.btn_pageExpenseManagement_search_2_clicked)
+        self.btn_pageExpenseCategory_DeleteStaff.clicked.connect(self.btn_pageExpenseCategory_DeleteStaff_clicked)
+        self.btn_pageExpenseManagement_ViewExpenseCategory_2.clicked.connect(self.btn_pageExpenseManagement_ViewExpenseCategory_2_clicked)
+        self.btn_pageCategory_search_3.clicked.connect(self.btn_pageCategory_search_3_clicked)
+        self.btn_pageExpenseCategory_DeleteCategory_2.clicked.connect(self.btn_pageExpenseCategory_DeleteCategory_2_clicked)
+        self.btn_pageCategory_AddCategory_3.clicked.connect(self.btn_pageCategory_AddCategory_3_clicked)
+        self.btn_pageExpenseManagement_AddExpense_2.clicked.connect(self.btn_pageExpenseManagement_AddExpense_2_cliked)
+        self.btn_pageAddExpense_add_2.clicked.connect(self.btn_pageAddExpense_add_2_clicked)
+        self.btn_pageExpenseManagement_AddExpense_4.clicked.connect(self.btn_pageExpenseManagement_AddExpense_4_clicked)
+        self.btn_pageAddExpense_add_3.clicked.connect(self.btn_pageAddExpense_add_3_clicked)
+        self.btn_pageHomepage_settings.clicked.connect(self.btn_pageHomepage_settings_clicked)
+        self.btn_pageAddExpense_add_5.clicked.connect(self.btn_pageAddExpense_add_5_clicked)
+        self.btn_pageCategory_AddCategory_5.clicked.connect(self.btn_pageCategory_AddCategory_5_clicked)
+        self.btn_pageCategory_AddCategory_4.clicked.connect(self.btn_pageCategory_AddCategory_4_clicked)
+        self.btn_pageAddExpense_add_6.clicked.connect(self.btn_pageAddExpense_add_6_clicked)
+        self.btn_pageCategory_AddCategory_6.clicked.connect(self.btn_pageCategory_AddCategory_6_clicked)
+        self.btn_pageCategory_AddCategory_7.clicked.connect(self.btn_pageCategory_AddCategory_7_clicked)
+        self.btn_pageAddExpense_add_8.clicked.connect(self.btn_pageAddExpense_add_8_clicked)
+        self.btn_pageCategory_AddCategory_8.clicked.connect(self.btn_pageCategory_AddCategory_8_clicked)
+        self.btn_pageCategory_AddCategory_9.clicked.connect(self.btn_pageCategory_AddCategory_9_clicked)
+        self.btn_pageAddExpense_add_7.clicked.connect(self.btn_pageAddExpense_add_7_clicked)
+        self.btn_pageCategory_AddCategory_10.clicked.connect(self.btn_pageCategory_AddCategory_10_clicked)
+        self.btn_pageCategory_AddCategory_11.clicked.connect(self.btn_pageCategory_AddCategory_11_clicked)
+        self.btn_pageAddExpense_add_4.clicked.connect(self.btn_pageAddExpense_add_4_clicked)
+        self.btn_pageHomepage_batchFlock.clicked.connect(self.btn_pageHomepage_batchFlock_clicked)
+        self.btn_pageHomepage_viewBachFlock.clicked.connect(self.btn_pageHomepage_batchFlock_clicked)
+        self.btn_pageOrder_search_2.clicked.connect(self.btn_pageOrder_search_2_clicked)
+        self.btn_pageOrder_deleteOrder_2.clicked.connect(self.btn_pageOrder_deleteOrder_2_clicked)
+        self.btn_pageOrder_addOrder_2.clicked.connect(self.btn_pageOrder_addOrder_2_clicked)
+        self.btn_pageAddExpense_add_9.clicked.connect(self.btn_pageAddExpense_add_9_clicked)
+        self.btn_pageHomepage_eggProduction.clicked.connect(self.btn_pageHomepage_eggProduction_clicked)
+        self.btn_pageHomepage_viewEggProduction.clicked.connect(self.btn_pageHomepage_eggProduction_clicked)
+        self.btn_pageOrder_search_3.clicked.connect(self.btn_pageOrder_search_3_cliced)
+        self.btn_pageOrder_deleteOrder_3.clicked.connect(self.btn_pageOrder_deleteOrder_3_clicked)
+        self.btn_pageOrder_addOrder_3.clicked.connect(self.btn_pageOrder_addOrder_3_clicked)
+        self.btn_pageAddExpense_add_10.clicked.connect(self.btn_pageAddExpense_add_10_clicked)
+        self.btn_pageHomepage_hatchery.clicked.connect(self.btn_pageHomepage_hatchery_clicked)
+        self.btn_pageOrder_search_4.clicked.connect(self.btn_pageOrder_search_4_clicked)
+        self.btn_pageOrder_deleteOrder_4.clicked.connect(self.btn_pageOrder_deleteOrder_4_cliced)
+        self.btn_pageOrder_addOrder_4.clicked.connect(self.btn_pageOrder_addOrder_4_clicked)
+        self.btn_pageHomepage_viewHatchery.clicked.connect(self.btn_pageHomepage_hatchery_clicked)
+        self.btn_pageAddExpense_add_11.clicked.connect(self.btn_pageAddExpense_add_11_clicked)
+
+
+
+    def btn_pageAddExpense_add_11_clicked(self):
+            income_date = self.dateEdit_3.date().toString('yyyy-MM-dd')
+            date = datetime.strptime(income_date, "%Y-%m-%d").date()
+
+            batch_flock = self.combo_pageAddExpense_Category_12.currentText()
+            staff = self.combo_pageAddExpense_Category_11.currentText()
+
+            if self.led_pageAddExpense_Description_17.text() == "":
+                    name_done = False
+            else:
+                    name = self.led_pageAddExpense_Description_17.text()
+                    name_done = True
+
+
+            if self.led_pageAddExpense_Description_23.text() == "":
+                    total_done = False
+            else:
+                    total = self.led_pageAddExpense_Description_23.text()
+                    try:
+                            int(total)
+                            total_done = True
+                    except:
+                            total_done = False
+
+            if self.led_pageAddExpense_Description_24.text() == "":
+                    hatched_done = False
+            else:
+                    hatched = self.led_pageAddExpense_Description_24.text()
+                    try:
+                            int(hatched)
+                            hatched_done = True
+                    except:
+                            hatched_done = False
+
+            if self.led_pageAddExpense_Description_22.text() == "":
+                    survive_done = False
+            else:
+                    survived = self.led_pageAddExpense_Description_22.text()
+                    try:
+                            int(survived)
+                            survive_done = True
+                    except:
+                            survive_done = False
+
+            if (total_done is True) and (name_done is True) and (survive_done is True) and (hatched_done is True):
+                    try:
+                            self.mycursor.execute(
+                                    f"INSERT INTO poultry_management.hatcheryRecods(batch_flock, name, staff, introduction_date, total, hatched,survived)"
+                                    f" VALUES('{batch_flock}', '{name}', '{staff}', '{date}', '{total}', '{hatched}', '{survived}');")
+                            self.db.commit()
+
+                            messagebox = QMessageBox()
+                            messagebox.setWindowTitle("Hatchery record added")
+                            messagebox.setIcon(QMessageBox.Information)
+                            messagebox.setText(f"Hatchery record added successfully.")
+                            x = messagebox.exec_()
+
+                            self.led_pageAddExpense_Description_17.clear()
+                            self.led_pageAddExpense_Description_24.clear()
+                            self.led_pageAddExpense_Description_23.clear()
+                            self.led_pageAddExpense_Description_22.clear()
+                            self.btn_pageHomepage_hatchery_clicked()
+                    except:
+                            messagebox = QMessageBox()
+                            messagebox.setWindowTitle("Fail")
+                            messagebox.setIcon(QMessageBox.Warning)
+                            messagebox.setText(
+                                    f"An unexpected error prevented the hatchery record from being saved. \n"
+                                    f"Check your input fields and try again.")
+                            x = messagebox.exec_()
+
+            elif name_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Name field received wrong or invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif total_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Total field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif hatched_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Hatched field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif survive_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Survive field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+
+    def btn_pageOrder_addOrder_4_clicked(self):
+            self.combo_pageAddExpense_Category_11.clear()
+            self.mycursor.execute(f"SELECT first_name, last_name FROM poultry_management.staff;")
+            staff_names = [f'{i[0]} {i[1]}' for i in self.mycursor]
+            self.combo_pageAddExpense_Category_11.addItems(staff_names)
+            self.dateEdit_3.setDate(datetime.now().date())
+
+            self.combo_pageAddExpense_Category_12.clear()
+            self.mycursor.execute(f"SELECT breed_type, batch_number FROM poultry_management.batchnumber;")
+            batch = [f'{i[0]} {i[1]}' for i in self.mycursor]
+            self.combo_pageAddExpense_Category_12.addItems(batch)
+            self.stackedWidget_2.setCurrentWidget(self.pageAddHatcheryRecords)
+
+    def btn_pageOrder_deleteOrder_4_cliced(self):
+            to_delete_id = self.led_pageOrder_searchOrder_7.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.hatcheryRecods WHERE hatchery_ID = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Hatchery record deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageHomepage_hatchery_clicked()
+                    self.led_pageOrder_searchOrder_7.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting hatchery record due to invalid input.\nPlease enter a valid hatch_id")
+                    x = messagebox.exec_()
+
+
+    def btn_pageOrder_search_4_clicked(self):
+            search_term = self.led_pageOrder_searchOrder_8.text()
+
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT * FROM poultry_management.hatcheryRecods WHERE batch_flock REGEXP '{search_term}' or name REGEXP '{search_term}' or"
+                    f" staff REGEXP '{search_term}' or introduction_date REGEXP '{search_term}' or total REGEXP '{search_term}' or "
+                    f"hatched REGEXP '{search_term}' or survived REGEXP '{search_term}';")
+
+            self.table_pageOrder_Orders_4.setColumnCount(8)
+            header_labels = ['Hatch ID', 'Batch Flock', 'Name', 'Staff', 'Introduction Date', 'Total', 'Hatched', 'Survived']
+            self.table_pageOrder_Orders_4.setHorizontalHeaderLabels(header_labels)
+            self.table_pageOrder_Orders_4.verticalHeader().setVisible(False)
+            self.table_pageOrder_Orders_4.setRowCount(0)
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageOrder_Orders_4.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageOrder_Orders_4.setItem(row_number, column_number,
+                                                                  QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageHomepage_hatchery_clicked(self):
+
+        self.table_pageOrder_Orders_4.setColumnCount(8)
+        header_labels = ['Hatch ID', 'Batch Flock', 'Name', 'Staff', 'Introduction Date', 'Total', 'Hatched', 'Survived']
+        self.table_pageOrder_Orders_4.setHorizontalHeaderLabels(header_labels)
+        self.table_pageOrder_Orders_4.verticalHeader().setVisible(False)
+        self.table_pageOrder_Orders_4.setRowCount(0)
+
+        self.mycursor.execute(f"SELECT * FROM poultry_management.hatcheryrecods;")
+
+        for row_number, row_data in enumerate(self.mycursor):
+                self.table_pageOrder_Orders_4.insertRow(row_number)
+                for column_number, data in enumerate(row_data):
+                        self.table_pageOrder_Orders_4.setItem(row_number, column_number,
+                                                                   QtWidgets.QTableWidgetItem(str(data)))
+
+        self.stackedWidget_2.setCurrentWidget(self.pageHatcheryRecords)
+    def btn_pageAddExpense_add_10_clicked(self):
+            income_date = self.dateEdit_2.date().toString('yyyy-MM-dd')
+            date = datetime.strptime(income_date, "%Y-%m-%d").date()
+
+            batch_flock = self.combo_pageAddExpense_Category_10.currentText()
+            staff = self.combo_pageAddExpense_Category_9.currentText()
+
+            if self.led_pageAddExpense_Description_16.text() == "":
+                    total_done = False
+            else:
+                    total = self.led_pageAddExpense_Description_16.text()
+
+                    try:
+                            int(total)
+                            total_done = True
+
+                    except:
+                            total_done = False
+
+            if self.led_pageAddExpense_Description_15.text() == "":
+                    cracked_done = False
+            else:
+                    cracked = self.led_pageAddExpense_Description_15.text()
+                    try:
+                            int(cracked)
+                            cracked_done = True
+                    except:
+                            cracked_done = False
+
+
+            if self.led_pageAddExpense_Description_20.text() == "":
+                    double_york_done = False
+            else:
+                    double_york = self.led_pageAddExpense_Description_20.text()
+                    try:
+                            int(double_york)
+                            double_york_done = True
+                    except:
+                            double_york_done = False
+
+
+
+            if self.led_pageAddExpense_Description_19.text() == "":
+                    dirty_done = False
+            else:
+                    dirty = self.led_pageAddExpense_Description_19.text()
+                    try:
+                            int(dirty)
+                            dirty_done = True
+                    except:
+                            dirty_done = False
+
+
+
+            if self.led_pageAddExpense_Description_18.text() == "":
+                    other_done = False
+            else:
+                    other = self.led_pageAddExpense_Description_18.text()
+                    try:
+                            int(other)
+                            other_done = True
+                    except:
+                            other_done = False
+
+
+
+
+
+            if (total_done is True) and (cracked_done is True) and (double_york_done is True) and (dirty_done is True) and (other_done is True):
+                    try:
+                            self.mycursor.execute(
+                                    f"INSERT INTO poultry_management.eggProduction(batch_flock_ID, total, cracked, double_yolk, dirty, others, staff, date) "
+                                    f"VALUES('{batch_flock}', '{total}', '{cracked}', '{double_york}', '{dirty}', '{other}', '{staff}', '{date}');")
+                            self.db.commit()
+
+                            messagebox = QMessageBox()
+                            messagebox.setWindowTitle("Egg production added")
+                            messagebox.setIcon(QMessageBox.Information)
+                            messagebox.setText(f"Egg production added successfully.")
+                            x = messagebox.exec_()
+
+                            self.led_pageAddExpense_Description_15.clear()
+                            self.led_pageAddExpense_Description_16.clear()
+                            self.led_pageAddExpense_Description_18.clear()
+                            self.led_pageAddExpense_Description_19.clear()
+                            self.led_pageAddExpense_Description_20.clear()
+                            self.combo_pageAddExpense_Category_10.clear()
+                            self.combo_pageAddExpense_Category_9.clear()
+                            self.btn_pageHomepage_eggProduction_clicked()
+                    except:
+                            messagebox = QMessageBox()
+                            messagebox.setWindowTitle("Fail")
+                            messagebox.setIcon(QMessageBox.Warning)
+                            messagebox.setText(f"An unexpected error prevented the egg production record from being saved. \n"
+                                               f"Check your answers and try again.")
+                            x = messagebox.exec_()
+
+            elif total_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Total field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif cracked_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Cracked field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif double_york_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Eggs with double york field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif dirty_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Dirty field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif other_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Other field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+    def btn_pageOrder_addOrder_3_clicked(self):
+            self.combo_pageAddExpense_Category_9.clear()
+            self.mycursor.execute(f"SELECT first_name, last_name FROM poultry_management.staff;")
+            staff_names = [f'{i[0]} {i[1]}' for i in self.mycursor]
+            self.combo_pageAddExpense_Category_9.addItems(staff_names)
+            self.dateEdit_2.setDate(datetime.now().date())
+
+            self.mycursor.execute(f"SELECT breed_type, batch_number FROM poultry_management.batchnumber;")
+            batch = [f'{i[0]} {i[1]}' for i in self.mycursor]
+            self.combo_pageAddExpense_Category_10.addItems(batch)
+
+            self.stackedWidget_2.setCurrentWidget(self.pageAddEggProd)
+    def btn_pageOrder_deleteOrder_3_clicked(self):
+            to_delete_id = self.led_pageOrder_searchOrder_5.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.eggproduction WHERE production_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Egg production record deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageHomepage_eggProduction_clicked()
+                    self.led_pageOrder_searchOrder_5.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting egg production record due to invalid input.\nPlease enter a valid Batch ID")
+                    x = messagebox.exec_()
+    def btn_pageOrder_search_3_cliced(self):
+            search_term = self.led_pageOrder_searchOrder_6.text()
+
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT * FROM poultry_management.eggproduction WHERE "
+                    f"batch_flock_ID REGEXP '{search_term}' or total REGEXP '{search_term}' or cracked REGEXP '{search_term}' or"
+                    f" double_yolk REGEXP '{search_term}' or dirty REGEXP '{search_term}' or others REGEXP '{search_term}' "
+                    f"or staff REGEXP '{search_term}' or date REGEXP '{search_term}';")
+
+            self.table_pageOrder_Orders_3.setColumnCount(9)
+            header_labels = ['Egg production ID', 'Batch Fock ID', 'Total', 'Cracked', 'Double York', 'Dirty', 'Other',
+                             'Staff', 'Date']
+            self.table_pageOrder_Orders_3.setHorizontalHeaderLabels(header_labels)
+            self.table_pageOrder_Orders_3.verticalHeader().setVisible(False)
+            self.table_pageOrder_Orders_3.setRowCount(0)
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageOrder_Orders_3.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageOrder_Orders_3.setItem(row_number, column_number,
+                                                                  QtWidgets.QTableWidgetItem(str(data)))
+
+
+    def btn_pageHomepage_eggProduction_clicked(self):
+        self.table_pageOrder_Orders_3.setColumnCount(9)
+        header_labels = ['Egg production ID', 'Batch Fock ID', 'Total', 'Cracked', 'Double York', 'Dirty', 'Other', 'Staff', 'Date']
+        self.table_pageOrder_Orders_3.setHorizontalHeaderLabels(header_labels)
+        self.table_pageOrder_Orders_3.verticalHeader().setVisible(False)
+        self.table_pageOrder_Orders_3.setRowCount(0)
+
+        self.mycursor.execute(f"SELECT * FROM poultry_management.eggproduction;")
+
+        for row_number, row_data in enumerate(self.mycursor):
+                self.table_pageOrder_Orders_3.insertRow(row_number)
+                for column_number, data in enumerate(row_data):
+                        self.table_pageOrder_Orders_3.setItem(row_number, column_number,
+                                                              QtWidgets.QTableWidgetItem(str(data)))
+
+        self.stackedWidget_2.setCurrentWidget(self.pageEggProductions)
+
+    def btn_pageAddExpense_add_9_clicked(self):
+        income_date = self.dateEdit.date().toString('yyyy-MM-dd')
+        date = datetime.strptime(income_date, "%Y-%m-%d").date()
+
+        breed = self.combo_pageAddExpense_Category_5.currentText()
+        expired = self.combo_pageAddExpense_Category_6.currentText()
+        laying = self.combo_pageAddExpense_Category_7.currentText()
+
+        if self.led_pageAddExpense_Description_13.text() == "":
+                total_done = False
+        else:
+                total = self.led_pageAddExpense_Description_13.text()
+
+                try:
+                        int(total)
+                        total_done = True
+
+                except:
+                        total_done = False
+
+        if self.led_pageAddExpense_Description_14.text() == "":
+                batch_done = False
+        else:
+                batch = self.led_pageAddExpense_Description_14.text()
+                try:
+                        int(batch)
+                        batch_done = True
+                except:
+                        batch_done = False
+
+        if (total_done is True) and (batch_done is True) :
+                try:
+                        self.mycursor.execute(
+                                f"INSERT INTO poultry_management.batchFlock(breed_type, total, date, expired, laying, batch_number) VALUES"
+                                f"('{breed}', '{total}', '{date}', '{expired}', '{laying}', '{batch}');")
+                        self.db.commit()
+
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Batch flock added")
+                        messagebox.setIcon(QMessageBox.Information)
+                        messagebox.setText(f"Batch flock added successfully.")
+                        x = messagebox.exec_()
+
+                        self.led_pageAddExpense_Description_14.clear()
+                        self.led_pageAddExpense_Description_13.clear()
+                        self.btn_pageHomepage_batchFlock_clicked()
+                except:
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Fail")
+                        messagebox.setIcon(QMessageBox.Warning)
+                        messagebox.setText(f"An unexpected error prevented the batch flock from being saved. \n"
+                                           f"Check your answers and try again.")
+                        x = messagebox.exec_()
+
+        elif total_done is False:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Error")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText(
+                        "Total field received wrong invalid input.\nPlease enter a valid answer")
+                x = messagebox.exec_()
+
+        elif batch_done is False:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Error")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText(
+                        "Batch Number field received wrong invalid input.\nPlease enter a valid answer")
+                x = messagebox.exec_()
+
+
+    def btn_pageOrder_addOrder_2_clicked(self):
+        self.combo_pageAddExpense_Category_5.clear()
+        self.mycursor.execute(f"SELECT breed_name FROM poultry_management.breedtype;")
+        breeds = [i[0] for i in self.mycursor]
+        self.combo_pageAddExpense_Category_5.addItems(breeds)
+
+        self.dateEdit.setDate(datetime.now().date())
+
+        self.stackedWidget_2.setCurrentWidget(self.pageAddBatchFlock)
+    def btn_pageOrder_deleteOrder_2_clicked(self):
+            to_delete_id = self.led_pageOrder_searchOrder_3.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.batchflock WHERE batch_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Batch flock  deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageHomepage_batchFlock_clicked()
+                    self.led_pageOrder_searchOrder_3.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting batch flock due to invalid input.\nPlease enter a valid Batch ID")
+                    x = messagebox.exec_()
+    def btn_pageOrder_search_2_clicked(self):
+            search_term = self.led_pageOrder_searchOrder_4.text()
+
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT * FROM poultry_management.batchflock WHERE breed_type REGEXP '{search_term}' or total REGEXP '{search_term}' or"
+                    f" date REGEXP '{search_term}' or expired REGEXP '{search_term}' or laying REGEXP '{search_term}' or"
+                    f" batch_number REGEXP '{search_term}';")
+
+            self.table_pageOrder_Orders_2.setColumnCount(7)
+            header_labels = ['Batch ID', 'Breed Type', 'Total', 'Date', 'Expired', 'Laying', 'Batch number']
+            self.table_pageOrder_Orders_2.setHorizontalHeaderLabels(header_labels)
+            self.table_pageOrder_Orders_2.verticalHeader().setVisible(False)
+            self.table_pageOrder_Orders_2.setRowCount(0)
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageOrder_Orders_2.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageOrder_Orders_2.setItem(row_number, column_number,
+                                                                  QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageHomepage_batchFlock_clicked(self):
+        self.table_pageOrder_Orders_2.setColumnCount(7)
+        header_labels = ['Batch ID', 'Breed Type', 'Total', 'Date', 'Expired', 'Laying', 'Batch number']
+        self.table_pageOrder_Orders_2.setHorizontalHeaderLabels(header_labels)
+        self.table_pageOrder_Orders_2.verticalHeader().setVisible(False)
+        self.table_pageOrder_Orders_2.setRowCount(0)
+
+        self.mycursor.execute(f"SELECT * FROM poultry_management.batchflock;")
+
+        for row_number, row_data in enumerate(self.mycursor):
+                self.table_pageOrder_Orders_2.insertRow(row_number)
+                for column_number, data in enumerate(row_data):
+                        self.table_pageOrder_Orders_2.setItem(row_number, column_number,
+                                                                   QtWidgets.QTableWidgetItem(str(data)))
+
+        self.stackedWidget_2.setCurrentWidget(self.pageBatchFlock)
+
+    def btn_pageAddExpense_add_4_clicked(self):
+            if self.led_pageAddExpense_Description_11.text() == "":
+                name_done = False
+            else:
+                name = self.led_pageAddExpense_Description_11.text()
+                name_done = True
+
+
+            if self.led_pageAddExpense_Description_10.text() == "":
+                strain_done = False
+            else:
+                strain = self.led_pageAddExpense_Description_10.text()
+                strain_done = True
+
+
+            if self.led_pageAddExpense_Description_9.text() == "":
+                route_done = False
+            else:
+                route = self.led_pageAddExpense_Description_9.text()
+                route_done = True
+
+
+            if self.led_pageAddExpense_Description_8.text() == "":
+                dose_done = False
+            else:
+                dose = self.led_pageAddExpense_Description_8.text()
+                dose_done = True
+
+
+            if self.led_pageAddExpense_amount_4.text() == "":
+                age_done = False
+            else:
+                age = self.led_pageAddExpense_amount_4.text()
+                age_done = True
+
+
+            if (strain_done is True) and (name_done is True) and (route_done is True) and (dose_done is True) and (age_done is True):
+                try:
+                        self.mycursor.execute(f"INSERT INTO poultry_management.vaccine(vaccine_name, vaccine_strain, vaccine_route, vaccine_dose, vaccine_age) "
+                                              f"VALUES ('{name}','{strain}','{route}','{dose}','{age}');")
+                        self.db.commit()
+
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Program added")
+                        messagebox.setIcon(QMessageBox.Information)
+                        messagebox.setText(f"Vaccination added successfully.")
+                        x = messagebox.exec_()
+
+                        self.led_pageAddExpense_amount_4.clear()
+                        self.led_pageAddExpense_Description_8.clear()
+                        self.led_pageAddExpense_Description_9.clear()
+                        self.led_pageAddExpense_Description_10.clear()
+                        self.led_pageAddExpense_Description_11.clear()
+                        self.btn_pageAddExpense_add_7_clicked()
+                except:
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Fail")
+                        messagebox.setIcon(QMessageBox.Warning)
+                        messagebox.setText(f"An unexpected eror prevented the record from being saved. \n"
+                                           f"Check your answers and try again.")
+                        x = messagebox.exec_()
+
+            elif strain_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Strain field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif name_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Name field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif route_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Route field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif dose_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Dose field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif age_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Age field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+
+
+
+
+
+    def btn_pageCategory_AddCategory_11_clicked(self):
+        self.stackedWidget_3.setCurrentWidget(self.pageAddVaccination)
+    def btn_pageCategory_AddCategory_10_clicked(self):
+            to_delete_id = self.led_pageCategory_AddCategory_10.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.vaccine WHERE vaccine_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Vaccination program deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageAddExpense_add_7_clicked()
+                    self.led_pageCategory_AddCategory_10.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting Vaccination program due to invalid input.\nPlease enter a valid breed ID")
+                    x = messagebox.exec_()
+
+    def btn_pageAddExpense_add_7_clicked(self):
+            self.label_85.setText("VACCINATION ROGRAMME")
+            self.table_pageCategory_category_7.setColumnCount(6)
+            header_labels = ["Program ID", "Name", "Strain", "Route", "Dose", "Age"]
+            self.table_pageCategory_category_7.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCategory_category_7.verticalHeader().setVisible(False)
+            self.table_pageCategory_category_7.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT * FROM poultry_management.vaccine;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCategory_category_7.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCategory_category_7.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+            self.stackedWidget_3.setCurrentWidget(self.pageVaccination)
+    def btn_pageCategory_AddCategory_9_clicked(self):
+            category = self.led_pageCategory_AddCategory_9.text()
+            breed_type = self.comboBox.currentText()
+            if category == "":
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Blank batch number")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Please provide a batch number. \nIt should not be blank.")
+                    x = messagebox.exec_()
+            else:
+                    try:
+                            int(category)
+                            self.mycursor.execute(f"INSERT INTO poultry_management.batchnumber(breed_type, batch_number) "
+                                                  f"VALUES ('{breed_type}', '{category}');")
+                            self.db.commit()
+                            self.led_pageCategory_AddCategory_9.clear()
+                            messagebox = QMessageBox()
+                            messagebox.setWindowTitle("Batch Added")
+                            messagebox.setIcon(QMessageBox.Information)
+                            messagebox.setText(f"{breed_type}: {category} added successfully!")
+                            x = messagebox.exec_()
+                            self.btn_pageAddExpense_add_8_clicked()
+                    except:
+                            messagebox = QMessageBox()
+                            messagebox.setWindowTitle("Invalid batch number")
+                            messagebox.setIcon(QMessageBox.Warning)
+                            messagebox.setText("Invalid batch number! \nPlease provide a digits only for the batch number.")
+                            x = messagebox.exec_()
+
+    def btn_pageCategory_AddCategory_8_clicked(self):
+            to_delete_id = self.led_pageCategory_AddCategory_8.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.batchnumber WHERE batch_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Batch number deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageAddExpense_add_8_clicked()
+                    self.led_pageCategory_AddCategory_8.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting Batch Number due to invalid input.\nPlease enter a valid breed ID")
+                    x = messagebox.exec_()
+
+    def btn_pageAddExpense_add_8_clicked(self):
+            self.label_85.setText("BATCH NUMBER TYPE")
+            self.comboBox.clear()
+            self.mycursor.execute(f"SELECT breed_name FROM poultry_management.breedtype;")
+            items = [i[0] for i in self.mycursor]
+            self.comboBox.addItems(items)
+
+            self.table_pageCategory_category_6.setColumnCount(3)
+            header_labels = ["Batch ID", "Breed type", "Batch Number"]
+            self.table_pageCategory_category_6.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCategory_category_6.verticalHeader().setVisible(False)
+            self.table_pageCategory_category_6.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT * FROM poultry_management.batchnumber;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCategory_category_6.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCategory_category_6.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+            self.stackedWidget_3.setCurrentWidget(self.pageBatch)
+
+    def btn_pageCategory_AddCategory_7_clicked(self):
+            category = self.led_pageCategory_AddCategory_7.text()
+            if category == "":
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Blank breed name")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Please provide a breed name. \nIt should not be blank.")
+                    x = messagebox.exec_()
+            else:
+                    self.mycursor.execute(f"INSERT INTO poultry_management.breedtype(breed_name) VALUES('{category}');")
+                    self.db.commit()
+                    self.led_pageCategory_AddCategory_7.clear()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Breed name Added")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"{category} added successfully!")
+                    x = messagebox.exec_()
+                    self.btn_pageAddExpense_add_6_clicked()
+
+    def btn_pageCategory_AddCategory_6_clicked(self):
+            to_delete_id = self.led_pageCategory_AddCategory_6.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.breedtype WHERE breed_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Breed type deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageAddExpense_add_6_clicked()
+                    self.led_pageCategory_AddCategory_6.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting breed type due to invalid input.\nPlease enter a valid breed ID")
+                    x = messagebox.exec_()
+
+    def btn_pageAddExpense_add_6_clicked(self):
+            self.label_85.setText("BREED TYPE")
+
+            header_labels = ["Breed ID", "Breed Name"]
+            self.table_pageCategory_category_5.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCategory_category_5.verticalHeader().setVisible(False)
+            self.table_pageCategory_category_5.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT * FROM poultry_management.breedtype;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCategory_category_5.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCategory_category_5.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+            self.stackedWidget_3.setCurrentWidget(self.pageBreed)
+
+    def btn_pageCategory_AddCategory_4_clicked(self):
+            category = self.led_pageCategory_AddCategory_4.text()
+            if category == "":
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Blank feed name")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Please provide a feed name. \nIt should not be blank.")
+                    x = messagebox.exec_()
+            else:
+                    self.mycursor.execute(f"INSERT INTO poultry_management.feedtype(feed_name) VALUES('{category}');")
+                    self.db.commit()
+                    self.led_pageCategory_AddCategory_4.clear()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Feed name Added")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"{category} added successfully!")
+                    x = messagebox.exec_()
+                    self.btn_pageAddExpense_add_5_clicked()
+
+    def btn_pageCategory_AddCategory_5_clicked(self):
+        to_delete_id = self.led_pageCategory_AddCategory_5.text()
+        try:
+                self.mycursor.execute(
+                        f"DELETE FROM poultry_management.feedtype WHERE feed_id = {to_delete_id};")
+                self.db.commit()
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Success")
+                messagebox.setIcon(QMessageBox.Information)
+                messagebox.setText(f"Feed type deleted successfully.")
+                x = messagebox.exec_()
+                self.btn_pageAddExpense_add_5_clicked()
+                self.led_pageCategory_AddCategory_5.clear()
+        except:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Error")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText(
+                        "Error deleting feed type due to invalid input.\nPlease enter a valid Feed ID")
+                x = messagebox.exec_()
+
+    def btn_pageAddExpense_add_5_clicked(self):
+        self.label_85.setText("FEED TYPE")
+
+        header_labels = ["Feed ID", "Feed Name"]
+        self.table_pageCategory_category_4.setHorizontalHeaderLabels(header_labels)
+        self.table_pageCategory_category_4.verticalHeader().setVisible(False)
+        self.table_pageCategory_category_4.setRowCount(0)
+
+        self.mycursor.execute(f"SELECT * FROM poultry_management.feedtype;")
+
+        for row_number, row_data in enumerate(self.mycursor):
+                self.table_pageCategory_category_4.insertRow(row_number)
+                for column_number, data in enumerate(row_data):
+                        self.table_pageCategory_category_4.setItem(row_number, column_number,
+                                                                   QtWidgets.QTableWidgetItem(str(data)))
+
+        self.stackedWidget_3.setCurrentWidget(self.pageFeed)
+    def btn_pageHomepage_settings_clicked(self):
+        self.stackedWidget_2.setCurrentWidget(self.pageSettings)
+        self.btn_pageAddExpense_add_5_clicked()
+
+    def btn_pageAddExpense_add_3_clicked(self):
+        incentive = self.combo_pageAddExpense_Category_4.currentText()
+        staff = self.combo_pageAddExpense_Category_3.currentText()
+        description = self.led_pageAddExpense_Description_7.text()
+        amount = self.led_pageAddExpense_amount_3.text()
+
+        if amount != '':
+                try:
+                        float(amount)
+
+                        self.mycursor.execute(f"INSERT INTO poultry_management.expenses(category, expense_description, expense_date, amount) VALUES"
+                                              f"('Staff Expenditure', '{staff} {incentive}: {description}', '{datetime.now().date()}', '{amount}')")
+                        self.led_pageAddExpense_Description_7.clear()
+                        self.led_pageAddExpense_amount_3.clear()
+
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Paid")
+                        messagebox.setIcon(QMessageBox.Information)
+                        messagebox.setText("Transaction updated successfully.")
+                        x = messagebox.exec_()
+
+
+
+                except:
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Amount")
+                        messagebox.setIcon(QMessageBox.Warning)
+                        messagebox.setText("Please provide a valid amount. \nUse digits only.")
+                        x = messagebox.exec_()
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Amount")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide an amount. \nIt should not be blank.")
+                x = messagebox.exec_()
+
+
+    def btn_pageExpenseManagement_AddExpense_4_clicked(self):
+        self.combo_pageAddExpense_Category_3.clear()
+        self.mycursor.execute(f"SELECT first_name, last_name FROM poultry_management.staff;")
+        staff =[f'{i[0]} {i[1]}' for i in self.mycursor]
+
+        self.combo_pageAddExpense_Category_3.addItems(staff)
+
+        self.stackedWidget_2.setCurrentWidget(self.page_4)
+
+    def btn_pageAddExpense_add_2_clicked(self):
+        firstname_done = False
+        lastname_done = False
+        address_done = False
+        phone_done = False
+        email_done = False
+        salary_done = False
+
+        designation = self.combo_pageAddExpense_Category_2.currentText()
+
+        if self.led_pageAddExpense_Description_3.text() != "":
+                firstname_done = True
+                first_name = self.led_pageAddExpense_Description_3.text()
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Blank Firstname")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide a First Name. \nIt should not be blank.")
+                x = messagebox.exec_()
+
+        if self.led_pageAddExpense_Description_4.text() != "":
+                lastname_done = True
+                last_name = self.led_pageAddExpense_Description_4.text()
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Blank lastname")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide a Last Name. \nIt should not be blank.")
+                x = messagebox.exec_()
+
+        if self.led_pageAddExpense_Description_2.text() != "":
+                address_done = True
+                address = self.led_pageAddExpense_Description_2.text()
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Blank Address")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide an address. \nIt should not be blank.")
+                x = messagebox.exec_()
+
+        if self.led_pageAddExpense_Description_5.text() != "" and len(self.led_pageAddExpense_Description_5.text()) == 12:
+                try:
+                        int(self.led_pageAddExpense_Description_5.text())
+                        phone_done = True
+                        phone_number = self.led_pageAddExpense_Description_5.text()
+                except:
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Phone number")
+                        messagebox.setIcon(QMessageBox.Warning)
+                        messagebox.setText(
+                                "Please provide a valid phone number. \nIt should not be blank.\neg: 254712345678")
+                        x = messagebox.exec_()
+
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Phone number")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide a valid phone number. \nIt should not be blank.\neg: 254712345678")
+                x = messagebox.exec_()
+
+
+        if self.led_pageAddExpense_Description_6.text() != "":
+                pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+                valid = bool(re.match(pattern, self.led_pageAddExpense_Description_6.text()))
+                if valid is True:
+                        email_done = True
+                        email = self.led_pageAddExpense_Description_6.text()
+                else:
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Blank email")
+                        messagebox.setIcon(QMessageBox.Warning)
+                        messagebox.setText("Please provide a valid email address. \nEntered email is invalid.")
+                        x = messagebox.exec_()
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Blank email")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide an email address. \nIt should not be blank.")
+                x = messagebox.exec_()
+
+
+        if self.led_pageAddExpense_amount_2.text() != "":
+                try:
+                        int(self.led_pageAddExpense_amount_2.text())
+                        salary_done = True
+                        salary = self.led_pageAddExpense_amount_2.text()
+                except:
+                        messagebox = QMessageBox()
+                        messagebox.setWindowTitle("Salo salooo")
+                        messagebox.setIcon(QMessageBox.Warning)
+                        messagebox.setText(
+                                "Please provide a valid salary amount. \nIt should be purely digits.\neg: 60000")
+                        x = messagebox.exec_()
+
+        else:
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("salo saloo")
+                messagebox.setIcon(QMessageBox.Warning)
+                messagebox.setText("Please provide a valid salary. \nIt should not be blank.\neg: 60000")
+                x = messagebox.exec_()
+
+
+        if firstname_done is True and lastname_done is True and address_done is True and phone_done is True and email_done is True and salary_done is True:
+                self.mycursor.execute(f"INSERT INTO poultry_management.staff(designation , first_name, "
+                                      f"last_name, address, email_address, phone_number, salary) values("
+                                      f"'{designation}', '{first_name}', '{last_name}', '{address}', '{email}', "
+                                      f"'{phone_number}', '{salary}');")
+                self.db.commit()
+
+                messagebox = QMessageBox()
+                messagebox.setWindowTitle("Staff added")
+                messagebox.setIcon(QMessageBox.Information)
+                messagebox.setText("New staff added successfully")
+                x = messagebox.exec_()
+
+                self.btn_pageHomepage_staffManagement_clicked()
+                self.led_pageAddExpense_amount_2.clear()
+                self.led_pageAddExpense_Description_2.clear()
+                self.led_pageAddExpense_Description_3.clear()
+                self.led_pageAddExpense_Description_4.clear()
+                self.led_pageAddExpense_Description_5.clear()
+                self.led_pageAddExpense_Description_6.clear()
+
+    def btn_pageExpenseManagement_AddExpense_2_cliked(self):
+        self.combo_pageAddExpense_Category_2.clear()
+        self.mycursor.execute(f"SELECT designation_name FROM poultry_management.designation ORDER BY designation_name;")
+        fields = [i[0] for i in self.mycursor]
+
+        self.combo_pageAddExpense_Category_2.addItems(fields)
+
+        self.stackedWidget_2.setCurrentWidget(self.pageAddStaff)
+
+    def btn_pageCategory_search_3_clicked(self):
+            search_term = self.led_pageCategory_search_3.text()
+
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT * FROM poultry_management.designation WHERE designation_id REGEXP '{search_term}' "
+                    f"or designation_name REGEXP '{search_term}';")
+
+            header_labels = ["Designation ID", "Designation Name"]
+            self.table_pageCategory_category_3.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCategory_category_3.verticalHeader().setVisible(False)
+            self.table_pageCategory_category_3.setRowCount(0)
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCategory_category_3.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCategory_category_3.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageCategory_AddCategory_3_clicked(self):
+            category = self.led_pageCategory_AddCategory_3.text()
+            if category == "":
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Blank Designation")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Please provide a designation Name. \nIt should not be blank.")
+                    x = messagebox.exec_()
+            else:
+                    self.mycursor.execute(f"INSERT INTO poultry_management.designation(designation_name) "
+                                          f"VALUES('{category}');")
+                    self.db.commit()
+                    self.led_pageCategory_AddCategory_3.clear()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Designation Added")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"{category} added successfully!")
+                    x = messagebox.exec_()
+                    self.btn_pageExpenseManagement_ViewExpenseCategory_2_clicked()
+
+    def btn_pageExpenseCategory_DeleteCategory_2_clicked(self):
+            to_delete_id = self.led_pageExpenseCategory_DeleteCategory_2.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.designation WHERE designation_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Desination Deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageExpenseManagement_ViewExpenseCategory_2_clicked()
+                    self.led_pageExpenseCategory_DeleteCategory_2.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting designation due to invalid input.\nPlease enter a valid Category ID")
+                    x = messagebox.exec_()
+    def btn_pageExpenseManagement_ViewExpenseCategory_2_clicked(self):
+            header_labels = ["Designation ID", "Designation Name"]
+            self.table_pageCategory_category_3.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCategory_category_3.verticalHeader().setVisible(False)
+            self.table_pageCategory_category_3.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT * FROM poultry_management.designation;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCategory_category_3.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCategory_category_3.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+            self.stackedWidget_2.setCurrentWidget(self.pageDesinations)
+
+    def btn_pageExpenseCategory_DeleteStaff_clicked(self):
+            to_delete_id = self.ledDeleteStaf.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.staff WHERE staff_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Staff Deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageHomepage_staffManagement_clicked()
+                    self.ledDeleteStaf.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting staff due to invalid input.\nPlease enter a valid staff ID")
+                    x = messagebox.exec_()
+
+    def btn_pageExpenseManagement_search_2_clicked(self):
+            search_term = self.led_pageExpenseManagement_search_2.text()
+
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT staff_id, designation , first_name, last_name, address, phone_number, email_address"
+                    f" FROM poultry_management.staff WHERE staff_id REGEXP '{search_term}' "
+                    f"or designation REGEXP '{search_term}' or first_name REGEXP '{search_term}' or last_name REGEXP '{search_term}'"
+                    f" or address REGEXP '{search_term}' or phone_number REGEXP '{search_term}' or email_address REGEXP '{search_term}';")
+
+            header_labels = ["Staff ID", "Designation", "First Name", "Last Name", "Address", "Phone number", "Email Address"]
+            self.table_pageexpenseManagement_Expense_2.setHorizontalHeaderLabels(header_labels)
+            self.table_pageexpenseManagement_Expense_2.verticalHeader().setVisible(False)
+            self.table_pageexpenseManagement_Expense_2.setRowCount(0)
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageexpenseManagement_Expense_2.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageexpenseManagement_Expense_2.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageHomepage_staffManagement_clicked(self):
+            header_labels = ["Staff ID", "Designation", "First Name", "Last Name", "Address", "Phone number", "Email Address"]
+            self.table_pageexpenseManagement_Expense_2.setHorizontalHeaderLabels(header_labels)
+            self.table_pageexpenseManagement_Expense_2.verticalHeader().setVisible(False)
+            self.table_pageexpenseManagement_Expense_2.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT staff_id, designation , first_name, last_name, address, phone_number, email_address FROM poultry_management.staff;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageexpenseManagement_Expense_2.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageexpenseManagement_Expense_2.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+
+            self.stackedWidget_2.setCurrentWidget(self.pageStaffanagement)
+
+    def btn_pageAddExpense_add_clicked(self):
+            category = self.combo_pageAddExpense_Category.currentText()
+            date = self.led_pageAddExpense_date.date().toString('yyyy-MM-dd')
+            date = datetime.strptime(date, "%Y-%m-%d").date()
+            description = self.led_pageAddExpense_Description.text()
+
+            if description == "":
+                    done_description = False
+            else:
+                    done_description = True
+
+            amount = self.led_pageAddExpense_amount.text()
+
+            if amount == "":
+                    done_amount = False
+            else:
+                    try:
+                            float(amount)
+                            done_amount = True
+                    except:
+                            done_amount = False
+
+            if (done_description is True) and (done_amount is True):
+                    self.mycursor.execute(
+                            "INSERT INTO poultry_management.expenses(category, expense_description, expense_date, amount) VALUES"
+                            f"('{category}', '{description}', '{date}', '{amount}');")
+                    self.db.commit()
+
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Expense Added successfully.")
+                    x = messagebox.exec_()
+                    self.led_pageAddExpense_Description.clear()
+                    self.led_pageAddExpense_amount.clear()
+
+                    self.btn_pageHomepage_expenseManagement_clicked()
+            elif done_description is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(f"Description cannot be blank!.")
+                    x = messagebox.exec_()
+
+            elif done_amount is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(f"'Amount' is ether blank or received wrong input\nEnter digits only!.")
+                    x = messagebox.exec_()
+
+    def btn_pageExpenseManagement_AddExpense_clicked(self):
+            self.mycursor.execute(f"SELECT category_name FROM poultry_management.expense_category;")
+            categories = [i[0] for i in self.mycursor]
+
+            self.combo_pageAddExpense_Category.clear()
+            self.combo_pageAddExpense_Category.addItems(categories)
+
+            self.led_pageAddExpense_date.setDate(datetime.now().date())
+
+            self.stackedWidget_2.setCurrentWidget(self.pageAddExpense)
+
+    def btn_pageCategory_search_2_clicked(self):
+            search_term = self.led_pageCategory_search_2.text()
+
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT * FROM poultry_management.expense_category WHERE category_ID REGEXP '{search_term}' "
+                    f"or category_name REGEXP '{search_term}';")
+
+            header_labels = ["Category ID", "Category Name"]
+            self.table_pageCategory_category_2.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCategory_category_2.verticalHeader().setVisible(False)
+            self.table_pageCategory_category_2.setRowCount(0)
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCategory_category_2.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCategory_category_2.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageCategory_AddCategory_2_clicked(self):
+            category = self.led_pageCategory_AddCategory_2.text()
+            if category == "":
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Blank Category")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Please provide a Category Name. \nIt should not be blank.")
+                    x = messagebox.exec_()
+            else:
+                    self.mycursor.execute(f"INSERT INTO poultry_management.expense_category(category_name) "
+                                          f"VALUES('{category}');")
+                    self.db.commit()
+                    self.led_pageCategory_AddCategory_2.clear()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Category Added")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"{category} added successfully!")
+                    x = messagebox.exec_()
+                    self.btn_pageExpenseManagement_ViewExpenseCategory_clicked()
+
+    def btn_pageExpenseCategory_DeleteCategory_clicked(self):
+            to_delete_id = self.led_pageExpenseCategory_DeleteCategory.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.expense_category WhERE category_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Succedd")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Category Deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageExpenseManagement_ViewExpenseCategory_clicked()
+                    self.led_pageExpenseCategory_DeleteCategory.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting category due to invalid input.\nPlease enter a valid Category ID")
+                    x = messagebox.exec_()
+
+    def btn_pageExpenseManagement_ViewExpenseCategory_clicked(self):
+            header_labels = ["Category ID", "Category Name"]
+            self.table_pageCategory_category_2.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCategory_category_2.verticalHeader().setVisible(False)
+            self.table_pageCategory_category_2.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT * FROM poultry_management.expense_category;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCategory_category_2.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCategory_category_2.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+            self.stackedWidget_2.setCurrentWidget(self.pageExpenseCategory)
+
+    def btn_pageExpenseManagement_search_clicked(self):
+            search_term = self.led_pageExpenseManagement_search.text()
+
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT * FROM poultry_management.expenses WHERE expense_id REGEXP '{search_term}' "
+                    f"or category REGEXP '{search_term}' or expense_description REGEXP '{search_term}' or "
+                    f"expense_date REGEXP '{search_term}' or amount REGEXP '{search_term}';")
+
+            header_labels = ['Expense ID', 'Category', 'Description', 'Date', 'Amount']
+            self.table_pageexpenseManagement_Expense.setHorizontalHeaderLabels(header_labels)
+            self.table_pageexpenseManagement_Expense.verticalHeader().setVisible(False)
+            self.table_pageexpenseManagement_Expense.setRowCount(0)
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageexpenseManagement_Expense.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageexpenseManagement_Expense.setItem(row_number, column_number,
+                                                                             QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageHomepage_expenseManagement_clicked(self):
+            header_labels = ['Expense ID', 'Category', 'Description', 'Date', 'Amount']
+            self.table_pageexpenseManagement_Expense.setHorizontalHeaderLabels(header_labels)
+            self.table_pageexpenseManagement_Expense.verticalHeader().setVisible(False)
+            self.table_pageexpenseManagement_Expense.setRowCount(0)
+
+            self.mycursor.execute("SELECT * FROM poultry_management.expenses;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageexpenseManagement_Expense.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageexpenseManagement_Expense.setItem(row_number, column_number,
+                                                                             QtWidgets.QTableWidgetItem(str(data)))
+            self.stackedWidget_2.setCurrentWidget(self.pageExpenseManagement)
+
+    def btn_addSale_clicked(self):
+            customer = self.combo_pageAddsale_Customer.currentText()
+            staff = self.combo_pageAddsale_staff.currentText()
+            order_date = self.led_pageaddSale_dateOfSale.date().toString('yyyy-MM-dd')
+            order_date = datetime.strptime(order_date, "%Y-%m-%d").date()
+            description = self.led_pageaddSale_Description.text()
+            if description == "":
+                    done_description = False
+            else:
+                    done_description = True
+
+            amount = self.led_pageaddSale_amount.text()
+
+            if amount == "":
+                    done_amount = False
+            else:
+                    try:
+                            float(amount)
+                            done_amount = True
+                    except:
+                            done_amount = False
+
+            paid = self.led_pageaddSale_paid.text()
+
+            if paid == "":
+                    done_paid = False
+            else:
+                    try:
+                            float(paid)
+                            done_paid = True
+                    except:
+                            done_paid = False
+
+            balance = self.led_pageaddSale_balance.text()
+            if balance == "":
+                    done_balance = False
+            else:
+                    try:
+                            float(balance)
+                            done_balance = True
+                    except:
+                            done_balance = False
+
+            if (done_paid is True) and (done_balance is True) and (done_description is True) and (done_amount is True):
+
+                    self.mycursor.execute("INSERT INTO poultry_management.orders"
+                                          "(customer,received_by, order_description, date_received, amount, paid, balance) VALUES"
+                                          f"('{customer}','{staff}', '{description}', '{order_date}', '{amount}', "
+                                          f"'{paid}', '{balance}');")
+                    self.db.commit()
+
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Order Added successfully.")
+                    x = messagebox.exec_()
+                    self.led_pageaddSale_Description.clear()
+                    self.led_pageaddSale_balance.clear()
+                    self.led_pageaddSale_amount.clear()
+                    self.led_pageaddSale_paid.clear()
+
+                    self.btn_pageHomepage_sales_clicked()
+            elif done_description is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(f"Description cannot be blank!.")
+                    x = messagebox.exec_()
+
+            elif done_amount is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(f"'Amount' is ether blank or received wrong input\nEnter digits only!.")
+                    x = messagebox.exec_()
+
+            elif done_paid is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(f"'Paid' is ether blank or received wrong input\nEnter digits only!.")
+                    x = messagebox.exec_()
+
+            elif done_balance is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(f"'Balance' is ether blank or received wrong input\nEnter digits only!.")
+                    x = messagebox.exec_()
+
+    def btn_pageOrder_addOrder_clicked(self):
+            self.combo_pageAddsale_Customer.clear()
+            self.combo_pageAddsale_staff.clear()
+            self.mycursor.execute(
+                    f"SELECT first_name, last_name FROM poultry_management.customers ORDER BY first_name;")
+            customers = [f"{i[0]} {i[1]}" for i in self.mycursor]
+
+            self.combo_pageAddsale_Customer.addItems(customers)
+
+            self.mycursor.execute(f"SELECT first_name, last_name FROM poultry_management.staff;")
+
+            staff_names = [f'{i[0]} {i[1]}' for i in self.mycursor]
+
+            self.combo_pageAddsale_staff.addItems(staff_names)
+            self.led_pageaddSale_dateOfSale.setDate(datetime.now().date())
+
+            self.stackedWidget_2.setCurrentWidget(self.pageAddOrder)
+
+    def btn_pageOrder_deleteOrder_clicked(self):
+            to_delete_id = self.led_pageOrder_searchOrder_2.text()
+            try:
+                    self.mycursor.execute(f"DELETE FROM poultry_management.orders WhERE order_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Order Deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageHomepage_sales_clicked()
+                    self.led_pageOrder_searchOrder_2.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Error deleting order due to invalid input.\nPlease enter a valid Category ID")
+                    x = messagebox.exec_()
+
+    def btn_pageOrder_search_clicked(self):
+            search_term = self.led_pageOrder_searchOrder.text()
+
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT * FROM poultry_management.orders WHERE order_id REGEXP '{search_term}' "
+                    f"or customer REGEXP '{search_term}' or order_description REGEXP '{search_term}' or "
+                    f"date_received REGEXP '{search_term}' or amount REGEXP '{search_term}' "
+                    f"or paid REGEXP '{search_term}' or balance REGEXP '{search_term}';")
+
+            header_labels = ["Order ID", "Customer", "Description", "Date Placed", "Amount", "Paid", "Balance"]
+            self.table_pageOrder_Orders.setHorizontalHeaderLabels(header_labels)
+            self.table_pageOrder_Orders.verticalHeader().setVisible(False)
+            self.table_pageOrder_Orders.setRowCount(0)
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageOrder_Orders.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageOrder_Orders.setItem(row_number, column_number,
+                                                                QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageHomepage_sales_clicked(self):
+
+            header_labels = ["Order ID", "Customer", "Received By", "Description", "Date Placed", "Amount", "Paid",
+                             "Balance"]
+            self.table_pageOrder_Orders.setHorizontalHeaderLabels(header_labels)
+            self.table_pageOrder_Orders.verticalHeader().setVisible(False)
+            self.table_pageOrder_Orders.setRowCount(0)
+
+            self.mycursor.execute(
+                    f"SELECT order_id, customer,received_by, order_description, date_received, amount, paid, balance "
+                    f"FROM poultry_management.orders;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageOrder_Orders.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageOrder_Orders.setItem(row_number, column_number,
+                                                                QtWidgets.QTableWidgetItem(str(data)))
+            self.stackedWidget_2.setCurrentWidget(self.pageOrder)
+
+    def btn_pageCategory_DeleteCategory_clicked(self):
+            to_delete_id = self.led_pageCategory_DeleteCategory.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.income_category WhERE category_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Succedd")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Category Deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageIncomeManagement_ViewIncomeCategory_clicked()
+                    self.led_pageCategory_DeleteCategory.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Error deleting record due to invalid input.\nPlease enter a valid Category ID")
+                    x = messagebox.exec_()
+
+    def btn_pageCategory_AddCategory_clicked(self):
+            category = self.led_pageCategory_AddCategory.text()
+            if category == "":
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Blank Category")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Please provide a Category Name. \nIt should not be blank.")
+                    x = messagebox.exec_()
+            else:
+                    self.mycursor.execute(f"INSERT INTO poultry_management.income_category(category_name) "
+                                          f"VALUES('{category}');")
+                    self.db.commit()
+                    self.led_pageCategory_AddCategory.clear()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Category Added")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"{category} added successfully!")
+                    x = messagebox.exec_()
+                    self.btn_pageIncomeManagement_ViewIncomeCategory_clicked()
+
+    def btn_pageIncomeManagement_ViewIncomeCategory_clicked(self):
+            header_labels = ["Category ID", "Category Name"]
+            self.table_pageCategory_category.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCategory_category.verticalHeader().setVisible(False)
+            self.table_pageCategory_category.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT * FROM poultry_management.income_category;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCategory_category.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCategory_category.setItem(row_number, column_number,
+                                                                     QtWidgets.QTableWidgetItem(str(data)))
+
+            self.stackedWidget_2.setCurrentWidget(self.pageCategory)
+
+    def btn_pageAddincome_AddIncome_clicked(self):
+            income_date = self.led_pageAddincome_dateOfIncome.date().toString('yyyy-MM-dd')
+            income_date = datetime.strptime(income_date, "%Y-%m-%d").date()
+            description = self.led_pageAddincome_Description.text()
+            amount = self.led_pageAddincome_amount.text()
+            category = self.combo_pageAddincome_Category.currentText()
+
+            try:
+                    amount = float(amount)
+                    correct_amount = True
+            except:
+                    correct_amount = False
+
+            if description == "":
+                    correct_description = False
+            else:
+                    correct_description = True
+
+            if correct_description is True and correct_amount is True:
+                    self.mycursor.execute(
+                            f"INSERT INTO poultry_management.income(category, income_description, income_date, amount) VALUES"
+                            f"('{category}', '{description}', '{income_date}', '{amount}');")
+                    self.db.commit()
+
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText("Income has been added successfully.")
+                    x = messagebox.exec_()
+
+                    self.btn_pageHomepage_incomeManagement_clicked()
+            elif correct_description is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Blank Description")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Please provide a description. \nIt should not be blank.")
+                    x = messagebox.exec_()
+            elif correct_amount is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Wrong Amount")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("You entered incorrect Amount format.")
+                    x = messagebox.exec_()
+
+    def btn_pageIncomeManagement_AddIncome_clicked(self):
+            self.stackedWidget_2.setCurrentWidget(self.pageAddIncome)
+            self.mycursor.execute(f"SELECT category_name FROM poultry_management.income_category;")
+
+            categories = [i[0] for i in self.mycursor]
+            self.combo_pageAddincome_Category.addItems(categories)
+            self.led_pageAddincome_dateOfIncome.setDate(datetime.now().date())
+
+    def btn_pageIncomeManagement_search_clicked(self):
+            search_term = self.led_pageIncomeManagement_search.text()
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT * FROM poultry_management.income WHERE income_id REGEXP '{search_term}' "
+                    f"or category REGEXP '{search_term}' or income_description REGEXP '{search_term}' or "
+                    f"income_date REGEXP '{search_term}' or amount REGEXP '{search_term}';")
+
+            header_labels = ["Transaction ID", "Category", "Description", "Date", "Amount"]
+            self.table_pageIncomeManagement_Income.setHorizontalHeaderLabels(header_labels)
+            self.table_pageIncomeManagement_Income.verticalHeader().setVisible(False)
+            self.table_pageIncomeManagement_Income.setRowCount(0)
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageIncomeManagement_Income.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageIncomeManagement_Income.setItem(row_number, column_number,
+                                                                           QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageCustomers_previous_clicked(self):
+            if self.customer_display_highbound > 10:
+                    self.customer_display_highbound -= 10
+
+            if self.customer_display_lowbound > 0:
+                    self.customer_display_lowbound -= 10
+
+            self.mycursor.execute(f"SELECT COUNT(*) FROM(SELECT * FROM poultry_management.customers "
+                                  f"limit {self.customer_display_lowbound}, {self.customer_display_highbound}) as A")
+            records = int(self.mycursor.fetchall()[0][0])
+
+            if records >= 1:
+                    header_labels = ["Customer ID", "First Name", "Last Name", "Address", "Phone Number", "Gender"]
+                    self.table_pageCustomers_customers.setHorizontalHeaderLabels(header_labels)
+                    self.table_pageCustomers_customers.verticalHeader().setVisible(False)
+                    self.table_pageCustomers_customers.setRowCount(0)
+
+                    self.mycursor.execute(f"SELECT * FROM poultry_management.customers "
+                                          f"limit {self.customer_display_lowbound}, {self.customer_display_highbound};")
+
+                    for row_number, row_data in enumerate(self.mycursor):
+                            self.table_pageCustomers_customers.insertRow(row_number)
+                            for column_number, data in enumerate(row_data):
+                                    self.table_pageCustomers_customers.setItem(row_number, column_number,
+                                                                               QtWidgets.QTableWidgetItem(str(data)))
+
+
+
+            else:
+                    print("Records is NOT FUCKING grater than 1")
+
+                    self.customer_display_highbound -= 10
+                    self.customer_display_lowbound -= 10
+
+    def btn_pageCustomers_next_clicked(self):
+
+            self.customer_display_highbound += 10
+            self.customer_display_lowbound += 10
+
+            self.mycursor.execute(f"SELECT COUNT(*) FROM(SELECT * FROM poultry_management.customers "
+                                  f"limit {self.customer_display_lowbound}, {self.customer_display_highbound}) as A")
+            records = int(self.mycursor.fetchall()[0][0])
+            if records >= 1:
+                    print("Records is grater than 1")
+                    header_labels = ["Customer ID", "First Name", "Last Name", "Address", "Phone Number", "Gender"]
+                    self.table_pageCustomers_customers.setHorizontalHeaderLabels(header_labels)
+                    self.table_pageCustomers_customers.verticalHeader().setVisible(False)
+                    self.table_pageCustomers_customers.setRowCount(0)
+
+                    self.mycursor.execute(f"SELECT * FROM poultry_management.customers "
+                                          f"limit {self.customer_display_lowbound}, {self.customer_display_highbound};")
+
+                    for row_number, row_data in enumerate(self.mycursor):
+                            self.table_pageCustomers_customers.insertRow(row_number)
+                            for column_number, data in enumerate(row_data):
+                                    self.table_pageCustomers_customers.setItem(row_number, column_number,
+                                                                               QtWidgets.QTableWidgetItem(str(data)))
+
+            else:
+
+                    self.customer_display_highbound -= 10
+                    self.customer_display_lowbound -= 10
+
+    def btn_pageHomepage_incomeManagement_clicked(self):
+
+            header_labels = ["Transaction ID", "Category", "Description", "Date", "Amount"]
+            self.table_pageIncomeManagement_Income.setHorizontalHeaderLabels(header_labels)
+            self.table_pageIncomeManagement_Income.verticalHeader().setVisible(False)
+            self.table_pageIncomeManagement_Income.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT * FROM poultry_management.income ORDER BY income_date;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageIncomeManagement_Income.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageIncomeManagement_Income.setItem(row_number, column_number,
+                                                                           QtWidgets.QTableWidgetItem(str(data)))
+
+            self.stackedWidget_2.setCurrentWidget(self.pageIncomeManagement)
+
+    def btn_pageDeleteCustomer_deleteCustomer_clicked(self):
+            try:
+                    self.mycursor.execute(f"DELETE FROM poultry_management.customers "
+                                          f"WHERE (customer_id = '{self.led_CustomerID.text()}');")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Done")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Customer deleted sucessfully.")
+                    x = messagebox.exec_()
+
+                    self.btn_pageHomepage_customer_clicked()
+                    self.led_CustomerID.clear()
+
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("ERROR")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "There was an error deleting customer!\nPlease confirm the customer ID you entered.")
+                    x = messagebox.exec_()
+
+    def btn_pageCustomers_deleteCustomer_clicked(self):
+            self.stackedWidget_2.setCurrentWidget(self.pageDeleteCustomer)
+
+    def btn_pageCustomers_addCustomer_clicked(self):
+            self.stackedWidget_2.setCurrentWidget(self.pageAddCustomer)
+
+    def btn_addCustomer_clicked(self):
+            fname_done = False
+            lname_done = False
+            address_done = False
+            phone_done = False
+
+            gender = self.combo_pageaddCustomer_gender.currentText()
+
+            if self.led_pageaddCustomer_firstName.text() != "":
+                    first_name = self.led_pageaddCustomer_firstName.text()
+                    fname_done = True
+
+            if self.led_pageaddCustomer_lastName.text() != "":
+                    last_name = self.led_pageaddCustomer_lastName.text()
+                    lname_done = True
+            if self.led_pageaddCustomer_address.text() != "":
+                    address = self.led_pageaddCustomer_address.text()
+                    address_done = True
+            if self.led_pageaddCustomer_phoneNumber.text() != "":
+                    phone = self.led_pageaddCustomer_phoneNumber.text()
+                    if len(phone) == 12:
+                            try:
+                                    int(phone)
+                                    phone_done = True
+                                    self.led_pageaddCustomer_phoneNumber.setStyleSheet(
+                                            "border: 2px solid rgb(3, 23, 24);"
+                                            "border-radius: 5px")
+
+                            except:
+                                    self.led_pageaddCustomer_phoneNumber.setStyleSheet(
+                                            "border: 2px solid rgb(255, 10, 34); "
+                                            "border-radius: 5px")
+                    else:
+                            self.led_pageaddCustomer_phoneNumber.setStyleSheet("border: 2px solid rgb(255, 10, 34); "
+                                                                               "border-radius: 5px")
+
+            if (fname_done == True) and (lname_done == True) and (address_done == True) and (phone_done == True):
+                    self.mycursor.execute(
+                            f"INSERT INTO poultry_management.customers(first_name, last_name, address, phone_number, sex) "
+                            f"VALUES('{first_name}', '{last_name}', '{address}', '{phone}', '{gender}');")
+                    self.db.commit()
+
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("ERROR")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText("Customer added successfully!")
+                    x = messagebox.exec_()
+                    self.led_pageaddCustomer_firstName.clear()
+                    self.led_pageaddCustomer_lastName.clear()
+                    self.led_pageaddCustomer_address.clear()
+                    self.led_pageaddCustomer_phoneNumber.clear()
+
+                    self.btn_pageHomepage_customer_clicked()
+
+            else:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("ERROR")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText("Fill in all the fields correctly")
+                    x = messagebox.exec_()
+
+    def btn_pageCustomers_search_clicked(self):
+            self.stackedWidget_2.setCurrentWidget(self.pageCustomers)
+            header_labels = ["Customer ID", "First Name", "Last Name", "Address", "Phone Number", "Gender"]
+            self.table_pageCustomers_customers.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCustomers_customers.verticalHeader().setVisible(False)
+            self.table_pageCustomers_customers.setRowCount(0)
+            search_term = self.led_pageCustomers_search.text()
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT * FROM poultry_management.customers WHERE customer_id REGEXP '{search_term}' "
+                    f"or first_name REGEXP '{search_term}' or last_name REGEXP '{search_term}' or "
+                    f"address REGEXP '{search_term}' or phone_number REGEXP '{search_term}' or "
+                    f"sex REGEXP '{search_term}';")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCustomers_customers.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCustomers_customers.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageHomepage_Dashboard_clicked(self):
+            self.stackedWidget_2.setCurrentWidget(self.pageDashboard)
+
+    def btn_pageHomepage_customer_clicked(self):
+            self.customer_display_highbound = 10
+            self.customer_display_lowbound = 0
+
+            self.stackedWidget_2.setCurrentWidget(self.pageCustomers)
+            header_labels = ["Customer ID", "First Name", "Last Name", "Address", "Phone Number", "Gender"]
+            self.table_pageCustomers_customers.setHorizontalHeaderLabels(header_labels)
+            self.table_pageCustomers_customers.verticalHeader().setVisible(False)
+            self.table_pageCustomers_customers.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT * FROM poultry_management.customers limit 10;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageCustomers_customers.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageCustomers_customers.setItem(row_number, column_number,
+                                                                       QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageSignin_submit_clicked(self):
+            if (self.led_pageSignin_password.text() == "admin") and (self.led_pageSignin_username.text() == "admin"):
+                    self.stackedWidget.setCurrentWidget(self.pageHomepage)
+                    self.stackedWidget_2.setCurrentWidget(self.pageDashboard)
+                    self.lbl_pageSignin_username.setText("")
+                    self.lbl_pageSignin_password.setText("")
+            elif (self.led_pageSignin_username.text() != "admin"):
+                    self.lbl_pageSignin_username.setText("Incorrect Username!")
+                    self.lbl_pageSignin_password.setText("")
+            elif (self.led_pageSignin_password.text() != "admin"):
+                    self.lbl_pageSignin_username.setText("")
+                    self.lbl_pageSignin_password.setText("Incorrect Password!")
+
+    def logout(self):
+            self.stackedWidget.setCurrentWidget(self.pageLogin)
+
+import mysql.connector
+import resources_rc
+from PyQt5.QtWidgets import QMessageBox
+from datetime import datetime
+import re
 
 if __name__ == "__main__":
     import sys

@@ -95,6 +95,7 @@ salary DECIMAL(10,2));
 INSERT INTO staff(designation , first_name, last_name, address, email_address, phone_number, salary) values
 ('Manager','Ian','Mweta','Ruiru, Kiambu','ianmewta@muguku.com','254797012369',60000),
 ('Staff','Alexa','Muthoni','Mwatate, Coast','alexamuthoni@muguku.com','254704163790', 23000),
+('Staff','Beatrice','Ngetich','Pokot','beatricengetich@muguku.com','254709101297', 20000),
 ('IT Tecnician','Skyler', 'Mdamu', 'Boni Forest Reserve, Tana River', 'skylermdamu@muguku.com','254793984667',28000),
 ('Mechanic','Justin','Nyanchae','Kisii Town, Kisii', 'justinnyanchae@gmail.com', '254703629028',20000);
 
@@ -115,7 +116,93 @@ amount DECIMAL(8,2)
 INSERT INTO payments(paid_to, incentive_type, payment_description, amount) VALUES
 ('Alexa Muthoni','Salary','February\'s Salary',23000);
 
+CREATE TABLE feedtype(
+feed_id INT PRIMARY KEY AUTO_INCREMENT,
+feed_name VARCHAR(200));
+
+INSERT INTO feedtype(feed_name) VALUES ('Grower Feed'), ('Layer Feed'),('Flock Raiser'),('Broiler Feed'), ('Game Bird Feed'),('Fermented Feed');
+
+CREATE TABLE breedtype(
+breed_id INT PRIMARY KEY AUTO_INCREMENT,
+breed_name VARCHAR(200));
+
+INSERT INTO breedtype(breed_name) VALUES ('Layers'), ('Broilers'),('Grower');
+
+CREATE TABLE batchnumber(
+batch_id INT PRIMARY KEY AUTO_INCREMENT,
+breed_type VARCHAR(200),
+batch_number VARCHAR(100));
+
+INSERT INTO batchnumber(breed_type, batch_number) VALUES ('Layers', '10'), ('Broilers', '9'),('Grower', '2');
+
+CREATE TABLE vaccine(
+vaccine_id INT PRIMARY KEY AUTO_INCREMENT,
+vaccine_name VARCHAR(200),
+vaccine_strain VARCHAR(100),
+vaccine_route VARCHAR(100),
+vaccine_dose VARCHAR(100),
+vaccine_age VARCHAR(100));
 
 
+INSERT INTO vaccine(vaccine_name, vaccine_strain, vaccine_route, vaccine_dose, vaccine_age) VALUES
+('Newcastle Disease','Lasota',' Eye','One drop','5th day'),
+('Infectious Bursal Disease', 'Georgia', 'Oral', 'One drop', '15th day');
 
+CREATE TABLE batchFlock(
+batch_id INT PRIMARY KEY AUTO_INCREMENT,
+breed_type VARCHAR(100),
+total int,
+date DATE,
+expired VARCHAR(100),
+laying VARCHAR(100),
+batch_number INT);
 
+INSERT INTO batchFlock(breed_type, total, date, expired, laying, batch_number) VALUES
+('Broilers', '4000', '2023-2-24', 'No', 'No', '9'),
+('Layers', '2000', '2023-2-11', 'No', 'No', '10'),
+('Broilers', '3750', '2023-3-19', 'No', 'No', '80');
+
+CREATE TABLE eggProduction(
+production_id INT PRIMARY KEY AUTO_INCREMENT,
+batch_flock_ID VARCHAR(100),
+total INT,
+cracked INT,
+double_yolk	INT,
+dirty INT,
+others INT,
+staff VARCHAR(100),
+date DATE);
+
+INSERT INTO eggProduction(batch_flock_ID, total, cracked, double_yolk, dirty, others, staff, date)
+VALUES('Layers 10', '305', '2', '5', '0', '0', 'Beatrice', '2023-01-05'),	 
+('Layers 10', '12', '2', '6', '0', '4', 'Alexa', '2023-01-27');
+
+CREATE TABLE hatcheryRecods(
+hatchery_ID INT PRIMARY KEY AUTO_INCREMENT,
+batch_flock VARCHAR(100),
+name VARCHAR(100),
+staff VARCHAR(100),
+introduction_date DATE,
+total INT,
+hatched INT,
+survived INT);
+
+INSERT INTO hatcheryRecods(batch_flock, name, staff, introduction_date, total, hatched,survived) VALUES
+('Layers 10', 'Hatch 10', 'Alexa', '2023-01-27', '477', '456', '438'),	
+('Layers 7', 'Hatch 15', 'Alexa', '2023-03-10', '607', '587', '576'),	  
+('Layers 10', 'Hatch 09', 'Beatrice', '2023-02-14', '147', '143', '140');
+
+CREATE TABLE vaccinationRecords(
+vaccination_id INT PRIMARY KEY AUTO_INCREMENT,
+batch_flock VARCHAR(100),
+vaccine VARCHAR(100),
+vaccine_name VARCHAR(100),
+staff VARCHAR(100),
+date DATE,
+reaction VARCHAR(100),
+others VARCHAR(100));
+
+INSERT INTO vaccinationRecords(batch_flock, vaccine, vaccine_name , staff, date, reaction, others) VALUES
+('Layers 10', 'Newcastle Disease', 'Lentogenic', 'Beatrice', '2023-01-23', 'None', 'None'),	 
+('Broilers 9', 'Infectious Bursal Disease', 'Bural Dest', 'Alexa', '2022-12-04', 'Okay', 'No'),
+('Growers 2', 'Mareks Disease',	'Gordon', 'Alexa', '2023-03-05', 'Fine', 'Good')

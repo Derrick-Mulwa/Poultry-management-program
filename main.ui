@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1036</width>
+    <width>1116</width>
     <height>584</height>
    </rect>
   </property>
@@ -49,7 +49,7 @@
       <item>
        <widget class="QStackedWidget" name="stackedWidget">
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="pageLogin">
          <widget class="QLabel" name="label_2">
@@ -809,7 +809,7 @@ border: 2px solid rgb(19, 145, 13);</string>
                    <enum>QFrame::NoFrame</enum>
                   </property>
                   <property name="currentIndex">
-                   <number>0</number>
+                   <number>18</number>
                   </property>
                   <widget class="QWidget" name="pageDashboard">
                    <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -10232,7 +10232,7 @@ border-radius: 5px</string>
                              <item>
                               <widget class="QStackedWidget" name="stackedWidget_3">
                                <property name="currentIndex">
-                                <number>1</number>
+                                <number>0</number>
                                </property>
                                <widget class="QWidget" name="pageFeed">
                                 <layout class="QVBoxLayout" name="verticalLayout_97">
@@ -12373,7 +12373,7 @@ border-radius:5px</string>
                                 </font>
                                </property>
                                <property name="text">
-                                <string>Breed Type</string>
+                                <string>Laying</string>
                                </property>
                               </widget>
                              </item>
@@ -12385,7 +12385,7 @@ border-radius:5px</string>
                                 </font>
                                </property>
                                <property name="text">
-                                <string>Breed Type</string>
+                                <string>Expired</string>
                                </property>
                               </widget>
                              </item>
@@ -12444,7 +12444,7 @@ border-radius: 5px</string>
                                 </font>
                                </property>
                                <property name="text">
-                                <string>Salary</string>
+                                <string>Date</string>
                                </property>
                               </widget>
                              </item>
