@@ -16,7 +16,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Muguku Farm</string>
+   <string>Muguku Farm v1.0</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -49,7 +49,7 @@
       <item>
        <widget class="QStackedWidget" name="stackedWidget">
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="pageLogin">
          <widget class="QLabel" name="label_2">
@@ -809,7 +809,7 @@ border: 2px solid rgb(19, 145, 13);</string>
                    <enum>QFrame::NoFrame</enum>
                   </property>
                   <property name="currentIndex">
-                   <number>18</number>
+                   <number>0</number>
                   </property>
                   <widget class="QWidget" name="pageDashboard">
                    <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -1311,7 +1311,7 @@ border-top-right-radius:5px</string>
                                 </font>
                                </property>
                                <property name="text">
-                                <string>15,000
+                                <string>Ksh. 15,000
 
 Last
 30 days
@@ -1478,7 +1478,7 @@ border-top-right-radius:5px</string>
                                 </font>
                                </property>
                                <property name="text">
-                                <string>15,000
+                                <string>Ksh. 1000
 
 Last
 30 days
@@ -1659,8 +1659,8 @@ border-top-right-radius:5px</string>
                                 </font>
                                </property>
                                <property name="text">
-                                <string>This month: 0
-Today: 0</string>
+                                <string>This month : 0
+Today : 0</string>
                                </property>
                               </widget>
                              </item>
@@ -2169,8 +2169,12 @@ border-top-right-radius:5px</string>
                                 </font>
                                </property>
                                <property name="text">
-                                <string>This month: 0
+                                <string>Vaccines given this
+Month: 0
 Today: 0</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                                </property>
                               </widget>
                              </item>
@@ -2292,6 +2296,35 @@ border: 2px solid rgb(255, 255, 255);</string>
                       <property name="frameShadow">
                        <enum>QFrame::Raised</enum>
                       </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_142">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_142">
+                         <property name="font">
+                          <font>
+                           <pointsize>11</pointsize>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Muguku Farm v1.0</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
                      </widget>
                     </item>
                    </layout>
@@ -12025,7 +12058,7 @@ background-color: rgb(255, 255, 255,0);</string>
                               <widget class="QTableWidget" name="table_pageOrder_Orders_2">
                                <property name="maximumSize">
                                 <size>
-                                 <width>750</width>
+                                 <width>650</width>
                                  <height>16777215</height>
                                 </size>
                                </property>
@@ -12812,7 +12845,7 @@ background-color: rgb(240, 4, 28);</string>
 background-color: rgb(57, 180, 4);</string>
                                   </property>
                                   <property name="text">
-                                   <string>Add Flock</string>
+                                   <string>Add</string>
                                   </property>
                                   <property name="icon">
                                    <iconset resource="resources.qrc">

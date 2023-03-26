@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1036, 584)
+        Form.resize(1116, 584)
         font = QtGui.QFont()
         font.setPointSize(14)
         Form.setFont(font)
@@ -795,6 +795,7 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setPointSize(11)
         self.lbl_pagHomepage_vaccination.setFont(font)
+        self.lbl_pagHomepage_vaccination.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.lbl_pagHomepage_vaccination.setObjectName("lbl_pagHomepage_vaccination")
         self.verticalLayout_17.addWidget(self.lbl_pagHomepage_vaccination)
         self.verticalLayout_40.addWidget(self.frame_54)
@@ -833,6 +834,16 @@ class Ui_Form(object):
         self.frame_19.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_19.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_19.setObjectName("frame_19")
+        self.horizontalLayout_142 = QtWidgets.QHBoxLayout(self.frame_19)
+        self.horizontalLayout_142.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_142.setSpacing(0)
+        self.horizontalLayout_142.setObjectName("horizontalLayout_142")
+        self.label_142 = QtWidgets.QLabel(self.frame_19)
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_142.setFont(font)
+        self.label_142.setObjectName("label_142")
+        self.horizontalLayout_142.addWidget(self.label_142)
         self.verticalLayout_5.addWidget(self.frame_19)
         self.stackedWidget_2.addWidget(self.pageDashboard)
         self.pageCustomers = QtWidgets.QWidget()
@@ -4550,7 +4561,7 @@ class Ui_Form(object):
         self.horizontalLayout_111 = QtWidgets.QHBoxLayout(self.frame_239)
         self.horizontalLayout_111.setObjectName("horizontalLayout_111")
         self.table_pageOrder_Orders_2 = QtWidgets.QTableWidget(self.frame_239)
-        self.table_pageOrder_Orders_2.setMaximumSize(QtCore.QSize(750, 16777215))
+        self.table_pageOrder_Orders_2.setMaximumSize(QtCore.QSize(650, 16777215))
         self.table_pageOrder_Orders_2.setAcceptDrops(False)
         self.table_pageOrder_Orders_2.setAutoFillBackground(False)
         self.table_pageOrder_Orders_2.setAlternatingRowColors(True)
@@ -6007,12 +6018,12 @@ class Ui_Form(object):
         self.retranslateUi(Form)
         self.stackedWidget.setCurrentIndex(0)
         self.stackedWidget_2.setCurrentIndex(0)
-        self.stackedWidget_3.setCurrentIndex(1)
+        self.stackedWidget_3.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Muguku Farm"))
+        Form.setWindowTitle(_translate("Form", "Muguku Farm v1.0"))
         self.label_3.setText(_translate("Form", "Sign In"))
         self.led_pageSignin_password.setPlaceholderText(_translate("Form", "  Password"))
         self.btn_pageSignin_submit.setText(_translate("Form", "Submit"))
@@ -6045,21 +6056,21 @@ class Ui_Form(object):
 "\n"
 "Orders"))
         self.btn_pageHomepage_viewSalesDetails.setText(_translate("Form", "          View details     "))
-        self.lbl_pagHomepage_income.setText(_translate("Form", "15,000\n"
+        self.lbl_pagHomepage_income.setText(_translate("Form", "Ksh. 15,000\n"
 "\n"
 "Last\n"
 "30 days\n"
 " Income"))
         self.btn_pageHomepage_viewIncomeDetails.setText(_translate("Form", "          View details     "))
-        self.lbl_pagHomepage_expenses.setText(_translate("Form", "15,000\n"
+        self.lbl_pagHomepage_expenses.setText(_translate("Form", "Ksh. 1000\n"
 "\n"
 "Last\n"
 "30 days\n"
 "Expenses"))
         self.btn_pageHomepage_viewExpensesDetails.setText(_translate("Form", "          View details     "))
         self.label.setText(_translate("Form", "BATCH FLOCK"))
-        self.lbl_pagHomepage_batchFlock.setText(_translate("Form", "This month: 0\n"
-"Today: 0"))
+        self.lbl_pagHomepage_batchFlock.setText(_translate("Form", "This month : 0\n"
+"Today : 0"))
         self.btn_pageHomepage_viewBachFlock.setText(_translate("Form", "          View details     "))
         self.label_14.setText(_translate("Form", "EGG PRODUCTION"))
         self.lbl_pagHomepage_eggProduction.setText(_translate("Form", "This month: 0\n"
@@ -6070,9 +6081,11 @@ class Ui_Form(object):
 "Today: 0"))
         self.btn_pageHomepage_viewHatchery.setText(_translate("Form", "          View details     "))
         self.label_22.setText(_translate("Form", "VACCINATION"))
-        self.lbl_pagHomepage_vaccination.setText(_translate("Form", "This month: 0\n"
+        self.lbl_pagHomepage_vaccination.setText(_translate("Form", "Vaccines given this\n"
+"Month: 0\n"
 "Today: 0"))
         self.btn_pageHomepage_viewVaccination.setText(_translate("Form", "          View details     "))
+        self.label_142.setText(_translate("Form", "Muguku Farm v1.0"))
         self.label_25.setText(_translate("Form", "CUSTOMERS"))
         self.btn_pageCustomers_deleteCustomer.setText(_translate("Form", "Delete Customer  "))
         self.btn_pageCustomers_addCustomer.setText(_translate("Form", "Add Customer"))
@@ -6392,12 +6405,12 @@ class Ui_Form(object):
         self.combo_pageAddExpense_Category_7.setItemText(1, _translate("Form", "No"))
         self.combo_pageAddExpense_Category_6.setItemText(0, _translate("Form", "Yes"))
         self.combo_pageAddExpense_Category_6.setItemText(1, _translate("Form", "No"))
-        self.label_107.setText(_translate("Form", "Breed Type"))
-        self.label_106.setText(_translate("Form", "Breed Type"))
+        self.label_107.setText(_translate("Form", "Laying"))
+        self.label_106.setText(_translate("Form", "Expired"))
         self.led_pageAddExpense_Description_14.setPlaceholderText(_translate("Form", "12"))
         self.label_103.setText(_translate("Form", "Batch Number"))
         self.label_101.setText(_translate("Form", "Breed Type"))
-        self.label_100.setText(_translate("Form", "Salary"))
+        self.label_100.setText(_translate("Form", "Date"))
         self.btn_pageAddExpense_add_9.setText(_translate("Form", "ADD "))
         self.label_102.setText(_translate("Form", "Total"))
         self.led_pageAddExpense_Description_13.setPlaceholderText(_translate("Form", "100"))
@@ -6405,7 +6418,7 @@ class Ui_Form(object):
         self.label_99.setText(_translate("Form", "EGG PRODUCTION RECORDS"))
         self.led_pageOrder_searchOrder_5.setPlaceholderText(_translate("Form", "Record ID"))
         self.btn_pageOrder_deleteOrder_3.setText(_translate("Form", "DELETE RECORD  "))
-        self.btn_pageOrder_addOrder_3.setText(_translate("Form", "Add Flock"))
+        self.btn_pageOrder_addOrder_3.setText(_translate("Form", "Add"))
         self.label_104.setText(_translate("Form", "SHOW"))
         self.combo_pageIncomeManagement_entries_7.setItemText(0, _translate("Form", "10"))
         self.combo_pageIncomeManagement_entries_7.setItemText(1, _translate("Form", "15"))
@@ -6612,8 +6625,277 @@ class Ui_Form(object):
         self.btn_pageOrder_addOrder_4.clicked.connect(self.btn_pageOrder_addOrder_4_clicked)
         self.btn_pageHomepage_viewHatchery.clicked.connect(self.btn_pageHomepage_hatchery_clicked)
         self.btn_pageAddExpense_add_11.clicked.connect(self.btn_pageAddExpense_add_11_clicked)
+        self.btn_pageHomepage_vaccination.clicked.connect(self.btn_pageHomepage_vaccination_clicked)
+        self.btn_pageHomepage_viewVaccination.clicked.connect(self.btn_pageHomepage_vaccination_clicked)
+        self.btn_pageOrder_search_5.clicked.connect(self.btn_pageOrder_search_5_clicked)
+        self.btn_pageOrder_deleteOrder_5.clicked.connect(self.btn_pageOrder_deleteOrder_5_clicked)
+        self.btn_pageOrder_addOrder_5.clicked.connect(self.btn_pageOrder_addOrder_5_clicked)
+        self.btn_pageAddExpense_add_12.clicked.connect(self.btn_pageAddExpense_add_12_clicked)
 
 
+    def update_home_labels(self):
+            self.mycursor.execute(f"SELECT count(*) FROM poultry_management.customers;")
+            customer_num = [i for i in self.mycursor][0][0]
+
+            self.lbl_pagHomepage_customers.setText(f"{customer_num}\n\nTotal \n\ncustomers")
+
+            self.mycursor.execute(f"SELECT COUNT(*) FROM poultry_management.orders;")
+            orders_num = [i for i in self.mycursor][0][0]
+            self.lbl_pagHomepage_sales.setText(f"{orders_num}\n\nTotal \n\nOrders")
+
+            self.mycursor.execute(f"SELECT SUM(amount) FROM poultry_management.income WHERE income_date > '{(datetime.today() - timedelta(days=30)).date()}';")
+            income = [i for i in self.mycursor][0][0]
+            try:
+                    income = format('{:,}'.format(income))
+            except:
+                    income = 0
+            self.lbl_pagHomepage_income.setText(f"Ksh.\n{income}\n\nLast\n30 days\n Income")
+
+
+            self.mycursor.execute(
+                    f"SELECT SUM(amount) FROM poultry_management.expenses WHERE expense_date > '{(datetime.today() - timedelta(days=30)).date()}';")
+            expense = [i for i in self.mycursor][0][0]
+            try:
+                    expense = format('{:,}'.format(expense))
+            except:
+                    expense = 0
+            self.lbl_pagHomepage_expenses.setText(f"Ksh.\n{expense}\n\nLast\n30 days\n Expenses")
+
+            now = datetime.now()
+
+            self.mycursor.execute(
+                    f"SELECT SUM(total) FROM poultry_management.batchflock WHERE date > '{now.year}-{now.month}-01';")
+            this_month = [i for i in self.mycursor][0][0]
+            try:
+                    month_total = format('{:,}'.format(this_month))
+            except:
+                    month_total = this_month
+
+            self.mycursor.execute(f"SELECT SUM(total) FROM poultry_management.batchflock WHERE date = '{now.date()}';")
+            today_total = [i for i in self.mycursor][0][0]
+            try:
+                    today_total = format('{:,}'.format(today_total))
+            except:
+                    today_total = today_total
+
+            self.lbl_pagHomepage_batchFlock.setText(f"This month : {month_total}\nToday : {today_total}")
+
+                # Egg prod
+            self.mycursor.execute(
+                    f"SELECT SUM(total) FROM poultry_management.eggproduction WHERE date > '{now.year}-{now.month}-01';")
+            this_month = [i for i in self.mycursor][0][0]
+            try:
+                    month_total = format('{:,}'.format(this_month))
+            except:
+                    month_total = this_month
+
+            self.mycursor.execute(f"SELECT SUM(total) FROM poultry_management.eggproduction WHERE date = '{now.date()}';")
+            today_total = [i for i in self.mycursor][0][0]
+            try:
+                    today_total = format('{:,}'.format(today_total))
+            except:
+                    today_total = today_total
+
+            self.lbl_pagHomepage_eggProduction.setText(f"This month : {month_total}\nToday : {today_total}")
+
+                # Hatchery
+            self.mycursor.execute(
+                    f"SELECT SUM(total) FROM poultry_management.hatcheryrecods WHERE introduction_date > '{now.year}-{now.month}-01';")
+            this_month = [i for i in self.mycursor][0][0]
+            try:
+                    month_total = format('{:,}'.format(this_month))
+            except:
+                    month_total = this_month
+
+            self.mycursor.execute(
+                    f"SELECT SUM(total) FROM poultry_management.hatcheryrecods WHERE introduction_date = '{now.date()}';")
+            today_total = [i for i in self.mycursor][0][0]
+            try:
+                    today_total = format('{:,}'.format(today_total))
+            except:
+                    today_total = today_total
+
+            self.lbl_pagHomepage_hatchery.setText(f"This month : {month_total}\nToday : {today_total}")
+
+                # Vaccination
+
+            self.mycursor.execute(
+                    f"SELECT COUNT(*) FROM poultry_management.vaccinationrecords WHERE date > '{now.year}-{now.month}-01';")
+            this_month = [i for i in self.mycursor][0][0]
+            try:
+                    month_total = format('{:,}'.format(this_month))
+            except:
+                    month_total = this_month
+
+            self.mycursor.execute(
+                    f"SELECT COUNT(*) FROM poultry_management.vaccinationrecords WHERE date = '{now.date()}';")
+            today_total = [i for i in self.mycursor][0][0]
+            try:
+                    today_total = format('{:,}'.format(today_total))
+            except:
+                    today_total = today_total
+
+            self.lbl_pagHomepage_vaccination.setText(f"Vaccines given this\nMonth: {month_total}\nToday : {today_total}")
+    def btn_pageAddExpense_add_12_clicked(self):
+            income_date = self.dateEdit_4.date().toString('yyyy-MM-dd')
+            date = datetime.strptime(income_date, "%Y-%m-%d").date()
+
+            batch_flock = self.combo_pageAddExpense_Category_15.currentText()
+            staff = self.combo_pageAddExpense_Category_13.currentText()
+            vaccine = self.combo_pageAddExpense_Category_14.currentText()
+
+            if self.led_pageAddExpense_Description_21.text() == "":
+                    name_done = False
+            else:
+                    name = self.led_pageAddExpense_Description_21.text()
+                    name_done = True
+
+            if self.led_pageAddExpense_Description_25.text() == "":
+                    reacton_done = False
+            else:
+                    reacton = self.led_pageAddExpense_Description_25.text()
+                    reacton_done = True
+
+            if self.led_pageAddExpense_Description_27.text() == "":
+                    other_done = False
+            else:
+                    other = self.led_pageAddExpense_Description_27.text()
+                    other_done = True
+
+            if (name_done is True) and (reacton_done is True) and (other_done is True):
+                    try:
+                            self.mycursor.execute(
+                                    f"INSERT INTO poultry_management.vaccinationRecords(batch_flock, vaccine, "
+                                    f"vaccine_name , staff, date, reaction, others) VALUES "
+                                    f"('{batch_flock}', '{vaccine}', '{name}', '{staff}', '{date}', '{reacton}', '{other}');")
+                            self.db.commit()
+
+                            messagebox = QMessageBox()
+                            messagebox.setWindowTitle("Hatchery record added")
+                            messagebox.setIcon(QMessageBox.Information)
+                            messagebox.setText(f"Hatchery record added successfully.")
+                            x = messagebox.exec_()
+
+                            self.led_pageAddExpense_Description_21.clear()
+                            self.led_pageAddExpense_Description_25.clear()
+                            self.led_pageAddExpense_Description_27.clear()
+                            self.btn_pageHomepage_vaccination_clicked()
+                    except:
+                            messagebox = QMessageBox()
+                            messagebox.setWindowTitle("Fail")
+                            messagebox.setIcon(QMessageBox.Warning)
+                            messagebox.setText(
+                                    f"An unexpected error prevented the hatchery record from being saved. \n"
+                                    f"Check your input fields and try again.")
+                            x = messagebox.exec_()
+
+            elif name_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Name field received wrong or invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+            elif reacton_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Reaction field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+
+            elif other_done is False:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Other field received wrong invalid input.\nPlease enter a valid answer")
+                    x = messagebox.exec_()
+
+
+    def btn_pageOrder_addOrder_5_clicked(self):
+            self.combo_pageAddExpense_Category_14.clear()
+            self.mycursor.execute(f"SELECT vaccine_name,vaccine_strain FROM poultry_management.vaccine;")
+            vaccines = [f'{i[0]}: {i[1]}' for i in self.mycursor]
+            self.combo_pageAddExpense_Category_14.addItems(vaccines)
+
+            self.combo_pageAddExpense_Category_13.clear()
+            self.mycursor.execute(f"SELECT first_name, last_name FROM poultry_management.staff;")
+            staff_names = [f'{i[0]} {i[1]}' for i in self.mycursor]
+            self.combo_pageAddExpense_Category_13.addItems(staff_names)
+            self.dateEdit_4.setDate(datetime.now().date())
+
+            self.combo_pageAddExpense_Category_15.clear()
+            self.mycursor.execute(f"SELECT breed_type, batch_number FROM poultry_management.batchnumber;")
+            batch = [f'{i[0]} {i[1]}' for i in self.mycursor]
+            self.combo_pageAddExpense_Category_15.addItems(batch)
+
+            self.stackedWidget_2.setCurrentWidget(self.page_3)
+    def btn_pageOrder_deleteOrder_5_clicked(self):
+            to_delete_id = self.led_pageOrder_searchOrder_9.text()
+            try:
+                    self.mycursor.execute(
+                            f"DELETE FROM poultry_management.vaccinationrecords WHERE vaccination_id = {to_delete_id};")
+                    self.db.commit()
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Success")
+                    messagebox.setIcon(QMessageBox.Information)
+                    messagebox.setText(f"Vaccination record deleted successfully.")
+                    x = messagebox.exec_()
+                    self.btn_pageHomepage_vaccination_clicked()
+                    self.led_pageOrder_searchOrder_9.clear()
+            except:
+                    messagebox = QMessageBox()
+                    messagebox.setWindowTitle("Error")
+                    messagebox.setIcon(QMessageBox.Warning)
+                    messagebox.setText(
+                            "Error deleting vaccination record due to invalid input.\nPlease enter a valid hatch_id")
+                    x = messagebox.exec_()
+
+
+    def btn_pageOrder_search_5_clicked(self):
+            search_term = self.led_pageOrder_searchOrder_10.text()
+
+            if search_term == "":
+                    search_term = "."
+
+            self.mycursor.execute(
+                    f"SELECT * FROM poultry_management.vaccinationrecords WHERE vaccination_id REGEXP '{search_term}' or"
+                    f" batch_flock REGEXP '{search_term}' or vaccine REGEXP '{search_term}' or vaccine_name REGEXP '{search_term}' or"
+                    f" staff REGEXP '{search_term}' or date REGEXP '{search_term}' or reaction REGEXP '{search_term}' or"
+                    f" others REGEXP '{search_term}';")
+
+            self.table_pageOrder_Orders_5.setColumnCount(8)
+            header_labels = ['Vaccination ID', 'Batch Flock', 'Vaccine', 'Vaccine Name', 'Staff', 'Date', 'Reaction', 'Others']
+            self.table_pageOrder_Orders_5.setHorizontalHeaderLabels(header_labels)
+            self.table_pageOrder_Orders_5.verticalHeader().setVisible(False)
+            self.table_pageOrder_Orders_5.setRowCount(0)
+
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageOrder_Orders_5.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageOrder_Orders_5.setItem(row_number, column_number,
+                                                                  QtWidgets.QTableWidgetItem(str(data)))
+
+    def btn_pageHomepage_vaccination_clicked(self):
+            self.table_pageOrder_Orders_5.setColumnCount(8)
+            header_labels = ['Vaccination ID', 'Batch Flock', 'Vaccine', 'Vaccine Name', 'Staff', 'Date', 'Reaction', 'Others']
+            self.table_pageOrder_Orders_5.setHorizontalHeaderLabels(header_labels)
+            self.table_pageOrder_Orders_5.verticalHeader().setVisible(False)
+            self.table_pageOrder_Orders_5.setRowCount(0)
+
+            self.mycursor.execute(f"SELECT * FROM poultry_management.vaccinationrecords;")
+
+            for row_number, row_data in enumerate(self.mycursor):
+                    self.table_pageOrder_Orders_5.insertRow(row_number)
+                    for column_number, data in enumerate(row_data):
+                            self.table_pageOrder_Orders_5.setItem(row_number, column_number,
+                                                                  QtWidgets.QTableWidgetItem(str(data)))
+
+            self.stackedWidget_2.setCurrentWidget(self.page_2)
 
     def btn_pageAddExpense_add_11_clicked(self):
             income_date = self.dateEdit_3.date().toString('yyyy-MM-dd')
@@ -8467,7 +8749,9 @@ class Ui_Form(object):
                                                                        QtWidgets.QTableWidgetItem(str(data)))
 
     def btn_pageHomepage_Dashboard_clicked(self):
+
             self.stackedWidget_2.setCurrentWidget(self.pageDashboard)
+            self.update_home_labels()
 
     def btn_pageHomepage_customer_clicked(self):
             self.customer_display_highbound = 10
@@ -8488,6 +8772,7 @@ class Ui_Form(object):
                                                                        QtWidgets.QTableWidgetItem(str(data)))
 
     def btn_pageSignin_submit_clicked(self):
+            self.update_home_labels()
             if (self.led_pageSignin_password.text() == "admin") and (self.led_pageSignin_username.text() == "admin"):
                     self.stackedWidget.setCurrentWidget(self.pageHomepage)
                     self.stackedWidget_2.setCurrentWidget(self.pageDashboard)
@@ -8506,7 +8791,7 @@ class Ui_Form(object):
 import mysql.connector
 import resources_rc
 from PyQt5.QtWidgets import QMessageBox
-from datetime import datetime
+from datetime import datetime, timedelta
 import re
 
 if __name__ == "__main__":

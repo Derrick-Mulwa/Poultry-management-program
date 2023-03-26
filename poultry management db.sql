@@ -42,7 +42,10 @@ amount DECIMAL(10, 2)
 );
 
 INSERT INTO income(category, income_description, income_date, amount) VALUES
-("Sell Chicken", "Sold 100 Chicken to Stanford", '2023-03-17', 50000);
+("Sell Chicken", "Sold 100 Chicken to Stanford", '2023-03-17', 50474),
+("Sell Manure", "Sold 100 tonnes to Mburi farm", '2023-03-24', 37097),
+("Sell Chicks", "Sold 10000 to Waluke farm", '2023-03-11', 63500),
+("Sell Eggs", "Sold 10000 eggs to Awesomecakes Bakery", '2023-03-30', 121744);
 
 CREATE TABLE orders(
 order_id INT PRIMARY KEY AUTO_INCREMENT,
